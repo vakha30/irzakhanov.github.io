@@ -1,0 +1,41 @@
+.paralax {
+	width: 100%;
+	height: 348px;
+	overflow: hidden;
+	padding-top: 0;
+	.paralax__banner {
+		background-image: url("../img/backgraund_2.jpg");
+		background-size: cover;
+		background-position: (50%, 50%);
+		height: 100%;
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(250, 0, 0, 0.5);	
+			z-index: -1;
+		}
+	}
+	.paralax__title {
+		text-align: center;
+		position: absolute;
+		top: calc(50% - 86px);
+		left: calc(50% - 227px);
+		h3 {
+			font-family: 'Roboto Slab', sans-serif;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 500;
+			text-transform: none;
+			max-width: 459px;
+			margin: 0 auto;
+			line-height: 40px;
+			margin-bottom: 53px;
+		}
+	}
+}

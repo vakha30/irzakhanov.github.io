@@ -1,0 +1,73 @@
+@import "reset";
+@import "header";
+@import "services";
+@import "about";
+@import "works";
+@import "paralax";
+
+.wrapper {
+	max-width: 1063px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 63px;
+	h2 {
+		font-size: 19px;
+	}
+	.subline {
+		width: 50px;
+		height: 2px;
+		background-color: #555;
+		margin: 25px auto;
+	}
+	p {
+		font-size: 15px;
+	}
+
+}
+
+section {
+	padding-top: 85px;
+	padding-bottom: 100px;
+}
+
+.button {
+			text-transform: uppercase;
+    		border: 2px solid #fff;
+    		padding: 12px 27px 12px 25px;
+    		font-size: 16px;
+    		font-weight: 700;
+    		text-align: center;
+    		&:hover {
+    			background-color: #fff;
+    			color: #c0301c;
+    			transition: 0.3s;
+    		}
+		}
+
+h1 {
+	font-size: 48px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: -1px;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	color: #555;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 13px;
+}
+
+
+

@@ -1,0 +1,118 @@
+.about {
+	background-color: #f8f8f8;
+	position: relative;
+	z-index: 99;
+	.section-title {
+		margin-bottom: 55px;
+	}
+	
+	.contents {
+		display: flex;
+		justify-content: space-between;
+		p {
+			max-width: 555px;
+			line-height: 24px;
+			&:last-child {
+				margin-left: 30px;
+			}
+		}
+	}
+	.members {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 55px;
+		.thumb {
+			position: relative;
+			overflow: hidden;
+			width: 248px;
+			height: 240px;
+			transition: 0.3s;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.5);
+				.arrow-left {
+					background-color: #8d8d8d;
+				}
+				.arrow-right {
+					background-color: #8d8d8d;
+				}
+				.social {
+					display: block;
+				}
+			}
+			a {
+				
+			}
+			.arrow-left {
+				position: absolute;
+				background-color: #c0301c;
+				width: 31px;
+				height: 33px;
+				z-index: 99;
+				top: calc(50% - 17px);
+				img {
+					object-fit: cover;
+					position: absolute;
+					top: calc(50% - 8px);
+					left: calc(50% - 5px);
+					width: 9px;
+					height: 14px;
+				}
+			}
+			.arrow-right {
+				position: absolute;
+				background-color: #c0301c;
+				width: 31px;
+				height: 33px;
+				z-index: 99;
+				top: calc(50% - 17px);
+				left: calc(100% - 33px);
+				img {
+					object-fit: cover;
+					transform: rotate(180deg);
+					position: absolute;
+					top: calc(50% - 8px);
+					left: calc(50% - 3px);
+					width: 9px;
+					height: 14px;
+				}
+			}
+
+			.member {
+				position: absolute;
+				object-fit: cover;
+				width: 248px;
+				z-index: -1;
+			}
+			.social {
+				display: none;
+				position: absolute;
+				top: calc(100% - 60px);
+				left: calc(50% - 56px);
+				right: 0;
+				bottom: 0;
+				ul {
+					display: flex;
+					li {
+						margin-left: 2px;
+						padding: 5px 6px 4px;
+						transition: 0.3s;
+						&:hover {
+							background-color: #c0301c;
+						}
+					}
+				}
+				img {
+					width: 15px;
+				}
+			}
+		}
+		.member-info {
+			.info {
+				text-align: center;
+				h3 {
+					margin: 15px 0 10px 0;
+				}
+			}
+		}
+	}
+}
