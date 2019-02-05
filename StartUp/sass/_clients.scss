@@ -1,0 +1,38 @@
+.clients {
+	background-color: #f8f8f8;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	.clients__logo {
+		display: flex;
+		justify-content: center;
+	}
+	p.clients__info {
+	    font-size: 17px;
+  		font-weight: 500;
+  		font-style: italic;
+  		max-width: 760px;
+  		margin: 0 auto;
+  		margin-top: 47px;
+  		line-height: 26px;
+	}
+	p.name {
+		font-size: 19px;
+		margin-top: 33px;
+	}
+	.circle {
+		display: flex;
+		justify-content: center;
+		margin-top: 35px;
+		.circle__item {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #ddd;
+			margin-left: 8px;
+			&:first-child {
+				background-color: #c0301c;
+			}
+		}
+	}
+}

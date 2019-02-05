@@ -1,0 +1,123 @@
+.contacts {
+	.contacts-block {
+		display: flex;
+		justify-content: space-between;
+		.contacts-info {
+			margin-left: 24px;
+			.contacts-info__item {
+				margin-bottom: 29px;
+				h3 {
+					font-size: 14px;
+					font-weight: 500;
+					position: relative;
+					&.adress::before {
+						content: '';
+						background-image: url("../img/adress.svg");
+						background-size: cover;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top: -1px;
+						left: -28px;
+					}
+					&.phone::before {
+						content: '';
+						background-image: url("../img/phone.svg");
+						background-size: cover;
+						width: 17px;
+						height: 17px;
+						position: absolute;
+						top: -1px;
+						left: -28px;
+					}
+					&.mail::before {
+						content: '';
+						background-image: url("../img/mail.svg");
+						background-size: cover;
+						width: 17px;
+						height: 17px;
+						position: absolute;
+						top: -1px;
+						left: -28px;
+					}
+				}
+				p {
+					font-size: 12px;
+					margin-top: 9px;
+					line-height: 20px;
+				}
+			}
+		}
+		.contacts-form {
+			padding-right: 7px;
+			max-width: 800px;
+			.input-items {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+				input {
+					width: 303px;
+   					margin-left: 26px;
+   					margin-bottom: 19px;
+   					height: 20px;
+   					border: 1px solid #555;
+   					outline: none;
+   					padding: 10px;
+   					padding-left: 15px;
+   					text-transform: uppercase;
+   					color: #555;
+    				&:focus {
+    					border-color: #c0301c;
+    				}
+				}
+				
+			}
+			textarea {
+			    width: 661px;
+   				height: 74px;
+   				margin-left: 113px;
+   				border: 1px solid #555;
+   				outline: none;
+   				padding: 10px;
+   				padding-left: 15px;
+   				text-transform: uppercase;
+   				color: #555;
+  				&:focus {
+    				border-color: #c0301c;
+    			}
+			}
+			input[type="submit"] {
+				background-color: #fff;
+    			color: #555;
+    			border: 1px solid #555;
+    			text-transform: uppercase;
+    			font-size: 12px;
+    			font-family: 'Roboto Slab', sans-serif;
+    			padding: 13px 33px;
+    			margin: 17px 0 0 117px;
+				transition: 0.3s;
+    			&:hover {
+    				background-color: #c0301c;
+    				border-color: #c0301c;
+    				color: #fff;
+    			}
+			}
+			p {
+				display: inline-block;
+				margin-left: 35px;
+				font-size: 12px;
+				position: relative;
+				&::before {
+					content: '';
+   					background-image: url(../img/star.svg);
+   					background-size: cover;
+   					width: 6px;
+   					height: 6px;
+   					position: absolute;
+   					top: 3px;
+   					left: -10px;
+				}
+			}
+		}
+	}
+}
