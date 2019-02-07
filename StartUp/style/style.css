@@ -5,7 +5,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Montseratt', sans-serif; }
+  font-family: 'Montseratt', sans-serif;
+  width: 100% }
 
 p {
   margin: 0;
