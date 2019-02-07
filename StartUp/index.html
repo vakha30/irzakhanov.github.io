@@ -5,6 +5,9 @@
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="favicon.jpg" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
 	<link rel="stylesheet" href="style/icomoons.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
@@ -81,14 +84,14 @@
 				<div class="members">
 					<div class="member-info">
 						<div class="thumb">
-							<img class="member" src="img/member_1.png"	 alt="member_1">
-							<div class="arrow-left"><a href="#"><img 	src="img/left-arrow.svg" alt=""></a></div>
+							<img class="member" src="img/member_1.png" alt="member_1">
+							<div class="arrow-left"><a href="#"><img src="img/left-arrow.svg" alt=""></a></div>
 							<div class="social">
 								<ul>
-									<li><a href="#"><img src="img/	facebook.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	twitter.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	google-plus.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	linked-in.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
@@ -99,13 +102,13 @@
 					</div>
 					<div class="member-info">
 						<div class="thumb">
-							<img class="member" src="img/member_2.png"	 alt="member_1">
+							<img class="member" src="img/member_2.png" alt="member_1">
 							<div class="social">
 								<ul>
-									<li><a href="#"><img src="img/	facebook.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	twitter.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	google-plus.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	linked-in.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
@@ -117,13 +120,13 @@
 
 					<div class="member-info">
 						<div class="thumb">
-							<img class="member" src="img/member_3.png"	 alt="member_1">
+							<img class="member" src="img/member_3.png" alt="member_1">
 							<div class="social">
 								<ul>
-									<li><a href="#"><img src="img/	facebook.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	twitter.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	google-plus.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	linked-in.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
@@ -135,14 +138,14 @@
 
 					<div class="member-info">
 						<div class="thumb">
-							<img class="member" src="img/member_4.png"	 alt="member_1">
-							<div class="arrow-right"><a href="#"><img 	src="img/left-arrow.svg" alt=""></a></div>
+							<img class="member" src="img/member_4.png" alt="member_1">
+							<div class="arrow-right"><a href="#"><img src="img/left-arrow.svg" alt=""></a></div>
 							<div class="social">
 								<ul>
-									<li><a href="#"><img src="img/	facebook.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	twitter.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	google-plus.svg" alt=""></a></li>
-									<li><a href="#"><img src="img/	linked-in.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
@@ -349,7 +352,7 @@
 								<input type="text" value="your subject">
 								<input type="text" value="company name">
 							</div>
-							<textarea name="text" id="text" value="write your message"></textarea>
+							<textarea name="text" id="text"></textarea>
 							<input type="submit" value="send message">
 							<p>Well contact you as as possible. We dont reply on Monday</p>
 						</form>
@@ -378,5 +381,15 @@
 			<p>&#xA9; 2015 Startup, Designed by ShapedTheme</p>
 		</div>
 	</footer>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
+	<script>
+		$('.members').slick({
+      		infinite: true,
+      		dots: true,
+      		slidesToShow: 4,
+    		slidesToScroll: 1
+		});
+	</script>
 </body>
 </html>
