@@ -4,41 +4,51 @@
 	<meta charset="UTF-8">
 	<title>script</title>
 	<style>
-		h1 {
-			display: inline-block;
-		}
+		
 		body {
-			width: 100%;	
+			width: 100%;
+			margin: 0;
+			padding: 0;
 		}
-		.waha {
-			display: none;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
 		}
-		.blok {
-			background-color: #555;
-			margin: 0 auto;
-			display: block;
-			
-			text-align: center;
-		}
+		
 		.wrapper {
 			width: 100%;
 			background-color: #ccc;
+		}
+		.blok {
+			background-color: #555;	
+			display: inline-block;
+			margin: 0 100px;
+			text-align: center;
+		}
+
+		h1 {
+			display: inline-block;
+		}
+		.waha {
+			display: none;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="wrapper">
-	<div class="blok">
-		<h1 class="name">Гуля</h1>
-		<h1 class="name waha" id="waha">+Ваха</h1>
-		<br>
-		<button onclick="colorText('#ff0000')">Красный цвет</button>
-		<button onclick="colorText('#00ff00')">Зеленый цвет</button>
-		<br>
-		<br>
-		<button id="wah">Добавить любимого</button>
-	</div>
+		<div class="blok">
+			<h1 class="name">Гуля</h1>
+			<h1 class="name waha" id="waha">+Ваха</h1>
+			<br>
+			<button onclick="colorText('#ff0000')">Красный цвет</button>
+			<button onclick="colorText('#00ff00')">Зеленый цвет</button>
+			<br>
+			<br>
+			<button id="wah">Добавить любимого</button>
+		</div>
 	</div>
 	<script>
 		function colorText(col) {
