@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>script</title>
+	<style>
+		h1 {
+			display: inline-block;
+		}
+
+		.waha {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Гуля</h1>
+	<h1 class="waha" id="waha">+Ваха</h1>
+	<br>
+	<button onclick="colorText('#ff0000')">Красный цвет</button>
+	<button onclick="colorText('#00ff00')">Зеленый цвет</button>
+	<br>
+	<br>
+	<button id="wah">Добавить любимого</button>
+	<script>
+		function colorText(col) {
+			var element = document.querySelector('h1');
+			element.style.color = col;	
+		}
+
+		var wah = document.getElementById('wah');
+		wah.onclick = function() {
+			var element = document.getElementById('waha');
+			element.style.display = "inline-block"; 
+		}
+	</script>
+</body>
+</html>
