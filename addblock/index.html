@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>script</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="management">
+			<button class="add-block-btn" onclick="addBlock()">Добавить блок</button>
+			<div class="options">
+				<button id="size-block">Размер 20px/40px</button>
+				<button id="elips">круг/квадрат</button>
+				<button id="size-enter">Задать размер</button>
+				<button id="clear-content">Очистить</button>
+			</div>
+		</div>
+		<div class="content">
+			<ul class="blocks">
+			</ul>
+		</div>
+		<div class="modal-input">
+			<div class="inp">
+				<input type="text" id="size-input">
+				<button id="modal-enter-btn">Задать</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
