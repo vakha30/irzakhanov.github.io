@@ -55,6 +55,17 @@ ul {
 	background-color: #f00;
 	margin: 1px;
 }
+.info-text {
+	display: block;
+	width: 100%;
+	background-color: yellow;
+	padding: 20px;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 
 .options {
 	display: inline-flex;

@@ -9,11 +9,18 @@
 <body>
 	<div class="container">
 		<div class="management">
+			<p class="info-text">
+					<span id="elips-text"></span>
+					с размером
+					<span id="size-text"></span>
+					px
+				</p>
 			<button class="add-block-btn" onclick="addBlock()">Добавить блок</button>
 			<div class="options">
 				<button id="size-block">Размер 20px/40px</button>
 				<button id="elips">круг/квадрат</button>
 				<button id="size-enter">Задать размер</button>
+				<input type="range" min="0" max="100" step="1"  id="polzunok" oninput="polz()">
 				<button id="clear-content">Очистить</button>
 			</div>
 		</div>

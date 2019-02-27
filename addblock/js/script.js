@@ -20,6 +20,21 @@ var input = document.getElementById('size-input');
 
 var btnClear = document.getElementById('clear-content');
 
+let elipsText = document.getElementById('elips-text');
+let sizeText = document.getElementById('size-text');
+let text = 'Квадрат';
+
+let polzunok = document.getElementById('polzunok');
+
+width = polzunok.value;
+
+
+function polz() {
+	width = polzunok.value;
+	sizeText.innerHTML = width;
+
+}
+
 btnClear.onclick = function() {
 	if (list.children.length > 0) {
 		list.children[list.children.length - 1].remove();
@@ -29,6 +44,8 @@ btnClear.onclick = function() {
 btnModalEnter.onclick = function () {
 	modalElement.style.display = "none";
 	width = input.value;
+	sizeText.innerHTML = width;
+	polzunok.value = width;
 }
 
 
@@ -39,12 +56,15 @@ btnSizeEnter.onclick = function () {
 
 
 btnElips.onclick = function () {
-	if (!isElips) {
-		isElips = true;
+	if(isElips) {
+		isElips = false;
+		text = 'Квадрат';
 	}
 	else {
-		isElips = false;
+		isElips = true;
+		text = 'Круг';
 	}
+	elipsText.innerHTML = text;
 }
 
 
@@ -57,7 +77,11 @@ btnSize.onclick = function () {
 		width = 20;
 		isWidth = true;
 	}
+	sizeText.innerHTML = width;
+	polzunok.value = width;
 }
+elipsText.innerHTML = text;
+sizeText.innerHTML = width;
 
 var addBlock = function () {
 		var block = makeElement('li', 'block');
@@ -71,4 +95,5 @@ var addBlock = function () {
 			block.style.borderRadius = '50%';
 		}
 } 
+
 
