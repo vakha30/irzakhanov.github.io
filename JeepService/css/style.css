@@ -2,36 +2,51 @@ header {
   padding-top: 25px;
   height: 349px;
   background-image: url(../img/bgheader.png);
-  background-size: contain;
+  background-size: 100% 300px;
   background-position: 0px 22px;
   background-repeat: no-repeat;
   position: relative;
   top: 0; }
+  @media screen and (max-width: 650px) {
+    header {
+      background: none; } }
   header .head {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 650px) {
+      header .head {
+        display: block; } }
+    @media screen and (max-width: 650px) {
+      header .head .logo {
+        display: block;
+        margin: 0 auto; } }
     header .head .form {
       position: relative;
       margin-right: 67px; }
-      header .head .form-input {
+      @media screen and (max-width: 650px) {
+        header .head .form {
+          display: block;
+          width: 150px;
+          margin: 50px auto 0; } }
+      header .head .form .form-input {
         position: relative;
         display: inline-block; }
-        header .head .form-input label {
+        header .head .form .form-input label {
           position: absolute;
           font-size: 11px;
           color: #626262; }
-          header .head .form-input label:first-of-type {
+          header .head .form .form-input label:first-of-type {
             left: -36px;
             top: 5px; }
-          header .head .form-input label:last-of-type {
+          header .head .form .form-input label:last-of-type {
             left: -45px;
             top: 35px; }
-        header .head .form-input input {
+        header .head .form .form-input input {
           width: 115px;
           height: 23px;
           border-radius: 5px;
           margin-bottom: 7px; }
-        header .head .form-input .form-button {
+        header .head .form .form-input .form-button {
           position: absolute;
           top: -2px;
           right: -58px;
@@ -60,6 +75,9 @@ header {
   header .wrapper-links {
     position: relative;
     bottom: -177px; }
+    @media screen and (max-width: 650px) {
+      header .wrapper-links {
+        bottom: -100px; } }
     header .wrapper-links .head-links {
       display: flex;
       justify-content: space-between;
@@ -108,6 +126,10 @@ main {
         main .nav .menu > li > a {
           border-radius: 10px;
           padding: 10px 15px; }
+          @media screen and (max-width: 750px) {
+            main .nav .menu > li > a {
+              padding: 5px 7px;
+              font-size: 12px; } }
           main .nav .menu > li > a.active, main .nav .menu > li > a:hover {
             background-color: #ffba00; }
         main .nav .menu > li:hover {
@@ -142,17 +164,23 @@ main {
           main .nav .menu .submenu a:hover {
             background-image: url("../img/bglink.png");
             background-size: contain; }
-    main .nav .search {
+    @media screen and (max-width: 750px) {
+      main .nav .searching {
+        display: none; } }
+    main .nav .searching .search {
       width: 230px;
       height: 35px;
       border-radius: 10px;
       font-size: 16px;
       position: relative;
       display: block; }
-      main .nav .search + a {
+      @media screen and (max-width: 1100px) {
+        main .nav .searching .search {
+          width: 130px; } }
+      main .nav .searching .search + a {
         display: block;
         position: relative; }
-        main .nav .search + a::after {
+        main .nav .searching .search + a::after {
           content: '';
           border: 2px solid #d5d5d5;
           border-radius: 50%;
@@ -161,7 +189,7 @@ main {
           position: absolute;
           top: -26px;
           right: 10px; }
-        main .nav .search + a::before {
+        main .nav .searching .search + a::before {
           content: '';
           background-color: #d5d5d5;
           border-radius: 50%;
@@ -498,9 +526,10 @@ footer .footer {
           margin-top: 16px; }
         footer .footer .wrapper .copyright p a {
           color: #fff;
-          font-size: 11px;
-          text-decoration: none;
-          border-bottom: 1px solid #fff; }
+          font-size: 11px; }
+          @media screen and (max-width: 1100px) {
+            footer .footer .wrapper .copyright p a {
+              display: block; } }
     footer .footer .wrapper .footer-links {
       display: block;
       width: 100%;
@@ -519,6 +548,7 @@ footer .footer {
 
 .wrapper {
   width: 100%;
+  max-width: 1300px;
   padding: 0 40px; }
 
 p {

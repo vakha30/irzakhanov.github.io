@@ -27,8 +27,9 @@ footer {
 					a {
 						color: #fff;
 						font-size: 11px;
-						text-decoration: none;
-						border-bottom: 1px solid #fff;
+						@media screen and (max-width: 1100px) {
+							display: block;
+						}
 					}
 				}
 			}
