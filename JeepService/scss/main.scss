@@ -1,0 +1,39 @@
+@import "header";
+@import "mains";
+@import "footer";
+
+.wrapper {
+	width: 100%;
+	padding: 0 40px;
+}
+
+p {
+	font-size: 13px;
+	color: #3b3b3b;
+}
+
+a {
+	font-size: 13px;
+	color: #437eb5;
+	transition: all 0.2s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+* {
+	transition: .2s;
+	box-sizing: border-box;
+}
+
+hr {
+	border-color: #ebebeb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2c2c2c;
+}

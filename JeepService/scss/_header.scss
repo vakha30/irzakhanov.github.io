@@ -1,0 +1,108 @@
+header {
+    padding-top: 25px;
+    height: 349px;
+    background-image: url(../img/bgheader.png);
+    background-size: contain;
+    background-position: 0px 22px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+	.head {
+		display: flex;
+		justify-content: space-between;
+		.logo {
+
+		}
+		.form {
+			position: relative;
+			margin-right: 67px;
+			&-input {
+				position: relative;
+				display: inline-block;
+				label {
+					position: absolute;
+					font-size: 11px;
+					color: #626262;
+					&:first-of-type {
+						left: -36px;
+						top: 5px;
+					}
+					&:last-of-type {
+						left: -45px;
+						top: 35px;
+					}
+				}
+				input {
+					width: 115px;
+					height: 23px;
+					border-radius: 5px;
+					margin-bottom: 7px;
+				}
+				.form-button {
+					  position: absolute;
+  					  top: -2px;
+  					  right: -58px;
+  					  width: 53px;
+  					  height: 53px;
+  					  background-color: #fff;
+  					  border: none;
+  					  background-image: url(../img/btn.png);
+  					  background-repeat: no-repeat;
+  					  background-size: contain;
+  					  background-position: 2px 2px;
+  					  color: #fff;
+  					  text-align: left;
+  					  font-size: 11px;
+  					  font-weight: bold;
+				}
+			}
+			.register-link {
+				position: absolute;
+   			 	display: block;
+   			 	width: 200px;
+   			 	bottom: -12px;
+   			 	left: -51px;
+				a:first-of-type:after {
+					content: '|';
+					margin-left: 7px;
+					color: #cacaca;
+				}
+
+			}
+		}
+	}
+	.wrapper-links {
+		position: relative;
+		bottom: -177px;
+
+		.head-links {
+   			display: flex;
+   			justify-content: space-between;
+   			width: 100%;
+   			a {
+				font-size: 11px;
+   				color: #583d00;
+   				&:hover {
+   					color: #437eb5;
+   				}
+   				&:first-of-type {
+   					margin-right: 20px;
+   				}
+   			}
+   			.links-right {
+   				position: relative;
+   				margin-right: 20px;
+   				.rss {
+   					background-image: url(../img/rss.svg);
+   					position: absolute;
+   					background-size: contain;
+   					width: 20px;
+   					height: 20px;
+   					top: -3px;
+   					right: -11px;
+   					z-index: 33;
+   				}
+   			}
+   		}
+   }
+}
