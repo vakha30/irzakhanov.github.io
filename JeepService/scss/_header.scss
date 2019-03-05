@@ -89,12 +89,16 @@ header {
 		position: relative;
 		bottom: -177px;
         @media  screen and (max-width: 650px) {
-            bottom: -100px;
+            bottom: -80px;
         }
 		.head-links {
    			display: flex;
    			justify-content: space-between;
    			width: 100%;
+            @media  screen and (max-width: 650px) {
+                display: block;
+                text-align: center;
+            }
    			a {
 				font-size: 11px;
    				color: #583d00;
@@ -103,11 +107,22 @@ header {
    				}
    				&:first-of-type {
    					margin-right: 20px;
+                    @media  screen and (max-width: 650px) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
    				}
+                @media  screen and (max-width: 650px) {
+                    display: block;
+                }
    			}
    			.links-right {
    				position: relative;
    				margin-right: 20px;
+                @media  screen and (max-width: 650px) {
+                    margin-right: 0;
+                    margin-top: 10px;
+                }
    				.rss {
    					background-image: url(../img/rss.svg);
    					position: absolute;
@@ -117,6 +132,9 @@ header {
    					top: -3px;
    					right: -11px;
    					z-index: 33;
+                    @media  screen and (max-width: 650px) {
+                        display: none;
+                    }
    				}
    			}
    		}

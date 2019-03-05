@@ -6,6 +6,10 @@ main {
 		padding-bottom: 30px;
 		.menu {
 			display: flex;
+			@media  screen and (max-width: 650px) {
+				display: block;
+				margin: 0 auto;
+			}
 			li {
 				position: relative;
 			}
@@ -18,16 +22,11 @@ main {
 				margin-right: 15px;
 				padding: 11px 0;
 				border-radius: 10px;
-				
-				@media screen and (max-width: 900px) {
-					margin-right: 0px;
-				}
 
 				&>a {
 					border-radius: 10px;
 					padding: 10px 15px;
 					@media  screen and (max-width: 750px) {
-						padding: 5px 7px;
 						font-size: 12px;
 					}
 					&.active, &:hover {
@@ -38,6 +37,11 @@ main {
 					background-color: #ffba00;
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
+					@media  screen and (max-width: 650px) {
+						border-bottom-left-radius: 10px;
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 0;
+					}
 				}
 				&:hover .submenu {
 						display: block;
@@ -54,9 +58,18 @@ main {
 				left: 0;
 				display: none;
 				z-index: 3;
+				@media  screen and (max-width: 650px) {
+					top: 0;
+					left: 80px;
+					width: 120px;
+				}
 				li {
 					&:first-of-type {
 						margin-top: 10px;
+						@media  screen and (max-width: 650px) {
+							margin-top: 0;
+							border: none;
+						}
 					}
 					&:last-of-type {
 						margin-bottom: 10px;
@@ -123,9 +136,16 @@ main {
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
+			@media  screen and (max-width: 650px) {
+				display: block;
+			}
 		}
 		.aside {
 			width: 450px;
+			@media  screen and (max-width: 650px) {
+				width: 90%;
+				margin: 0 auto;
+			}
 			.aside-content {
 				height: auto;
 				border: 1px solid #dcdcdc;
@@ -162,6 +182,9 @@ main {
 
 			.vopros {
 				margin-top: 20px;
+				@media  screen and (max-width: 650px) {
+					margin-bottom: 30px
+				}
 				li:not(:first-of-type) {
 					padding: 3px 25px;
 					position: relative;
@@ -192,6 +215,9 @@ main {
 			} 
 			.news {
 				padding-bottom: 10px;
+				@media  screen and (max-width: 650px) {
+					margin-top: 15px;
+				}
 				li:not(:first-of-type) {
 					padding: 10px 0;
 					margin: 0 15px;
@@ -258,9 +284,15 @@ main {
 			width: 100%;
 			margin: 0 30px;
 			padding: 5px 0 0 0;
+			@media  screen and (max-width: 650px) {
+				margin: 0 auto;
+			}
 			h2 {
 				font-size: 23px;
 				font-weight: normal;
+				@media  screen and (max-width: 650px) {
+					text-align: center;
+				}
 			}
 			.title-links {
 				padding: 9px 0 10px 15px;
@@ -268,6 +300,9 @@ main {
 					font-size: 13px;
 					position: relative;
 					margin-right: 15px;
+					@media  screen and (max-width: 650px) {
+						display: block;
+					}
 					&:hover::before {
 						background-color: #969696;
 					}
@@ -313,7 +348,11 @@ main {
 				}
 				.stars {
 					position: relative;
-					margin: 13px 0;
+					margin: 13px;
+					@media  screen and (max-width: 650px) {
+						margin: 13px auto;
+						text-align: center;
+					}
 					.star-like {
 						display: inline-block;
 						width: 20px;
@@ -334,6 +373,9 @@ main {
 					position: absolute;
 					top: calc(50% - 5px);
 					left: 130px;
+					@media  screen and (max-width: 650px) {
+						display: none;
+					}
 				}
 				.auto-info {
 					padding-top: 5px;
@@ -350,14 +392,27 @@ main {
 						outline: 1px solid #dcdcdc;
 						outline-offset: 5px;
 						float: left;
+						@media  screen and (max-width: 650px) {
+							float: none;
+							display: block;
+							margin: 0 auto;
+						}
 					}
 					p {
 						line-height: 1.6em;
+						@media  screen and (max-width: 650px) {
+							margin-top: 15px;
+							text-align: center;
+							padding: 0 15px;
+						}
 					}
 				}
 				.footer-section {
 					display: flex;
 					margin-top: 25px;
+					@media  screen and (max-width: 650px) {
+						display: block;
+					}
 					button {
 						border-radius: 5px;
 					    background: -webkit-linear-gradient(#febf01 0%, #f9d777 45%, #f9d66b 68%, #f9d66b 68%, #febf01 100%);
@@ -369,6 +424,10 @@ main {
 						font-size: 11px;
 						font-weight: bold;
 						position: relative;
+						@media  screen and (max-width: 650px) {
+							display: block;
+							margin: 0 auto 20px;
+						}
 						&::before {
 							content: '';
     						position: absolute;
@@ -427,6 +486,9 @@ main {
 					}
 					a {
 						font-size: 12px;
+						@media  screen and (max-width: 650px) {
+							display: block;
+						}
 					}
 				}
 			}
@@ -481,6 +543,9 @@ main {
 							span {
 								color: #939393;
 								font-size: 11px;
+								@media  screen and (max-width: 650px) {
+									text-align: right;
+								}
 							}
 						}
 						p {
@@ -496,5 +561,9 @@ main {
 		width: 110px;
 		height: 40px;
 		margin: 15px 0 10px 15px;
+		@media  screen and (max-width: 650px) {
+			display: block;
+			margin: 20px auto;
+		}
 	}
 }

@@ -14,8 +14,14 @@ footer {
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
+			@media  screen and (max-width: 650px) {
+				display: block;
+			}
 			.copyright {
 				width: 30%;
+				@media  screen and (max-width: 650px) {
+					width: 100%;
+				}
 				p {
 					line-height: 1.3em;
 					color: #fff;
@@ -23,13 +29,13 @@ footer {
 					font-size: 11px;
 					&:last-of-type {
 						margin-top: 16px;
+						@media  screen and (max-width: 650px) {
+							margin: 12px 0;
+						}
 					}
 					a {
 						color: #fff;
 						font-size: 11px;
-						@media screen and (max-width: 1100px) {
-							display: block;
-						}
 					}
 				}
 			}
@@ -37,6 +43,10 @@ footer {
 				display: block;
 				width: 100%;
 				margin-left: 50px;
+				@media  screen and (max-width: 650px) {
+					margin: 0 auto;
+					text-align: center;
+				}
 				a {
 					font-size: 12px;
 					color: #ffb900;
@@ -45,11 +55,18 @@ footer {
 			}
 			.empty-blocks {
 				display: flex;
+				@media  screen and (max-width: 650px) {
+					display: block;
+					margin-top: 15px;
+				}
 				.empty-block {
 					width: 90px;
 					height: 32px;
 					background-color: #515151;
 					margin-left: 10px;
+					@media  screen and (max-width: 650px) {
+						margin: 5px auto;
+					}
 				}
 
 			}

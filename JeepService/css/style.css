@@ -77,11 +77,15 @@ header {
     bottom: -177px; }
     @media screen and (max-width: 650px) {
       header .wrapper-links {
-        bottom: -100px; } }
+        bottom: -80px; } }
     header .wrapper-links .head-links {
       display: flex;
       justify-content: space-between;
       width: 100%; }
+      @media screen and (max-width: 650px) {
+        header .wrapper-links .head-links {
+          display: block;
+          text-align: center; } }
       header .wrapper-links .head-links a {
         font-size: 11px;
         color: #583d00; }
@@ -89,9 +93,20 @@ header {
           color: #437eb5; }
         header .wrapper-links .head-links a:first-of-type {
           margin-right: 20px; }
+          @media screen and (max-width: 650px) {
+            header .wrapper-links .head-links a:first-of-type {
+              margin-right: 0;
+              margin-bottom: 10px; } }
+        @media screen and (max-width: 650px) {
+          header .wrapper-links .head-links a {
+            display: block; } }
       header .wrapper-links .head-links .links-right {
         position: relative;
         margin-right: 20px; }
+        @media screen and (max-width: 650px) {
+          header .wrapper-links .head-links .links-right {
+            margin-right: 0;
+            margin-top: 10px; } }
         header .wrapper-links .head-links .links-right .rss {
           background-image: url(../img/rss.svg);
           position: absolute;
@@ -101,6 +116,9 @@ header {
           top: -3px;
           right: -11px;
           z-index: 33; }
+          @media screen and (max-width: 650px) {
+            header .wrapper-links .head-links .links-right .rss {
+              display: none; } }
 
 main {
   padding-top: 30px; }
@@ -110,6 +128,10 @@ main {
     padding-bottom: 30px; }
     main .nav .menu {
       display: flex; }
+      @media screen and (max-width: 650px) {
+        main .nav .menu {
+          display: block;
+          margin: 0 auto; } }
       main .nav .menu li {
         position: relative; }
       main .nav .menu a {
@@ -120,15 +142,11 @@ main {
         margin-right: 15px;
         padding: 11px 0;
         border-radius: 10px; }
-        @media screen and (max-width: 900px) {
-          main .nav .menu > li {
-            margin-right: 0px; } }
         main .nav .menu > li > a {
           border-radius: 10px;
           padding: 10px 15px; }
           @media screen and (max-width: 750px) {
             main .nav .menu > li > a {
-              padding: 5px 7px;
               font-size: 12px; } }
           main .nav .menu > li > a.active, main .nav .menu > li > a:hover {
             background-color: #ffba00; }
@@ -136,6 +154,11 @@ main {
           background-color: #ffba00;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0; }
+          @media screen and (max-width: 650px) {
+            main .nav .menu > li:hover {
+              border-bottom-left-radius: 10px;
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0; } }
         main .nav .menu > li:hover .submenu {
           display: block;
           border-top-left-radius: 0; }
@@ -149,10 +172,19 @@ main {
         left: 0;
         display: none;
         z-index: 3; }
+        @media screen and (max-width: 650px) {
+          main .nav .menu .submenu {
+            top: 0;
+            left: 80px;
+            width: 120px; } }
         main .nav .menu .submenu li {
           border-top: 2px groove #e0a812; }
           main .nav .menu .submenu li:first-of-type {
             margin-top: 10px; }
+            @media screen and (max-width: 650px) {
+              main .nav .menu .submenu li:first-of-type {
+                margin-top: 0;
+                border: none; } }
           main .nav .menu .submenu li:last-of-type {
             margin-bottom: 10px;
             border-bottom: 2px groove #e0a812; }
@@ -204,8 +236,15 @@ main {
     main .article-content .wrapper {
       display: flex;
       justify-content: space-between; }
+      @media screen and (max-width: 650px) {
+        main .article-content .wrapper {
+          display: block; } }
     main .article-content .aside {
       width: 450px; }
+      @media screen and (max-width: 650px) {
+        main .article-content .aside {
+          width: 90%;
+          margin: 0 auto; } }
       main .article-content .aside .aside-content {
         height: auto;
         border: 1px solid #dcdcdc;
@@ -232,6 +271,9 @@ main {
           border: none; }
       main .article-content .aside .vopros {
         margin-top: 20px; }
+        @media screen and (max-width: 650px) {
+          main .article-content .aside .vopros {
+            margin-bottom: 30px; } }
         main .article-content .aside .vopros li:not(:first-of-type) {
           padding: 3px 25px;
           position: relative; }
@@ -255,6 +297,9 @@ main {
           font-size: 13px; }
       main .article-content .aside .news {
         padding-bottom: 10px; }
+        @media screen and (max-width: 650px) {
+          main .article-content .aside .news {
+            margin-top: 15px; } }
         main .article-content .aside .news li:not(:first-of-type) {
           padding: 10px 0;
           margin: 0 15px;
@@ -308,15 +353,24 @@ main {
       width: 100%;
       margin: 0 30px;
       padding: 5px 0 0 0; }
+      @media screen and (max-width: 650px) {
+        main .article-content .content {
+          margin: 0 auto; } }
       main .article-content .content h2 {
         font-size: 23px;
         font-weight: normal; }
+        @media screen and (max-width: 650px) {
+          main .article-content .content h2 {
+            text-align: center; } }
       main .article-content .content .title-links {
         padding: 9px 0 10px 15px; }
         main .article-content .content .title-links a {
           font-size: 13px;
           position: relative;
           margin-right: 15px; }
+          @media screen and (max-width: 650px) {
+            main .article-content .content .title-links a {
+              display: block; } }
           main .article-content .content .title-links a:hover::before {
             background-color: #969696; }
           main .article-content .content .title-links a:before {
@@ -351,7 +405,11 @@ main {
             font-size: 19px; }
         main .article-content .content .auto-disassembly .stars {
           position: relative;
-          margin: 13px 0; }
+          margin: 13px; }
+          @media screen and (max-width: 650px) {
+            main .article-content .content .auto-disassembly .stars {
+              margin: 13px auto;
+              text-align: center; } }
           main .article-content .content .auto-disassembly .stars .star-like {
             display: inline-block;
             width: 20px;
@@ -369,6 +427,9 @@ main {
           position: absolute;
           top: calc(50% - 5px);
           left: 130px; }
+          @media screen and (max-width: 650px) {
+            main .article-content .content .auto-disassembly .auto-date {
+              display: none; } }
         main .article-content .content .auto-disassembly .auto-info {
           padding-top: 5px;
           padding-right: 10px; }
@@ -384,11 +445,24 @@ main {
             outline: 1px solid #dcdcdc;
             outline-offset: 5px;
             float: left; }
+            @media screen and (max-width: 650px) {
+              main .article-content .content .auto-disassembly .auto-info .thumb {
+                float: none;
+                display: block;
+                margin: 0 auto; } }
           main .article-content .content .auto-disassembly .auto-info p {
             line-height: 1.6em; }
+            @media screen and (max-width: 650px) {
+              main .article-content .content .auto-disassembly .auto-info p {
+                margin-top: 15px;
+                text-align: center;
+                padding: 0 15px; } }
         main .article-content .content .auto-disassembly .footer-section {
           display: flex;
           margin-top: 25px; }
+          @media screen and (max-width: 650px) {
+            main .article-content .content .auto-disassembly .footer-section {
+              display: block; } }
           main .article-content .content .auto-disassembly .footer-section button {
             border-radius: 5px;
             background: -webkit-linear-gradient(#febf01 0%, #f9d777 45%, #f9d66b 68%, #f9d66b 68%, #febf01 100%);
@@ -400,6 +474,10 @@ main {
             font-size: 11px;
             font-weight: bold;
             position: relative; }
+            @media screen and (max-width: 650px) {
+              main .article-content .content .auto-disassembly .footer-section button {
+                display: block;
+                margin: 0 auto 20px; } }
             main .article-content .content .auto-disassembly .footer-section button::before {
               content: '';
               position: absolute;
@@ -448,6 +526,9 @@ main {
               left: -18px; }
           main .article-content .content .auto-disassembly .more-links-section a {
             font-size: 12px; }
+            @media screen and (max-width: 650px) {
+              main .article-content .content .auto-disassembly .more-links-section a {
+                display: block; } }
       main .article-content .content .dialogs {
         margin-top: 25px; }
         main .article-content .content .dialogs .dialogs-block {
@@ -494,12 +575,19 @@ main {
               main .article-content .content .dialogs .dialogs-block .dialog .dialog-title span {
                 color: #939393;
                 font-size: 11px; }
+                @media screen and (max-width: 650px) {
+                  main .article-content .content .dialogs .dialogs-block .dialog .dialog-title span {
+                    text-align: right; } }
             main .article-content .content .dialogs .dialogs-block .dialog p {
               line-height: 1.6em; }
   main .logo-down {
     width: 110px;
     height: 40px;
     margin: 15px 0 10px 15px; }
+    @media screen and (max-width: 650px) {
+      main .logo-down {
+        display: block;
+        margin: 20px auto; } }
 
 footer .head-footer {
   width: 100%;
@@ -515,8 +603,14 @@ footer .footer {
   footer .footer .wrapper {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 650px) {
+      footer .footer .wrapper {
+        display: block; } }
     footer .footer .wrapper .copyright {
       width: 30%; }
+      @media screen and (max-width: 650px) {
+        footer .footer .wrapper .copyright {
+          width: 100%; } }
       footer .footer .wrapper .copyright p {
         line-height: 1.3em;
         color: #fff;
@@ -524,27 +618,38 @@ footer .footer {
         font-size: 11px; }
         footer .footer .wrapper .copyright p:last-of-type {
           margin-top: 16px; }
+          @media screen and (max-width: 650px) {
+            footer .footer .wrapper .copyright p:last-of-type {
+              margin: 12px 0; } }
         footer .footer .wrapper .copyright p a {
           color: #fff;
           font-size: 11px; }
-          @media screen and (max-width: 1100px) {
-            footer .footer .wrapper .copyright p a {
-              display: block; } }
     footer .footer .wrapper .footer-links {
       display: block;
       width: 100%;
       margin-left: 50px; }
+      @media screen and (max-width: 650px) {
+        footer .footer .wrapper .footer-links {
+          margin: 0 auto;
+          text-align: center; } }
       footer .footer .wrapper .footer-links a {
         font-size: 12px;
         color: #ffb900;
         line-height: 1.3em; }
     footer .footer .wrapper .empty-blocks {
       display: flex; }
+      @media screen and (max-width: 650px) {
+        footer .footer .wrapper .empty-blocks {
+          display: block;
+          margin-top: 15px; } }
       footer .footer .wrapper .empty-blocks .empty-block {
         width: 90px;
         height: 32px;
         background-color: #515151;
         margin-left: 10px; }
+        @media screen and (max-width: 650px) {
+          footer .footer .wrapper .empty-blocks .empty-block {
+            margin: 5px auto; } }
 
 .wrapper {
   width: 100%;
