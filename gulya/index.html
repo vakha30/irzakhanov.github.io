@@ -43,7 +43,7 @@
 	<div class="wrapper">
 		<div class="blok">
 			<h1 class="name">Гуля</h1>
-			<h1 class="name waha" id="waha">+Ваха</h1>
+			<h1 class="name waha" id="waha">Нету любимого</h1>
 			<br>
 			<button onclick="colorText('#ff0000')">Красный цвет</button>
 			<button onclick="colorText('#00ff00')">Зеленый цвет</button>
@@ -64,6 +64,9 @@
 		wah.onclick = function() {
 			var element = document.getElementById('waha');
 			element.style.display = "inline-block"; 
+			var element2 = document.querySelector('.name');
+			element2.style.display = 'none';
+
 		}
 	</script>
 </body>
