@@ -36,6 +36,29 @@
 		.waha {
 			display: none;
 		}
+
+		.modal {
+			position: absolute;
+			top: -1000px;
+			width: 100%;
+			min-height: 500px;
+			background-color: rgba(250,0,0,0.5);
+			padding-top: 120px;
+			transition: 1.9s;
+			text-align: center;
+		}
+		.photo {
+			background-image: url('avatar.jpg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 300px;
+			height: 265px;
+			margin: 0 auto;
+		}
+
+		#close {
+			padding: 20px 40px;
+		}
 	</style>
 </head>
 
@@ -43,13 +66,16 @@
 	<div class="wrapper">
 		<div class="blok">
 			<h1 class="name">Гуля</h1>
-			<h1 class="name waha" id="waha">Нету любимого</h1>
 			<br>
 			<button onclick="colorText('#ff0000')">Красный цвет</button>
 			<button onclick="colorText('#00ff00')">Зеленый цвет</button>
 			<br>
 			<br>
 			<button id="wah">Добавить любимого</button>
+		</div>
+		<div class="modal" id="modal">
+			<div class="photo"></div>
+			<button id="close">Убрать</button>
 		</div>
 	</div>
 	<script>
@@ -62,11 +88,13 @@
 
 		var wah = document.getElementById('wah');
 		wah.onclick = function() {
-			var element = document.getElementById('waha');
-			element.style.display = "inline-block"; 
-			var element2 = document.querySelector('.name');
-			element2.style.display = 'none';
-
+			var modal = document.getElementById('modal');
+			modal.style.top = '0';
+		}
+		var close = document.getElementById('close');
+		close.onclick = function() {
+			var modal = document.getElementById('modal');
+			modal.style.top = '-1000px';
 		}
 	</script>
 </body>
