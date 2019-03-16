@@ -1,0 +1,727 @@
+.about {
+	text-align: center;
+	h2{
+		color: #111;
+	}
+	p {
+		line-height: 1.7em;
+		margin: 10px 80px 0;
+		@media screen and (max-width: 750px) {
+			margin: 10px 20px 0;
+		}
+	}
+	.socials {
+		ul {
+			display: flex;
+			justify-content: center;
+			a {
+				background-image: url("../img/sprites.png");
+				background-repeat: no-repeat;
+				background-size: 400px;
+				display: block;
+				border-radius: 50%;
+				width: 90px;
+				height: 90px;
+				margin: 50px 10px 0 10px;
+				transition: .4s;
+				@media screen and (max-width: 750px) {
+					width: 50px;
+					height: 50px;
+					background-size: 225px;
+				}
+
+			}
+			a.instagram {
+				background-position: -4px -4px;
+				@media screen and (max-width: 750px) {
+					background-position: 0 0;
+				}
+				&:hover {
+					background-position: -4px -90px;
+					@media screen and (max-width: 750px) {
+						background-position: 0 -50px;
+					}
+				}
+			}
+			a.telegram {
+				background-position: -94px -4px;
+				@media screen and (max-width: 750px) {
+						background-position: -50px 0;
+					}
+				&:hover {
+					background-position: -94px -90px;
+					@media screen and (max-width: 750px) {
+						background-position: -50px -50px;
+					}
+				}
+			}
+			a.vk {
+				background-position: -194px -7px;
+				@media screen and (max-width: 750px) {
+						background-position: -110px -3px;
+					}
+				&:hover {
+					background-position: -194px -95px;
+					@media screen and (max-width: 750px) {
+						background-position: -110px -53px;
+					}
+				}
+			}
+			a.whatsapp {
+				background-position: -294px -7px;
+				@media screen and (max-width: 750px) {
+						background-position: -163px -3px;
+					}
+				&:hover {
+					background-position: -294px -95px;
+					@media screen and (max-width: 750px) {
+						background-position: -160px -53px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.my-skills {
+	background-color: #1abc9c;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 150px;
+	position: relative;
+	@media screen and (max-width: 750px) {
+		padding-bottom: 100px;
+	}
+	&::before {
+		content: '';
+		border-top: 70px solid #fff;
+		border-right: 96vw solid #1abc9c;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+
+	$diameter: 170px;
+	$accent: #fff;
+	$gray: #6ed4c0;
+
+	$progress-html: 325; 
+	$progress-css: 270; 
+	$progress-javascript: 90; 
+	$progress-bootstrap: 219; 
+	
+	$html-percent: ($progress-html * 100 / 360);
+	$css-percent: ($progress-css * 100 / 360);
+	$javascript-percent: ($progress-javascript * 100 / 360);
+	$bootstrap-percent: ($progress-bootstrap * 100 / 360);
+
+	$border: 12px;
+
+	.skills-block {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 40px;
+		@media screen and (max-width: 750px) {
+			display: block;
+		}
+		.skills-item {
+			@media screen and (max-width: 750px) {
+				display: block;
+				width: 172px;
+				margin: 0 auto;
+			}
+			.html {
+				position: relative;
+				width: $diameter;
+				height: $diameter;
+				border-radius: 50%;
+				background-color: $accent;
+				&::before {
+					position: absolute;
+					left: 0;
+					content: '';
+					@if $progress-html > 180 {
+				    	background-color: $accent;
+				  	}
+				 	@if $progress-html <= 180 {
+				    	background-color: $gray;
+				  	}
+				  	width: $diameter;
+				  	height: $diameter;
+				  	border-radius: 50%;
+				  	clip: rect(0, #{$diameter/2}, $diameter, 0);
+				  	transform-origin: 50% 50%;
+				  	@if $progress-html <= 180 {
+				    	transform: rotate(#{180 + $progress-html}deg);
+				  	}
+				  	@if $progress-html > 180 {
+				    	transform: rotate(#{180 + $progress-html - 180}deg);
+				  	}
+				  	z-index: 1;
+				}
+				&::after {
+					position: absolute;
+					left: 0;
+					content: '';
+					background-color: $gray;
+					width: $diameter;
+					height: $diameter;
+					border-radius: 50%;
+					clip: rect(0, #{$diameter/2}, $diameter, 0);
+					transform-origin: 50% 50%;
+					transform: rotate(0deg);
+				}
+				.progressbar-circle {
+					position: absolute;
+					top: $border;
+					left: $border;
+					width: #{$diameter - 2 * $border};
+					height: #{$diameter - 2 * $border};
+					background-color: #1abc9c;
+					border-radius: 50%;
+					z-index: 2;
+					&::before {
+						content: '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						position: absolute;
+						left: calc(50% + 16px);
+						top: calc(50% - 15px);
+					}
+					&::after {
+						content: $html-percent + '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						width: 33px;
+						overflow: hidden;
+						margin: 0 auto;
+						position: absolute;
+						left: calc(50% - 17px);
+						top: calc(50% - 15px);
+					}
+				}	
+			}
+
+			.css {
+				position: relative;
+				width: $diameter;
+				height: $diameter;
+				border-radius: 50%;
+				background-color: $accent;
+				&::before {
+					position: absolute;
+					left: 0;
+					content: '';
+					@if $progress-css > 180 {
+				    	background-color: $accent;
+				  	}
+				 	@if $progress-css <= 180 {
+				    	background-color: $gray;
+				  	}
+				  	width: $diameter;
+				  	height: $diameter;
+				  	border-radius: 50%;
+				  	clip: rect(0, #{$diameter/2}, $diameter, 0);
+				  	transform-origin: 50% 50%;
+				  	@if $progress-css <= 180 {
+				    	transform: rotate(#{180 + $progress-css}deg);
+				  	}
+				  	@if $progress-css > 180 {
+				    	transform: rotate(#{180 + $progress-css - 180}deg);
+				  	}
+				  	z-index: 1;
+				}
+				&::after {
+					position: absolute;
+					left: 0;
+					content: '';
+					background-color: $gray;
+					width: $diameter;
+					height: $diameter;
+					border-radius: 50%;
+					clip: rect(0, #{$diameter/2}, $diameter, 0);
+					transform-origin: 50% 50%;
+					transform: rotate(0deg);
+				}
+				.progressbar-circle {
+					position: absolute;
+					top: $border;
+					left: $border;
+					width: #{$diameter - 2 * $border};
+					height: #{$diameter - 2 * $border};
+					background-color: #1abc9c;
+					border-radius: 50%;
+					z-index: 2;
+					&::before {
+						content: '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						position: absolute;
+						left: calc(50% + 16px);
+						top: calc(50% - 15px);
+					}
+					&::after {
+						content: $css-percent + '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						width: 33px;
+						overflow: hidden;
+						margin: 0 auto;
+						position: absolute;
+						left: calc(50% - 17px);
+						top: calc(50% - 15px);
+					}
+				}
+			}
+
+			.javascript {
+				position: relative;
+				width: $diameter;
+				height: $diameter;
+				border-radius: 50%;
+				background-color: $accent;
+				&::before {
+					position: absolute;
+					left: 0;
+					content: '';
+					@if $progress-javascript > 180 {
+				    	background-color: $accent;
+				  	}
+				 	@if $progress-javascript <= 180 {
+				    	background-color: $gray;
+				  	}
+				  	width: $diameter;
+				  	height: $diameter;
+				  	border-radius: 50%;
+				  	clip: rect(0, #{$diameter/2}, $diameter, 0);
+				  	transform-origin: 50% 50%;
+				  	@if $progress-javascript <= 180 {
+				    	transform: rotate(#{180 + $progress-javascript}deg);
+				  	}
+				  	@if $progress-html > 180 {
+				    	transform: rotate(#{180 + $progress-html - 180}deg);
+				  	}
+				  	z-index: 1;
+				}
+				&::after {
+					position: absolute;
+					left: 0;
+					content: '';
+					background-color: $gray;
+					width: $diameter;
+					height: $diameter;
+					border-radius: 50%;
+					clip: rect(0, #{$diameter/2}, $diameter, 0);
+					transform-origin: 50% 50%;
+					transform: rotate(0deg);
+				}
+				.progressbar-circle {
+					position: absolute;
+					top: $border;
+					left: $border;
+					width: #{$diameter - 2 * $border};
+					height: #{$diameter - 2 * $border};
+					background-color: #1abc9c;
+					border-radius: 50%;
+					z-index: 2;
+					&::before {
+						content: '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						position: absolute;
+						left: calc(50% + 16px);
+						top: calc(50% - 15px);
+					}
+					&::after {
+						content: $javascript-percent + '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						width: 33px;
+						overflow: hidden;
+						margin: 0 auto;
+						position: absolute;
+						left: calc(50% - 17px);
+						top: calc(50% - 15px);
+					}
+				}
+			}
+
+			.bootstrap {
+				position: relative;
+				width: $diameter;
+				height: $diameter;
+				border-radius: 50%;
+				background-color: $accent;
+				&::before {
+					position: absolute;
+					left: 0;
+					content: '';
+					@if $progress-bootstrap > 180 {
+				    	background-color: $accent;
+				  	}
+				 	@if $progress-bootstrap <= 180 {
+				    	background-color: $gray;
+				  	}
+				  	width: $diameter;
+				  	height: $diameter;
+				  	border-radius: 50%;
+				  	clip: rect(0, #{$diameter/2}, $diameter, 0);
+				  	transform-origin: 50% 50%;
+				  	@if $progress-bootstrap <= 180 {
+				    	transform: rotate(#{180 + $progress-bootstrap}deg);
+				  	}
+				  	@if $progress-bootstrap > 180 {
+				    	transform: rotate(#{180 + $progress-bootstrap - 180}deg);
+				  	}
+				  	z-index: 1;
+				}
+				&::after {
+					position: absolute;
+					left: 0;
+					content: '';
+					background-color: $gray;
+					width: $diameter;
+					height: $diameter;
+					border-radius: 50%;
+					clip: rect(0, #{$diameter/2}, $diameter, 0);
+					transform-origin: 50% 50%;
+					transform: rotate(0deg);
+				}
+				.progressbar-circle {
+					position: absolute;
+					top: $border;
+					left: $border;
+					width: #{$diameter - 2 * $border};
+					height: #{$diameter - 2 * $border};
+					background-color: #1abc9c;
+					border-radius: 50%;
+					z-index: 2;
+					&::before {
+						content: '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						position: absolute;
+						left: calc(50% + 16px);
+						top: calc(50% - 15px);
+					}
+					&::after {
+						content: $bootstrap-percent + '%';
+						color: #fff;
+						display: block;
+						font-size: 30px;
+						width: 33px;
+						overflow: hidden;
+						margin: 0 auto;
+						position: absolute;
+						left: calc(50% - 17px);
+						top: calc(50% - 15px);
+					}
+				}
+			}
+
+			.skills-name {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 18px;
+				display: block;
+				margin-top: 25px;
+				@media screen and (max-width: 750px) {
+					margin-top: 5px;
+					margin-bottom: 30px;
+				}
+			}
+
+		}
+	}
+}
+
+.portfolio {
+	background-image: url("../img/port-back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 150px;
+	p {
+		color: #fff;
+		line-height: 1.7em;
+	}
+	.works {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 60px;
+		@media screen and (max-width: 750px) {
+			flex-direction: column;
+			align-items: center;
+		}
+		.works-item {
+			width: 33%;
+			cursor: pointer;
+			position: relative;
+			@media screen and (max-width: 750px) {
+				width: 95%;
+			}
+			&:hover .works-info {
+					transform: scale(1);
+				}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			.works-info {
+				position: absolute;
+				z-index: 9999;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,200,100,.7);
+				top: 0;
+				left: 0;
+				padding-top: calc(50% - 50px);
+				transition: .5s;
+				transform: scale(0);
+				h3 {
+					color: #eee;
+					font-weight: normal;
+					font-size: 24px;
+				}
+				p {
+					font-size: 16px;
+					color: #eee;
+					margin: 5px 0 20px;
+				}
+				a {
+					color: #eee;
+					text-transform: uppercase;
+					border: 2px solid #eee;
+					padding: 10px 20px;
+					font-weight: bold;
+					&:hover {
+						border-color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.contacts {
+	background-color: #52edc7;
+	margin-top: -1px;
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+	.section-title {
+		color: #111;
+	}
+	.contact-title {
+		color: #222;
+		font-weight: 400;
+		font-size: 20px;
+		position: relative;
+		display: inline-block;
+		&::after {
+			content: '';
+			width: calc(100% + 30px);
+			height: 1px;
+			background-color: #222;
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			@media screen and (max-width: 750px) {
+				bottom: -15px;
+			}
+		}
+	}
+	.contact-block {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+		margin-top: 40px;
+		@media screen and (max-width: 750px) {
+			flex-direction: column;
+		}
+		.contact-adress {
+			width: 40%;
+			@media screen and (max-width: 750px) {
+				width: 100%;
+			}
+			p {
+				color: #222;
+				line-height: 1.6em;
+				margin-top: 80px;
+				font-size: 18px;
+				@media screen and (max-width: 750px) {
+					line-height: 1.2em;
+					margin-top: 40px;
+				}
+			}
+			span {
+				display: block;
+				font-weight: bold;
+				font-size: 18px;
+				margin-top: 40px;
+			}
+			a:hover {
+				color: #fff;
+			}
+			a.contact-mail {
+				font-size: 18px;
+				display: inline-block;
+				margin: 40px 0;
+				@media screen and (max-width: 750px) {
+					margin: 15px 0;
+				}
+			}
+			a.contact-adress {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		.contact-form {
+			width: 55%;
+			@media screen and (max-width: 750px) {
+				width: 100%;
+				padding-top: 50px;
+				text-align: center;
+			}
+			.form {
+				margin-top: 100px;
+				@media screen and (max-width: 750px) {
+					margin-top: 50px;
+				}
+				input, textarea, button {
+					border: none;
+					border-radius: 3px;
+					border: 2px solid #fff;
+					&:hover {
+						border-color: #40c4a4;
+					}
+				}
+				input {
+					height: 60px;
+					padding: 0 15px;
+					font-size: 18px;
+					width: 48%;
+					@media screen and (max-width: 750px) {
+						width: 100%;
+					}
+					@media screen and (max-width: 1227px) {
+						width: 100%;
+					}
+					&:first-of-type {
+						margin-right: 20px;
+					}
+					&:last-of-type {
+						@media screen and (max-width: 1227px) {
+							margin-top: 20px;
+						}
+					}
+				}
+				textarea {
+					display: block;
+					margin-top: 30px;
+					width: 100%;
+					height: 200px;
+					padding: 15px;
+					font-size: 18px;
+					resize: none;
+				}
+				button {
+					padding: 0 100px;
+					height: 55px;
+					background-color: #52edc7;
+					border-color: #222;
+					font-size: 22px;
+					font-weight: bold;
+					margin-top: 30px;
+					color: #222;
+					position: relative;
+					&:hover {
+						border-color: #fff;
+					}
+					&::after {
+						content: '';
+						background-image: url("../img/mess.png");
+						background-repeat: no-repeat;
+						width: 20px;
+						height: 17px;
+						position: absolute;
+						top: 50%;
+						left: 60px;
+						transform: translate(0, -50%); 
+					}
+				}
+			}
+		}
+	}
+	&::after {
+		content: '';
+		border-top: 135px solid #52edc7;
+		border-left: 48.7vw solid #eeeeee;
+		border-right: 48.7vw solid #eeeeee;
+		position: absolute;
+		left: 0;
+		bottom: -134px;
+	}
+}
+
+.download {
+	padding-top: 170px;
+	background-color: #eee;	
+	text-align: center;
+	padding-bottom: 50px;
+	a {
+		background-color: #f1c40f;
+		padding: 15px 20px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #222;
+		border-radius: 4px;
+		border-bottom: 2px solid #b8950a;
+		display: inline-block;
+		&:hover {
+			color: #fff;
+		}
+		margin-top: 10px;
+	}
+}
+
+footer {
+	background-color: #888b90;
+	padding: 50px 0;
+	text-align: center;
+	p {
+		color: #fff;
+	}
+	a {
+		color: #52edbc;
+		text-decoration: underline;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+a.btn-up {
+	background-image: url("../img/arr.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	display: none;
+}
