@@ -1,0 +1,53 @@
+html, body, * {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 20px;
+}
+
+.wrapper {
+	max-width: 1184px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul, li {
+	list-style: none;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #1d446f;
+	font-size: 55px;
+}
+
+h3 {
+	color: #00566f;
+	font-size: 28px;
+}
+
+a {
+	color: #14a3a8;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+button {
+	background-color: none;
+	border: none;
+	background: none;
+}
+
+p {
+	font-size: 16px;
+	color: #71829b;
+}
