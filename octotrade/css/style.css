@@ -5,8 +5,7 @@ html, body, * {
 body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 20px; }
+  background-position: top center }
 
 .wrapper {
   max-width: 1184px;
