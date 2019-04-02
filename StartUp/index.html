@@ -2,12 +2,13 @@
 <html lang="zxx">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="favicon.jpg" rel="shortcut icon" type="image/x-icon" />
-	<link rel="stylesheet" href="js/slick/slick.css">
-	<link rel="stylesheet" href="js/slick/slick-theme.css">
+	<link href="favicon.jpg" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="style/icomoons.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
@@ -27,7 +28,21 @@
 							<li><a href="#clients">Clients</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
+						<ul class="mobile-menu" id="mobile-menu">
+							<span id="close-menu">&#215;</span>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#works">Works</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#clients">Clients</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
 					</nav>
+					<span id="open-menu">&#8801;</span>
+					
+						
+					
 				</div>
 				<div class="head-title">
 					<h1>welcome to startup</h1>
@@ -85,7 +100,7 @@
 					<div class="member-info">
 						<div class="thumb">
 							<img class="member" src="img/member_1.png" alt="member_1">
-							<div class="arrow-left"><a href="#"><img src="img/left-arrow.svg" alt=""></a></div>
+							
 							<div class="social">
 								<ul>
 									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
@@ -139,7 +154,7 @@
 					<div class="member-info">
 						<div class="thumb">
 							<img class="member" src="img/member_4.png" alt="member_1">
-							<div class="arrow-right"><a href="#"><img src="img/left-arrow.svg" alt=""></a></div>
+							
 							<div class="social">
 								<ul>
 									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
@@ -154,6 +169,79 @@
 							<p>Front-end Developer</p>
 						</div>
 					</div>
+					<div class="member-info">
+						<div class="thumb">
+							<img class="member" src="img/member_1.png" alt="member_1">
+							
+							<div class="social">
+								<ul>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h3>md. khalil uddin</h3>
+							<p>Head of Ideas</p>
+						</div>
+					</div>
+					<div class="member-info">
+						<div class="thumb">
+							<img class="member" src="img/member_2.png" alt="member_1">
+							<div class="social">
+								<ul>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h3>rubel miah</h3>
+							<p>Lead WordPress Developer</p>
+						</div>
+					</div>
+
+					<div class="member-info">
+						<div class="thumb">
+							<img class="member" src="img/member_3.png" alt="member_1">
+							<div class="social">
+								<ul>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h3>shamim mia</h3>
+							<p>Sr. Web Developer</p>
+						</div>
+					</div>
+
+					<div class="member-info">
+						<div class="thumb">
+							<img class="member" src="img/member_4.png" alt="member_1">
+							
+							<div class="social">
+								<ul>
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google-plus.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/linked-in.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h3>john doe</h3>
+							<p>Front-end Developer</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -242,7 +330,7 @@
 				<div class="banner__fon"></div>
 				<div class="wrapper">
 					<div class="paralax__title">
-						<h3>Do you like OUR WORK so far?
+						<h3>Do you like OUR WORK so far?<br>
 						Let's talk about YOUR PROJECT!</h3>
 							<a class="button" href="#">get in touch</a>
 					</div>
@@ -308,11 +396,20 @@
 				</div>
 				<p class="clients__info">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
 				<p class="name">John Doe, Google Inc.</p>
-				<div class="circle">
-					<div class="circle__item"></div>
-					<div class="circle__item"></div>
-					<div class="circle__item"></div>
+			</div>
+			<div class="wrapper">
+				<div class="clients__logo">
+					<img src="img/client-logo.png" alt="">
 				</div>
+				<p class="clients__info">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
+				<p class="name">John Doe, Google Inc.</p>
+			</div>
+			<div class="wrapper">
+				<div class="clients__logo">
+					<img src="img/client-logo.png" alt="">
+				</div>
+				<p class="clients__info">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
+				<p class="name">John Doe, Google Inc.</p>
 			</div>
 		</section>
 
@@ -378,17 +475,48 @@
 				</div>
 			</div>
 			<div class="subline"></div>
-			<p>&#xA9; 2015 Startup, Designed by ShapedTheme</p>
+			
 		</div>
 	</footer>
 	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/slick/slick.min.js"></script>
+	<script src="slick/slick.min.js"></script>
 	<script>
+		let open = document.getElementById('open-menu');
+		let close = document.getElementById('close-menu');
+		let mobileMenu = document.getElementById('mobile-menu');
+		let isOpenMenu = false;
+
+		open.onclick = function() {
+			if (!isOpenMenu) {
+				mobileMenu.style.top = 0;
+				isOpenMenu = true;
+			}
+		}
+		close.onclick = function() {
+			if (isOpenMenu) {
+				mobileMenu.style.top = '-3000px';
+				isOpenMenu = false;
+			}
+		}
+
 		$('.members').slick({
-      		infinite: true,
-      		dots: true,
-      		slidesToShow: 4,
-    		slidesToScroll: 1
+		infinite: true,
+		slidesToShow: 4,
+		arrows: true,
+		dots: false,
+		responsive: [
+    	{
+    		breakpoint: 800,
+     		settings: {
+        		slidesToShow: 1,
+            }
+    	}]
+		});
+		$('.clients').slick({
+		infinite: false,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true
 		});
 	</script>
 </body>

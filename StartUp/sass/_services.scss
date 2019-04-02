@@ -2,9 +2,16 @@
 	.single {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: 750px) {
+			display: block;
+		}
 		.single-card {
 			text-align: center;
 			max-width: 345px;
+			@media screen and (max-width: 750px) {
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
 			.icon {
 				margin: 0 auto;
 				width: 88px;
