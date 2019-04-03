@@ -19,6 +19,7 @@
 					<a href="">Кого мы ищем?</a>
 					<button class="open">Подать заявку</button>
 				</div>
+				<span class="open-menu">&#8801;</span>
 			</div>
 		</div>
 	</header>
@@ -159,7 +160,8 @@
 			<p>	&#169;2019&#8212;OctoTrade group</p>
 		</div>
 	</footer>
-
+	
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<script>
 		let openBtn = document.getElementsByClassName('open');
 		let closeBtn = document.getElementById('close');
@@ -178,7 +180,23 @@
 		closeBtn.onclick = function() {
 			popup.style.transform = 'scale(0)';
 		}
-		
+		let isOpen = false;
+		$(function(){
+			$('.open-menu').click(function(){
+				if(!isOpen) {
+					$('.menu').css('display', 'block');
+					$(this).html('&#215;');
+					isOpen = true;
+
+				}
+				else {
+					$('.menu').css('display', 'none');
+					$(this).html('&#8801;');
+					isOpen = false;
+				}
+			});
+		});
+		console.log(isOpen);
 	</script>
 </body>
 </html>

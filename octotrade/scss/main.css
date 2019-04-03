@@ -5,13 +5,13 @@ html, body, * {
 body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-size: cover;
+  background-position: 0 20px; }
 
 .wrapper {
   max-width: 1184px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px; }
+  margin: 0 auto; }
 
 ul, li {
   list-style: none; }
@@ -23,16 +23,10 @@ h1, h2, h3 {
 h2 {
   color: #1d446f;
   font-size: 55px; }
-  @media screen and (max-width: 800px) {
-    h2 {
-      font-size: 40px; } }
 
 h3 {
   color: #00566f;
   font-size: 28px; }
-  @media screen and (max-width: 800px) {
-    h3 {
-      font-size: 20px; } }
 
 a {
   color: #14a3a8;
@@ -56,128 +50,67 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media screen and (max-width: 800px) {
-      #header .head {
-        flex-direction: column;
-        padding-top: 30px; } }
-    #header .head .open-menu {
-      font-size: 54px;
+    #header .head .menu a {
+      margin-right: 20px;
+      padding-bottom: 26px;
+      transition: all .3s;
+      position: relative; }
+      #header .head .menu a::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #f4d656;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        z-index: 9999;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all .3s; }
+      #header .head .menu a:last-of-type {
+        margin-right: 53px; }
+      #header .head .menu a:hover::after, #header .head .menu a:hover {
+        color: #f4d656;
+        transform: scaleX(1); }
+    #header .head .menu button {
+      font-size: 16px;
+      font-weight: bold;
       color: #fff;
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      cursor: pointer;
-      display: none; }
-      @media screen and (max-width: 800px) {
-        #header .head .open-menu {
-          display: block; } }
-    #header .head .close-menu {
-      color: red; }
-    #header .head .menu {
-      display: block; }
-      @media screen and (max-width: 800px) {
-        #header .head .menu {
-          margin: 20px auto;
-          text-align: center;
-          display: none; } }
-      #header .head .menu a {
-        margin-right: 20px;
-        padding-bottom: 26px;
-        transition: all .3s;
-        position: relative; }
-        @media screen and (max-width: 800px) {
-          #header .head .menu a {
-            padding: 0;
-            display: block;
-            margin: 0;
-            margin-bottom: 15px; } }
-        #header .head .menu a::after {
-          content: '';
-          width: 100%;
-          height: 3px;
-          background-color: #f4d656;
-          position: absolute;
-          left: 0;
-          bottom: -2px;
-          z-index: 9999;
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: all .3s; }
-          @media screen and (max-width: 800px) {
-            #header .head .menu a::after {
-              display: none; } }
-        #header .head .menu a:last-of-type {
-          margin-right: 53px; }
-          @media screen and (max-width: 800px) {
-            #header .head .menu a:last-of-type {
-              margin: 0; } }
-        #header .head .menu a:hover::after, #header .head .menu a:hover {
-          color: #f4d656;
-          transform: scaleX(1); }
-      #header .head .menu button {
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        background-color: #1B97A1;
-        background-color: -moz-linear-gradient(top, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
-        background-color: -webkit-linear-gradient(top, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
-        background-color: linear-gradient(to bottom, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
-        padding: 15px 28px;
-        border-radius: 5px;
-        transition: 0.2s; }
-        @media screen and (max-width: 800px) {
-          #header .head .menu button {
-            margin-top: 15px; } }
-        #header .head .menu button:hover {
-          background-color: #00d8d1; }
+      background-color: #1B97A1;
+      background-color: -moz-linear-gradient(top, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
+      background-color: -webkit-linear-gradient(top, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
+      background-color: linear-gradient(to bottom, #1B97A1 0%, #10ACAC 68%, #03C5B9 100%);
+      padding: 15px 28px;
+      border-radius: 5px;
+      transition: 0.2s; }
+      #header .head .menu button:hover {
+        background-color: #00d8d1; }
 
 section.title {
   margin-top: 150px; }
-  @media screen and (max-width: 800px) {
-    section.title {
-      margin-top: 50px; } }
   section.title .title-one-text {
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
     color: #97aabd;
     line-height: 1.1em; }
-    @media screen and (max-width: 800px) {
-      section.title .title-one-text {
-        font-size: 18px;
-        text-align: center;
-        color: #000; } }
   section.title h1 {
     font-size: 95px;
     color: #fff;
     font-weight: bold;
     margin-top: 60px;
     margin-bottom: 14px; }
-    @media screen and (max-width: 800px) {
-      section.title h1 {
-        font-size: 50px;
-        margin-top: 30px;
-        text-align: center; } }
   section.title span {
     color: #f4d656;
     font-size: 23px;
     font-weight: 500;
     text-transform: uppercase; }
-    @media screen and (max-width: 800px) {
-      section.title span {
-        font-style: 18px;
-        display: block;
-        text-align: center; } }
   section.title .title-two-text {
     margin-top: 60px;
     margin-bottom: 80px;
     color: #cad0d4;
     font-size: 15px;
     line-height: 1.6em; }
-    @media screen and (max-width: 800px) {
-      section.title .title-two-text {
-        margin-top: 45px;
-        margin-bottom: 50px; } }
   section.title button {
     padding: 18px 60px;
     border-radius: 4px;
@@ -185,9 +118,6 @@ section.title {
     font-weight: bold;
     text-transform: uppercase;
     transition: .2s; }
-    @media screen and (max-width: 800px) {
-      section.title button {
-        margin-bottom: 15px; } }
     section.title button:first-of-type {
       color: #1d446f;
       margin-right: 28px;
@@ -214,26 +144,16 @@ section.one-section {
     font-weight: 200;
     color: #387db6;
     margin-top: 26px; }
-    @media screen and (max-width: 800px) {
-      section.one-section p.one-section-title-text {
-        font-size: 18px; } }
   section.one-section .one-section-block {
     display: flex;
     justify-content: space-between;
     margin-top: 115px; }
-    @media screen and (max-width: 800px) {
-      section.one-section .one-section-block {
-        display: block; } }
     section.one-section .one-section-block .block-item {
       background-color: #fff;
       border-radius: 5px;
       padding: 78px 25px 25px 25px;
       width: 365px;
       position: relative; }
-      @media screen and (max-width: 800px) {
-        section.one-section .one-section-block .block-item {
-          margin-bottom: 50px;
-          width: 100%; } }
       section.one-section .one-section-block .block-item::before {
         content: '';
         background-image: url("../img/sprite.png");
@@ -260,18 +180,12 @@ section.one-section {
     display: flex;
     justify-content: space-between;
     margin-top: 135px; }
-    @media screen and (max-width: 800px) {
-      section.one-section .we-offer-block {
-        display: block; } }
     section.one-section .we-offer-block h3 {
       margin-bottom: 45px; }
     section.one-section .we-offer-block .reuest label {
       color: #3ea7a1;
       font-size: 18px;
       margin-left: 15px; }
-      @media screen and (max-width: 800px) {
-        section.one-section .we-offer-block .reuest label {
-          color: #000; } }
     section.one-section .we-offer-block .reuest li {
       margin-bottom: 45px; }
     section.one-section .we-offer-block .reuest button {
@@ -293,9 +207,6 @@ section.one-section {
         box-shadow: 1px 5px 13px 5px #B4C2CF; }
     section.one-section .we-offer-block .we-offer {
       margin-right: 45px; }
-      @media screen and (max-width: 800px) {
-        section.one-section .we-offer-block .we-offer {
-          margin: 0; } }
       section.one-section .we-offer-block .we-offer span.line {
         width: 16px;
         height: 2px;
@@ -303,17 +214,11 @@ section.one-section {
         background-color: #3ea7a1;
         margin-right: 11px;
         margin-bottom: 22px; }
-        @media screen and (max-width: 800px) {
-          section.one-section .we-offer-block .we-offer span.line {
-            display: none; } }
       section.one-section .we-offer-block .we-offer p {
         display: inline-block;
         color: #3ea7a1;
         font-size: 18px;
         font-weight: normal; }
-        @media screen and (max-width: 800px) {
-          section.one-section .we-offer-block .we-offer p {
-            color: #333; } }
         section.one-section .we-offer-block .we-offer p span.subtext {
           font-size: 14px;
           font-style: italic;
@@ -322,11 +227,6 @@ section.one-section {
 
 section.ideas {
   margin-top: 65px; }
-  @media screen and (max-width: 800px) {
-    section.ideas {
-      margin-top: 100px; }
-      section.ideas h2 {
-        color: #222; } }
   section.ideas p {
     font-size: 24px;
     font-weight: 200;
@@ -345,12 +245,6 @@ section.ideas {
     border-radius: 5px;
     margin-top: 40px;
     position: relative; }
-    @media screen and (max-width: 800px) {
-      section.ideas .what-to-write {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 50px; } }
     section.ideas .what-to-write h3 {
       color: #03aeaf;
       margin-bottom: 40px; }
@@ -400,9 +294,6 @@ section.ideas {
       right: -475px;
       -webkit-box-shadow: 5px 4px 0px 1px #058d9e;
       box-shadow: 5px 4px 0px 1px #058d9e; }
-      @media screen and (max-width: 1100px) {
-        section.ideas .what-to-write::after {
-          display: none; } }
 
 .popup {
   position: fixed;
@@ -413,9 +304,6 @@ section.ideas {
   height: 100vh;
   transition: .2s;
   transform: scale(0); }
-  @media screen and (max-width: 800px) {
-    .popup {
-      display: block; } }
   .popup .form {
     width: 458px;
     position: absolute;
@@ -427,10 +315,6 @@ section.ideas {
     -webkit-box-shadow: 5px 5px 16px 1px #4B5F6E;
     box-shadow: 5px 5px 16px 1px #4B5F6E;
     padding: 60px; }
-    @media screen and (max-width: 800px) {
-      .popup .form {
-        width: 80%;
-        padding: 40px; } }
     .popup .form #close {
       position: absolute;
       color: #858689;
@@ -445,19 +329,12 @@ section.ideas {
       font-weight: bold;
       text-transform: none;
       margin-bottom: 42px; }
-      @media screen and (max-width: 800px) {
-        .popup .form h2 {
-          font-size: 20px;
-          margin-bottom: 20px; } }
     .popup .form span {
       display: block;
       font-size: 16px;
       color: #71829b;
       font-weight: 100;
       margin-bottom: 12px; }
-      @media screen and (max-width: 800px) {
-        .popup .form span {
-          font-size: 12px; } }
     .popup .form input {
       padding: 12px;
       color: #9a9a9a;
@@ -467,9 +344,6 @@ section.ideas {
       background-color: #eee;
       border: none;
       margin-bottom: 23px; }
-      @media screen and (max-width: 800px) {
-        .popup .form input {
-          height: 35px; } }
     .popup .form textarea {
       padding: 12px;
       color: #9a9a9a;
@@ -480,9 +354,6 @@ section.ideas {
       border: none;
       margin-bottom: 23px;
       resize: none; }
-      @media screen and (max-width: 800px) {
-        .popup .form textarea {
-          font-size: 11px; } }
     .popup .form button {
       padding: 15px 38px;
       border-radius: 5px;
@@ -513,4 +384,4 @@ section.ideas {
       color: #14a3a8;
       font-size: 14px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
