@@ -315,7 +315,7 @@ section.start {
 		margin: 0 auto;
 		.step-info {
 		text-align: left;
-		margin-top: 50px;
+		margin-top: 80px;
 			p {
 				font-size: 21px;
 				font-weight: normal;
@@ -340,7 +340,6 @@ section.start {
 		}
 		.step-left, .step-right {
 			display: flex;
-
 		}
 
 		.step-left {
@@ -350,7 +349,10 @@ section.start {
 			}
 		}
 		.step-right {
-			
+			justify-content: flex-end;
+			.step-info {
+				margin-right: 100px;
+			}
 		}
 	}
 	

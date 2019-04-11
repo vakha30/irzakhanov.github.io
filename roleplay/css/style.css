@@ -422,7 +422,7 @@ section.start {
     margin: 0 auto; }
     section.start .container .step-info {
       text-align: left;
-      margin-top: 50px; }
+      margin-top: 80px; }
       section.start .container .step-info p {
         font-size: 21px;
         font-weight: normal;
@@ -442,6 +442,10 @@ section.start {
       display: flex; }
     section.start .container .step-left .step-info {
       margin-left: 100px; }
+    section.start .container .step-right {
+      justify-content: flex-end; }
+      section.start .container .step-right .step-info {
+        margin-right: 100px; }
 
 footer {
   background-color: #f9fcfd;
