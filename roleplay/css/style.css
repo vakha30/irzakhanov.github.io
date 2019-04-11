@@ -37,6 +37,7 @@
   font-weight: normal; }
 
 body {
+  background-color: #f5f9fb;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: top center; }
@@ -300,18 +301,27 @@ section.donat {
       padding-bottom: 120px; } }
   section.donat form {
     margin-top: 220px; }
-    section.donat form select {
-      background-color: #fff;
-      border-radius: 3px;
-      border: none;
-      padding: 10px 15px 10px 60px;
-      color: #ccc;
-      font-size: 19px;
-      width: 290px;
-      height: 65px;
-      background-image: url(../img/icons/server.png);
+    section.donat form .select {
+      background-image: url(../img/icons/select.png);
       background-repeat: no-repeat;
-      background-position: 13px 18px; }
+      display: inline-block; }
+      section.donat form .select select {
+        background-color: #fff;
+        border-radius: 3px;
+        border: none;
+        padding: 10px 15px 10px 60px;
+        color: #ccc;
+        font-size: 19px;
+        width: 290px;
+        height: 65px;
+        background-image: url(../img/icons/server.png);
+        background-repeat: no-repeat;
+        background-position: 13px 18px;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative; }
     section.donat form input[type="text"] {
       background-color: transparent;
       border: 1px solid #fff;
@@ -414,7 +424,8 @@ section.vkontakte {
 section.start {
   background-color: #f6fafc;
   text-align: center;
-  padding-top: 145px; }
+  padding-top: 145px;
+  padding-bottom: 190px; }
   section.start .section-title {
     margin-bottom: 115px; }
   section.start .container {
@@ -426,7 +437,8 @@ section.start {
       section.start .container .step-info p {
         font-size: 21px;
         font-weight: normal;
-        color: #a8aaab; }
+        color: #a8aaab;
+        margin-bottom: 30px; }
       section.start .container .step-info p.step-text {
         font-size: 56px;
         font-weight: 800;
@@ -438,6 +450,22 @@ section.start {
         text-transform: uppercase;
         font-weight: 500;
         margin-bottom: 10px; }
+      section.start .container .step-info a {
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        border-radius: 4px;
+        padding: 10px 70px 10px 30px;
+        background-color: #1B56AE;
+        position: relative;
+        background-image: url(../img/icons/cloud.png);
+        background-repeat: no-repeat;
+        background-position: 113px 7px; }
+        section.start .container .step-info a:hover {
+          border-radius: 6px;
+          -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.33); }
     section.start .container .step-left, section.start .container .step-right {
       display: flex; }
     section.start .container .step-left .step-info {
@@ -446,6 +474,29 @@ section.start {
       justify-content: flex-end; }
       section.start .container .step-right .step-info {
         margin-right: 100px; }
+    section.start .container .help {
+      text-align: center;
+      margin-top: 125px; }
+      section.start .container .help p {
+        color: #a8aaab;
+        font-size: 21px;
+        margin-bottom: 28px; }
+      section.start .container .help a {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        border-radius: 4px;
+        padding: 10px 30px 10px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        background: #1B56AE;
+        background: -moz-linear-gradient(left, #1B56AE 0%, #1C6EA4 47%, #028CFB 100%);
+        background: -webkit-linear-gradient(left, #1B56AE 0%, #1C6EA4 47%, #028CFB 100%);
+        background: linear-gradient(to right, #1B56AE 0%, #1C6EA4 47%, #028CFB 100%); }
+        section.start .container .help a:hover {
+          border-radius: 6px;
+          -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.33); }
 
 footer {
   background-color: #f9fcfd;
