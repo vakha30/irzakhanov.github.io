@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title>Iskra</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header-title">
+				<h1>волейбольный клуб "искра"</h1>
+				<p>г.Барнаул</p>
+			</div>
+			<div class="header-banner">
+				<img src="img/banner.png" alt="foto">
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<nav class="navigation">
+				<button id="news-btn">новости</button>
+				<button id="gallery-btn">галерея</button>
+				<button id="command-btn">состав команды</button>
+				<button id="shop-btn">магазин</button>
+			</nav>
+			<section id="news">
+				<h2 class="section-title">новости клуба</h2>
+				<div class="news-container">
+					<div class="news-item">
+						<img src="img/ellips.png" alt="ellips">
+						<p class="news-text">
+							текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+						</p>
+					</div>
+					<div class="news-item">
+						<img src="img/ellips.png" alt="ellips">
+						<p class="news-text">
+							текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="gallery">
+				<h2 class="section-title">галерея</h2>
+				<div class="gallery-container">
+					<div class="thumb foto">
+						<p>фото</p>
+					</div>
+					<div class="thumb video">
+						<p>видео</p>
+					</div>
+				</div>
+				<a href="">загрузить фото или видео</a>
+			</section>
+			<section id="command">
+				<h2 class="section-title">состав команды</h2>
+				<div class="command-container1">
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+				</div>
+				<div class="command-container2">
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+					<div class="command-item">
+						<div class="command-thumb">
+							<p>фото</p>
+						</div>
+						<div class="command-info">
+							<p>текст</p><br>
+							<p>текст</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="shop">
+				<h2 class="section-title">магазин</h2>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div id="footer">
+				<h3>вк "искра"</h3>
+				<p>2019г.</p>
+				<p class="citi">г.барнаул</p>
+			</div>
+	</div>
+	</footer>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+	$('#news-btn').click(function(){
+		$('#news').css('display','block');
+		$('#gallery').css('display','none');
+		$('#command').css('display','none');
+		$('#shop').css('display','none');
+	});
+	$('#gallery-btn').click(function(){
+		$('#news').css('display','none');
+		$('#gallery').css('display','block');
+		$('#command').css('display','none');
+		$('#shop').css('display','none');
+	});
+	$('#command-btn').click(function(){
+		$('#news').css('display','none');
+		$('#gallery').css('display','none');
+		$('#command').css('display','block');
+		$('#shop').css('display','none');	
+	});
+	$('#shop-btn').click(function(){
+		$('#news').css('display','none');
+		$('#gallery').css('display','none');
+		$('#command').css('display','none');
+		$('#shop').css('display','block');
+	});
+</script>
+</body>
+</html>
