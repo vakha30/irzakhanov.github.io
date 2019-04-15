@@ -173,6 +173,9 @@ button.btn {
   #header .title {
     text-align: center;
     margin-top: 180px; }
+    @media screen and (max-width: 768px) {
+      #header .title {
+        margin-top: 80px; } }
     #header .title h1 {
       color: #fff;
       font-size: 32px; }
@@ -184,7 +187,11 @@ button.btn {
     #header .title p {
       margin-bottom: 50px; }
   #header .slick-dots {
-    bottom: -100px; }
+    bottom: -100px;
+    left: -7px; }
+    @media screen and (max-width: 768px) {
+      #header .slick-dots {
+        bottom: -40px; } }
   #header .slick-dots li {
     margin: 0 3px;
     width: 12px;

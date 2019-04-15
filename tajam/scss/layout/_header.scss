@@ -86,6 +86,9 @@
 	.title {
 		text-align: center;
 		margin-top: 180px;
+		@media screen and (max-width: 768px) {
+			margin-top: 80px;
+		}
 		h1 {
 			color: #fff;
   			font-size: 32px;
@@ -102,6 +105,10 @@
 	}
 	.slick-dots {
 		bottom: -100px;
+		left: -7px;
+		@media screen and (max-width: 768px) {
+			bottom: -40px;
+		}
 	}
 	.slick-dots li {
 		margin: 0 3px;
