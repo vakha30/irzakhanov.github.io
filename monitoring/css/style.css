@@ -45,6 +45,10 @@ ul {
 input {
   font-family: 'Cambria', serif; }
 
+button {
+  background: none;
+  border: none; }
+
 .header {
   background-image: url("../img/topthumb.png");
   background-repeat: no-repeat;
@@ -277,5 +281,22 @@ input {
         background-position: 9px 2px; }
     .content .aside-chronicles h2 {
       text-transform: uppercase; }
+    .content .aside-chronicles .chronicles-block {
+      padding: 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .content .aside-chronicles .chronicles-block__button {
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 8px 25px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 20px; }
+        .content .aside-chronicles .chronicles-block__button:hover {
+          color: #fff;
+          background-color: #000000; }
+      .content .aside-chronicles .chronicles-block .dop {
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -210,6 +210,27 @@
             h2 {
                 text-transform: uppercase;
             }
+            .chronicles-block {
+                padding: 0 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &__button {
+                    border: 1px solid #000;
+                    background-color: #fff;
+                    padding: 8px 25px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    &:hover {
+                        color: #fff;
+                        background-color: #000000;
+                    }
+                }
+                .dop {
+                    width: 100%;
+                }
+            }
         }
         &-strims {
             
