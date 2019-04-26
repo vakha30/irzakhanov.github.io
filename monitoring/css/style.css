@@ -127,7 +127,8 @@ button {
     .title {
       display: block;
       text-align: center;
-      padding-top: 30px; }
+      padding-top: 30px;
+      padding-bottom: 70px; }
       .title .title-image {
         display: none; } }
   .title-name {
@@ -293,9 +294,9 @@ button {
       .content-home {
         width: auto;
         display: block; } }
-    .content-home .home-btn {
+    .content-home .home-btn-block {
       display: none; }
-      .content-home .home-btn .home-btn {
+      .content-home .home-btn-block .home-btn {
         padding: 7px 13px;
         border-radius: 4px;
         width: 47%;
@@ -303,11 +304,11 @@ button {
         text-align: center;
         margin: 5px;
         font-size: 17px; }
-      .content-home .home-btn .btn-active {
+      .content-home .home-btn-block .btn-active {
         border-color: #c5c204;
         color: #c5c204; }
       @media screen and (max-width: 768px) {
-        .content-home .home-btn {
+        .content-home .home-btn-block {
           display: flex;
           justify-content: space-between; } }
     @media screen and (max-width: 768px) {
