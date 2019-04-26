@@ -453,6 +453,16 @@ button {
   .article-text__thry {
     color: #e01414; }
 
+.article-anons {
+  padding: 15px;
+  background-color: #beeaf1;
+  margin: 20px 0;
+  min-height: 300px; }
+  .article-anons a {
+    color: #063283; }
+  .article-anons p {
+    color: #111; }
+
 .footer {
   background-image: url("../img/bottomthumb.png");
   background-repeat: no-repeat;
