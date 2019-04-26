@@ -294,9 +294,9 @@ button {
       .content-home {
         width: auto;
         display: block; } }
-    .content-home .home-btn-block {
+    .content-home .home-btn {
       display: none; }
-      .content-home .home-btn-block .home-btn {
+      .content-home .home-btn .home-btn {
         padding: 7px 13px;
         border-radius: 4px;
         width: 47%;
@@ -304,11 +304,11 @@ button {
         text-align: center;
         margin: 5px;
         font-size: 17px; }
-      .content-home .home-btn-block .btn-active {
+      .content-home .home-btn .btn-active {
         border-color: #c5c204;
         color: #c5c204; }
       @media screen and (max-width: 768px) {
-        .content-home .home-btn-block {
+        .content-home .home-btn {
           display: flex;
           justify-content: space-between; } }
     @media screen and (max-width: 768px) {
