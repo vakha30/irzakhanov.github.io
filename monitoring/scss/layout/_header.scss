@@ -2,10 +2,19 @@
     background-image: url('../img/topthumb.png');
     background-repeat: no-repeat;
     position: relative;
+    @media screen and (max-width: 768px) {
+        background-image: none;
+    }
     &-logo {
         text-align: center;
         width: 449px;
         margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            width: auto;
+            img {
+                width: 300px;
+            }
+        }
     }
     .btn-add-server {
         display: block;
@@ -24,6 +33,10 @@
         top: 31px;
         right: 80px;
         transition: 0s;
+        @media screen and (max-width: 768px) {
+            position: static;
+            margin: 0 auto;
+        }
         &:hover {
             background-position: -1px -39px;
         }
@@ -40,6 +53,14 @@
         position: relative;
         bottom: -7px;
         left: 84px;
+        @media screen and (max-width: 768px) {
+            background-image: none;
+            font-size: 24px;
+            width: auto;
+            padding: 0;
+            position: static;
+            margin-top: 20px;
+        }
         &:hover {
             color: #89acec;
         }
@@ -54,10 +75,24 @@
     padding-top: 115px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        .title-image {
+            display: none;
+        }
+    }
     &-name {
         width: 700px;
+        @media screen and (max-width: 768px) {
+            width: auto;
+        }
         &__server {
             font-size: 175px;
+            @media screen and (max-width: 768px) {
+                font-size: 90px;
+            }
         }
         &__date {
             background-color: #000;
@@ -67,12 +102,19 @@
             width: 455px;
             text-align: center;
             margin-left: 20px;
+            @media screen and (max-width: 768px) {
+                margin: 0;
+                width: auto;
+            }
         }
         &__site {
             text-transform: uppercase;
             font-size: 35px;
             text-align: right;
             margin-top: 12px;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
         }
     }
 }

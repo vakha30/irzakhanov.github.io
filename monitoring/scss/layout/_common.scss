@@ -5,6 +5,9 @@
         background-image: url('../img/menuthumb.png');
         background-repeat: no-repeat;
         padding: 19px 30px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         &__item {
             text-align: center;
             position: relative;
@@ -55,6 +58,11 @@
     position: relative;
     width: 1030px;
     margin-left: -10px;
+    @media screen and (max-width: 768px) {
+        background-image: none;
+        display: none;
+        width: auto;
+    }
     .flag {
         position: absolute;
         background-repeat: no-repeat;
@@ -129,6 +137,9 @@
     border-left: 8px solid #e5e3e4;
     border-bottom: 10px solid #bdbabb;
     background-color: #fff;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
     h2 {
         text-align: center;
         font-size: 28px;
@@ -138,6 +149,37 @@
         display: flex;
         justify-content: space-between;
         padding: 0 10px 0 0;
+        @media screen and (max-width: 768px) {
+            width: auto;
+            display: block;
+        }
+
+        .home-btn {
+            display: none;
+            .home-btn {
+                padding: 7px 13px;
+                border-radius: 4px;
+                width: 47%;
+                border: 2px solid #333;
+                text-align: center;
+                margin: 5px;
+                font-size: 17px;
+            }
+            .btn-active {
+                border-color: #c5c204;
+                color: #c5c204;
+            }
+            @media screen and (max-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+        #uje {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
         .home-block-title {
             background-color: #1093d9;
             padding: 7px 0;
@@ -168,6 +210,7 @@
                     color: #fff;
                     padding: 4px 0;
                     text-align: center;
+                    
                 }
                 .item-site {
                     font-size: 11px;
@@ -308,15 +351,23 @@
         }
         .home-left {
             width: 325px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
         .home-right {
             width: 325px;
-            
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
     &-news {
         width: 700px;
-        padding: 15px;        
+        padding: 15px;
+        @media screen and (max-width: 768px) {
+            width: auto;
+        }       
     }
     &-order {
         padding: 15px;
@@ -336,6 +387,9 @@
     .aside {
         width: 300px;
         background-color: #062957;
+        @media screen and (max-width: 768px) {
+            width: auto;
+        }
         h2 {
             background-color: #000;
             text-align: center;
