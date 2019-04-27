@@ -251,15 +251,28 @@
                     margin-left: 40px;
                     display: inline-block;
                     min-width: 50px;
+                    background-color: #fff;
+                    padding: 2px 3px;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 4px;
                 }
                 .item-name {
                     font-size: 11px;
                     text-transform: none;
+                    background-color: #fff;
+                    padding: 2px 3px;
+                    border: 1px solid #d6d6d6;
+                    margin-left: 9px;
+                    border-radius: 4px;
                 }
                 .item-date {
                     font-size: 11px;
                     font-family: 'Cambria';
-                    margin-left: 15px;
+                    margin-left: 4px;
+                    background-color: #fff;
+                    padding: 2px 3px;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 4px;
                 }
                 .x-gve {
                     position: relative;
@@ -290,7 +303,7 @@
                         position: absolute;
                         text-transform: uppercase;
                         color: #555;
-                        left: -23px;
+                        left: -25px;
                         top: 0;
                     }
                 }
@@ -342,15 +355,18 @@
                 }
                 .item-x {
                     color: #c4b481;
+                    background-color: transparent;
                 }
                 .item-site {
                     color: #c4b481;
                 }
                 .item-name {
                     color: #c4b481;
+                    background-color: transparent;
                 }
                 .item-date {
                     color: #c4b481;
+                    background-color: transparent;
                 }
             }
             .top {

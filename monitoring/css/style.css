@@ -375,14 +375,27 @@ button {
           font-family: 'Cambria';
           margin-left: 40px;
           display: inline-block;
-          min-width: 50px; }
+          min-width: 50px;
+          background-color: #fff;
+          padding: 2px 3px;
+          border: 1px solid #d6d6d6;
+          border-radius: 4px; }
         .content-home .home-block-items__item .item-name {
           font-size: 11px;
-          text-transform: none; }
+          text-transform: none;
+          background-color: #fff;
+          padding: 2px 3px;
+          border: 1px solid #d6d6d6;
+          margin-left: 9px;
+          border-radius: 4px; }
         .content-home .home-block-items__item .item-date {
           font-size: 11px;
           font-family: 'Cambria';
-          margin-left: 15px; }
+          margin-left: 4px;
+          background-color: #fff;
+          padding: 2px 3px;
+          border: 1px solid #d6d6d6;
+          border-radius: 4px; }
         .content-home .home-block-items__item .x-gve {
           position: relative; }
           .content-home .home-block-items__item .x-gve::after {
@@ -408,7 +421,7 @@ button {
             position: absolute;
             text-transform: uppercase;
             color: #555;
-            left: -23px;
+            left: -25px;
             top: 0; }
         .content-home .home-block-items__item .x-like {
           position: relative; }
@@ -449,13 +462,16 @@ button {
           background-color: #3c3009;
           color: #c9b986; }
         .content-home .home-block-items .gold .item-x {
-          color: #c4b481; }
+          color: #c4b481;
+          background-color: transparent; }
         .content-home .home-block-items .gold .item-site {
           color: #c4b481; }
         .content-home .home-block-items .gold .item-name {
-          color: #c4b481; }
+          color: #c4b481;
+          background-color: transparent; }
         .content-home .home-block-items .gold .item-date {
-          color: #c4b481; }
+          color: #c4b481;
+          background-color: transparent; }
       .content-home .home-block-items .top .item-status {
         background-color: #df0024; }
       .content-home .home-block-items .top .item-site {
