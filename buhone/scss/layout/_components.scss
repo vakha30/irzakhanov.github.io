@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial';
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather';
+}
+
+.section-title {
+    span {
+        font-size: 24px;
+        letter-spacing: -1.4px;
+        color: #bdbdbd;
+        font-weight: 900;
+    }
+    h2{
+        font-size: 48px;
+        color: #333;
+        font-weight: 900;
+        margin-top: 42px;
+        span.subtitle {
+            color: #005FA3;
+            display: block;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 90px;
+        }
+    }
+}
+
+a {
+    transition: .2s linear;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.wrapper {
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #005FA3;
+    font-size: 18px;
+    color: #fff;
+    padding: 21px 56px;
+    transition: .2s;
+    &:hover {
+       @include transparentBackgroundColorMixin(0.6, #005FA3);
+    }
+}
+
+ul, li {
+    list-style: none;
+}

@@ -1,0 +1,3 @@
+@mixin transparentBackgroundColorMixin($alpha,$color) {
+    background-color: rgba(red($color), green($color), blue($color), $alpha);
+}
