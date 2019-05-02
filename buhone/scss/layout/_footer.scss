@@ -1,11 +1,19 @@
 .footer {
     padding:  52px 0;
+    @media screen and (max-width: 768px) {
+        padding: 20px 0;
+    }
     &-content {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            display: block;
+            text-align: center;
+        }
         p {
             font-size: 14px;
             font-weight: 300;
+            margin: 15px 0;
         }
     }
 }

@@ -18,3 +18,14 @@ $('.reviews-slide').slick({
 	arrows: true,
 	dots: true
 });
+
+let openBtn = document.getElementById('open-menu');
+let closeBtn = document.getElementById('close-menu');
+let mobileMenu = document.getElementById('mobile-menu');
+
+openBtn.addEventListener('click', function(){
+	mobileMenu.style.top = '0px';
+})
+closeBtn.addEventListener('click', function(){
+	mobileMenu.style.top = '-2000px';
+})

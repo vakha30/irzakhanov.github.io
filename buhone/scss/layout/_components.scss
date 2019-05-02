@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Arial';
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,12 +25,18 @@ h1, h2, h3, h4, h5 {
         color: #333;
         font-weight: 900;
         margin-top: 42px;
+        @media screen and (max-width: 768px) {
+              font-size: 30px;  
+        }
         span.subtitle {
             color: #005FA3;
             display: block;
             font-size: 48px;
             font-weight: 900;
             line-height: 90px;
+            @media screen and (max-width: 768px) {
+                font-size: 40px;   
+            }
         }
     }
 }
