@@ -29,7 +29,7 @@ body {
 * {
   box-sizing: border-box; }
 
-.wrapper {
+.container {
   max-width: 1152px;
   width: 100%;
   padding: 0 5px;
@@ -50,48 +50,47 @@ button {
 .header {
   background-color: #081734;
   padding: 25px 0; }
-  .header .head {
+  .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .header .navigation {
-    font-weight: 500; }
-    .header .navigation-menu {
-      display: flex; }
-      .header .navigation-menu__link {
-        margin-right: 60px;
-        color: #fff;
-        font-size: 14px;
-        text-transform: uppercase; }
-      .header .navigation-menu__btn {
-        font-weight: 500;
-        font-size: 17px;
-        color: #fff;
-        background-color: #0bae9f;
-        padding: 14px 38px;
-        border-radius: 25px;
-        margin-right: 100px;
-        transform: translateY(-20px); }
-      .header .navigation-menu__login {
-        font-size: 17px;
-        color: #0bafa0;
-        margin-right: 30px;
-        position: relative; }
-        .header .navigation-menu__login::after {
-          content: '';
-          background-image: url("../img/icons/Userpic.svg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 45px;
-          height: 45px;
-          display: block;
-          position: absolute;
-          top: -15px;
-          left: -55px; }
-      .header .navigation-menu__lang {
+    font-weight: 500;
+    display: flex;
+    align-items: center; }
+    .header .navigation__link {
+      margin-right: 60px;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .header .navigation__btn {
+      font-weight: 500;
+      font-size: 17px;
+      color: #fff;
+      background-color: #0bae9f;
+      padding: 14px 38px;
+      border-radius: 25px;
+      margin-right: 100px; }
+    .header .navigation__login {
+      font-size: 17px;
+      color: #0bafa0;
+      margin-right: 30px;
+      position: relative; }
+      .header .navigation__login::after {
+        content: '';
+        background-image: url("../img/icons/Userpic.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45px;
+        height: 45px;
         display: block;
-        width: 31px;
-        height: 23px;
-        background-image: url("../img/rus.png"); }
+        position: absolute;
+        top: -15px;
+        left: -55px; }
+    .header .navigation__lang {
+      display: block;
+      width: 31px;
+      height: 23px;
+      background-image: url("../img/rus.png"); }
 
 /*# sourceMappingURL=style.css.map */
