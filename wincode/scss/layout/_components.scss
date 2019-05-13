@@ -1,0 +1,27 @@
+body {
+    font-family: 'Muller';
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1152px;
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}

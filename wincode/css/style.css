@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/Fontfabric - MullerRegular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/Fontfabric - MullerLight.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/Fontfabric - MullerBold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/Fontfabric - MullerMedium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/Fontfabric - MullerExtraBold.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+body {
+  font-family: 'Muller'; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1152px;
+  width: 100%;
+  padding: 0 5px;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background-color: #081734;
+  padding: 25px 0; }
+  .header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .navigation {
+    font-weight: 500; }
+    .header .navigation-menu {
+      display: flex; }
+      .header .navigation-menu__link {
+        margin-right: 60px;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase; }
+      .header .navigation-menu__btn {
+        font-weight: 500;
+        font-size: 17px;
+        color: #fff;
+        background-color: #0bae9f;
+        padding: 14px 38px;
+        border-radius: 25px;
+        margin-right: 100px;
+        transform: translateY(-20px); }
+      .header .navigation-menu__login {
+        font-size: 17px;
+        color: #0bafa0;
+        margin-right: 30px;
+        position: relative; }
+        .header .navigation-menu__login::after {
+          content: '';
+          background-image: url("../img/icons/Userpic.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 45px;
+          height: 45px;
+          display: block;
+          position: absolute;
+          top: -15px;
+          left: -55px; }
+      .header .navigation-menu__lang {
+        display: block;
+        width: 31px;
+        height: 23px;
+        background-image: url("../img/rus.png"); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+.header {
+    background-color: #081734;
+    padding: 25px 0;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation {
+        font-weight: 500;
+        &-menu {
+            display: flex;
+
+            &__item {
+
+            }
+            &__link {
+                margin-right: 60px;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            &__btn {
+                font-weight: 500;
+                font-size: 17px;
+                color: #fff;
+                background-color: #0bae9f;
+                padding: 14px 38px;
+                border-radius: 25px;
+                margin-right: 100px;
+                transform: translateY(-20px);
+            }
+            &__login {
+                font-size: 17px;
+                color: #0bafa0;
+                margin-right: 30px;
+                position: relative;
+                &::after {
+                    content: '';
+                    background-image: url('../img/icons/Userpic.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 45px;
+                    height: 45px;
+                    display: block;
+                    position: absolute;
+                    top: -15px;
+                    left: - 55px;
+                }
+            }
+            &__lang {
+                display: block;
+                width: 31px;
+                height: 23px;
+                background-image: url('../img/rus.png');
+            }
+        }
+    }
+}
