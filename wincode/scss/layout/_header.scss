@@ -10,9 +10,6 @@
         font-weight: 500;
         display: flex;
         align-items: center;
-        &__item {
-
-        }
         &__link {
             margin-right: 60px;
             color: #fff;
@@ -20,14 +17,7 @@
             text-transform: uppercase;
         }
         &__btn {
-            font-weight: 500;
-            font-size: 17px;
-            color: #fff;
-            background-color: #0bae9f;
-            padding: 14px 38px;
-            border-radius: 25px;
             margin-right: 100px;
-            // transform: translateY(-20px);
         }
         &__login {
             font-size: 17px;

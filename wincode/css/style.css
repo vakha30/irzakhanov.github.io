@@ -47,6 +47,14 @@ button {
   margin: 0;
   padding: 0; }
 
+.btn-primary {
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  background-color: #0bae9f;
+  padding: 14px 38px;
+  border-radius: 25px; }
+
 .header {
   background-color: #081734;
   padding: 25px 0; }
@@ -64,12 +72,6 @@ button {
       font-size: 14px;
       text-transform: uppercase; }
     .header .navigation__btn {
-      font-weight: 500;
-      font-size: 17px;
-      color: #fff;
-      background-color: #0bae9f;
-      padding: 14px 38px;
-      border-radius: 25px;
       margin-right: 100px; }
     .header .navigation__login {
       font-size: 17px;
@@ -92,5 +94,38 @@ button {
       width: 31px;
       height: 23px;
       background-image: url("../img/rus.png"); }
+
+.home {
+  text-align: center;
+  background: url("../img/bg-back.png") bottom center no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .home-wrapper {
+    background: url("../img/bg.jpg") center -80px no-repeat;
+    background-size: 1366px;
+    padding-top: 105px;
+    padding-bottom: 160px; }
+  .home__title {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 63px; }
+  .home__info {
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 35px; }
+  .home__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 38px;
+    font-size: 19px;
+    padding: 20px 38px;
+    border-radius: 30px; }
+  .home__link {
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 2px solid #ffc600; }
 
 /*# sourceMappingURL=style.css.map */
