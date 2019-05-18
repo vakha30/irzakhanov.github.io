@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Borsok';
+  src: url("../fonts/boorsok.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'RelOpen Sanseway';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+.wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 955px;
+  width: 100%;
+  padding: 0 5px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'Open sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.header .head {
+  background: url("../img/bg-head.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 25px 0 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  line-height: 25px; }
+  .header .head__date {
+    text-align: center; }
+  .header .head__link {
+    font-size: 16px;
+    background-color: #009900;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px; }
+    .header .head__link:hover {
+      background-color: #ff9933; }
+.header .navigation {
+  background-color: #ff9900;
+  padding: 15px 0; }
+  .header .navigation .menu {
+    display: flex;
+    justify-content: center; }
+    .header .navigation .menu__item {
+      margin: 0 35px; }
+      .header .navigation .menu__item:first-child {
+        position: relative;
+        margin-right: 70px; }
+        .header .navigation .menu__item:first-child::after {
+          content: '';
+          background: url("../img/burger.png") center center no-repeat;
+          background-size: contain;
+          position: absolute;
+          width: 25px;
+          height: 20px;
+          top: 0;
+          left: calc(100% + 10px);
+          cursor: pointer; }
+    .header .navigation .menu__link {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff; }
+      .header .navigation .menu__link:hover {
+        color: #009900; }
+
+.home-section {
+  background: url("../img/bg1.jpg") top center no-repeat;
+  background-size: cover;
+  padding: 35px 0 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 50px;
+  line-height: 35px; }
+  .home-section .home-title {
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Borsok';
+    text-align: center;
+    text-shadow: 2px 2px 0px #FF9900, -2px -2px 0px #FF9900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  .home-section .home-info {
+    position: relative;
+    margin-bottom: 77px;
+    display: inline-block;
+    z-index: 333; }
+    .home-section .home-info::after {
+      content: '';
+      width: 260px;
+      height: 150px;
+      background-color: #ff6666;
+      opacity: .3;
+      position: absolute;
+      top: -20px;
+      left: calc(50%);
+      transform: translateX(-150px);
+      z-index: -1; }
+    .home-section .home-info--orange {
+      color: #ff9900; }
+    .home-section .home-info--green {
+      color: #009900; }
+  .home-section .home-years {
+    margin-bottom: 25px; }
+  .home-section .home-link {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff9900;
+    padding: 5px 44px;
+    color: #fff;
+    margin-left: 10px; }
+    .home-section .home-link:hover {
+      background-color: #009900; }
+
+/*# sourceMappingURL=style.css.map */

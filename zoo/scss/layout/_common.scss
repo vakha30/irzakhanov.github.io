@@ -1,0 +1,59 @@
+.home-section {
+    background: url('../img/bg1.jpg') top center no-repeat;
+    background-size: cover;
+    padding: 35px 0 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 50px;
+    line-height: 35px;
+    .home-title {
+        font-size: 45px;
+        color: #fff;
+        font-family: 'Borsok';
+        text-align: center;
+        text-shadow: 2px 2px 0px #FF9900, -2px -2px 0px #FF9900;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    .home-info {
+        position: relative;
+        margin-bottom: 77px;
+        display: inline-block;
+        z-index: 333;
+        &::after {
+            content: '';
+            width: 260px;
+            height: 150px;
+            background-color: #ff6666;
+            opacity: .3;
+            position: absolute;
+            top: -20px;
+            left: calc(50%);
+            transform: translateX(-150px);
+            z-index: -1;
+        }
+        &--orange {
+            color: #ff9900;
+        }
+        &--green {
+            color: #009900;
+        }
+        
+    }
+    .home-years {
+        margin-bottom: 25px;
+    }
+    .home-link {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ff9900;
+        padding: 5px 44px;
+        color: #fff;
+        margin-left: 10px;
+        &:hover {
+            background-color: #009900;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.header { 
+    .head {
+        background: url('../img/bg-head.jpg') center center no-repeat;
+        background-size: cover;
+        padding: 25px 0 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        line-height: 25px;
+        &__logo {
+
+        }
+        &__info {
+
+        }
+        &__date {
+            text-align: center;
+        }
+        &__link {
+            font-size: 16px;
+            background-color: #009900;
+            border-radius: 5px;
+            padding: 5px 15px;
+            color: #fff;
+            font-weight: bold;
+            margin-right: 30px;
+            &:hover {
+                background-color: #ff9933;
+            }
+        }
+    }
+    .navigation {
+        background-color: #ff9900;
+        padding: 15px 0;
+        .menu {
+            display: flex;
+            justify-content: center;
+            &__item {
+                margin: 0 35px;
+                &:first-child {
+                    position: relative;
+                    margin-right: 70px;
+                    &::after {
+                        content: '';
+                        background: url('../img/burger.png') center center no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        width: 25px;
+                        height: 20px;
+                        top: 0;
+                        left: calc(100% + 10px);
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__link {
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                &:hover {
+                    color: #009900;
+                }
+            }
+        }
+    }
+}
