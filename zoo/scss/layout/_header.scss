@@ -1,0 +1,136 @@
+.header { 
+    .head {
+        background: url('../img/bg-head.jpg') center center no-repeat;
+        background-size: cover;
+        padding: 25px 0 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        line-height: 25px;
+        @media screen and (max-width: 768px) {
+            display: block;
+            text-align: center;
+        }
+        &__logo {
+
+        }
+        &__info {
+
+        }
+        &__date {
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+        }
+        &__link {
+            font-size: 16px;
+            background-color: #009900;
+            border-radius: 5px;
+            padding: 5px 15px;
+            color: #fff;
+            font-weight: bold;
+            margin-right: 30px;
+            &:hover {
+                background-color: #ff9933;
+            }
+            @media screen and (max-width: 768px) {
+                margin: 0;
+            }
+        }
+    }
+    .navigation {
+        background-color: #ff9900;
+        padding: 15px 0;
+        position: relative;
+        @media screen and (max-width: 768px) {
+            height: 60px;
+            padding: 0;
+        }
+        .open-menu {
+            color: #fff;
+            font-size: 55px;
+            cursor: pointer;
+            position: absolute;
+            top: 1px;
+            right: 15px;
+            display: none;
+        }
+        .open-menu {
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            &__item {
+                margin: 0 35px;
+                &:first-child {
+                    position: relative;
+                    margin-right: 70px;
+                    &::after {
+                        content: '';
+                        background: url('../img/burger.png') center center no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        width: 25px;
+                        height: 20px;
+                        top: 0;
+                        left: calc(100% + 10px);
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__link {
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                &:hover {
+                    color: #009900;
+                }
+            }
+        }
+        .mobile-menu {
+            display: none;
+            background-color: rgba(0,0,0,.9);
+            text-align: center;
+            width: 100%;
+            padding: 30px 0;
+            transition: all .3s;
+            transform-origin: top;
+            transform: scaleY(0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+            &__item {
+                margin-bottom: 15px;
+            }
+            &__link {
+            color: #fff;
+            font-size: 24px;
+            &:hover {
+                color: $green;
+            } 
+            }
+        }
+        .close-menu {
+            font-size: 55px;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+    
+}
