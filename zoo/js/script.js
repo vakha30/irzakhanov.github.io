@@ -1,14 +1,10 @@
-// $('.posts-slide').slick({
-// 	infinite: true,
-// 	slidesToShow: 3,
-// 	arrows: true,
-// 	dots: false,
-// 	centerMode: true,
-// 	responsive: [
-//     {
-//     	breakpoint: 800,
-//      	settings: {
-//         	slidesToShow: 1,
-//        	}
-//     }]
-// });
+let openMenu = document.getElementById('open-menu');
+let closeMenu = document.getElementById('close-menu');
+let mobileMenu = document.getElementById('mobile-menu');
+
+openMenu.onclick = function () {
+    mobileMenu.style.transform = 'scaleY(1)';
+}
+closeMenu.onclick = function () {
+    mobileMenu.style.transform = 'scaleY(0)';
+}
