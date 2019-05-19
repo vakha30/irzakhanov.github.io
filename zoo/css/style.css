@@ -650,8 +650,10 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      .about-section .content-wrap {
+        flex-wrap: wrap; } }
     .about-section .content-wrap__text {
       padding-right: 109px; }
       @media screen and (max-width: 768px) {

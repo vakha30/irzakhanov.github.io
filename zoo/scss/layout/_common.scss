@@ -569,10 +569,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         margin-bottom: 60px;
         @media screen and (max-width: 768px) {
-            
+            flex-wrap: wrap; 
         }
         &__text {
             padding-right: 109px;
