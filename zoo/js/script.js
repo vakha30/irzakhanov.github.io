@@ -38,3 +38,19 @@ $(function() {
     
     var accordion = new Accordion($('.accordion-menu'), false);
   })
+
+  $('.tovar-slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		arrows: true,
+		dots: false,
+		centerMode: true,
+		centerPadding: '0px',
+		responsive: [
+    	{
+    		breakpoint: 800,
+     		settings: {
+        		slidesToShow: 1,
+            }
+    	}]
+	});
