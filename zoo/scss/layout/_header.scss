@@ -23,7 +23,7 @@
             font-size: 16px;
             background-color: #009900;
             border-radius: 5px;
-            padding: 5px 15px;
+            padding: 8px 15px;
             color: #fff;
             font-weight: bold;
             margin-right: 30px;
@@ -85,6 +85,7 @@
                 font-size: 18px;
                 font-weight: bold;
                 color: #fff;
+                padding: 14px 0;
                 &:hover {
                     color: #009900;
                 }
@@ -127,4 +128,64 @@
         }
     }
     
+}
+
+.submenu {
+    position: absolute;
+    z-index: 999;
+    min-width: 200px;
+    top: 33px;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  font-size: 16px;
+  background-color: $orange;
+  border: 1px solid $green;
+  display: block;
+  color: #fff;
+  padding: 10px 0 10px 10px;
+  position: relative;
+  &:hover {
+      color: $green;
+  }
+}
+
+.submenu li a.fa {
+    &:hover {
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+    &::after {
+        content: '';
+        width: 12px;
+        height: 17px;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 17px solid $green;
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        transform: rotate(180deg);
+        transition: all .1s;
+    }
+}
+
+.submenu .submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transition: .3s linear;
+
+}
+nav li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
 }

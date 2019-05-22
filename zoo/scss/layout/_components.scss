@@ -38,6 +38,15 @@
     }
 }
 
+textarea {
+    resize: none;
+}
+
+input {
+    border: none;
+}
+
+
 body {
     font-family: 'Open sans', sans-serif;
     color: #333;
@@ -53,6 +62,35 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    transition: all .2s;
+}
+
 .shadow--orange {
     text-shadow: 2px 2px 0px #FF9900, -2px -2px 0px #FF9900;
+}
+
+.shadow--black {
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    &__number {
+        color: $orange;
+        font-size: 40px;
+        border: 1px solid $green;
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        padding-top: 4px;
+        margin: 5px;
+        text-align: center;
+        font-weight: bold;
+        &:hover {
+            background-color: $green;
+        }
+    }
 }

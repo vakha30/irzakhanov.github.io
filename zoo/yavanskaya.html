@@ -7,9 +7,97 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup/popup-logo.png" alt="Logo"></a>
+			</div>
+			<h2 class="popup__title shadow--orange">
+					Оставьте ваши контактные данные и наш<br>
+					специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="#" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<a href="#" class="popup__link">Пользовательское соглашение</a>
+		</div>
+	</div>	
+
+	<div class="popup-wrap" id="popup2">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup/popup-logo.png" alt="Logo"></a>
+			</div>
+			<h2 class="popup__title shadow--orange">
+					Оставьте ваши контактные данные и наш<br>
+					специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="#" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Какое животное<br>вам инетресно?</label>
+							</td>
+							<td>
+								<textarea class="popup-form__text" name="" id=""></textarea>
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">найти по фото</label>
+							</td>
+							<td>
+								<input class="popup-form__file" type="file">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<a href="#" class="popup__link">Пользовательское соглашение</a>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		<header class="header">
 			<div class="head">
@@ -18,22 +106,49 @@
 				</div>
 				<p class="head__info">Экзотические животные<br>с питомника</p>
 				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br>8 800 777 77 77</p>
-				<a href="#" class="head__link">Получить консультацию</a>
+				<a href="javascript:openPopUp()" class="head__link">Получить консультацию</a>
 			</div>
 			<nav class="navigation">
 				<ul class="menu">
-					<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Каталог</a>
+						<ul class="submenu">
+							<li><a class="fa" href="">Обезьяны</a>
+								<ul class="submenu">
+									<li><a href="yavanskaya.html">Яванская макака</a></li>
+									<li><a href="yavanskaya.html">Яванская макака</a></li>
+									<li><a href="catalog.html">Все Обезьяны</a></li>
+								</ul>
+							</li>
+							<li><a class="fa" href="">Попугаи</a></li>
+							<li><a class="fa" href="">Птицы</a></li>
+							<li><a class="fa" href="">Кошачьи</a></li>
+							<li><a class="fa" href="">Псовые</a>
+								<ul class="submenu">
+									<li><a class="fa" href="">Волки</a>
+										<ul class="submenu">
+											<li><a href="">Серый волк</a></li>
+											<li><a href="">Канадский волк</a></li>
+											<li><a href="">Все волки</a></li>
+										</ul>
+									</li>
+									<li><a class="fa" href="">Лисы</a></li>
+								</ul>
+							</li>
+							<li><a class="fa" href="">Копытные</a></li>
+						</ul>
+					</li>
 					<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="articles.html" class="menu__link">Новости</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 				</ul>
+
 				<span id="open-menu" class="open-menu">&#8801;</span>
 				<ul id="mobile-menu" class="mobile-menu">
 					<li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
 					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
-					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Новости</a></li>
+					<li class="mobile-menu__item"><a href="articles.html" class="mobile-menu__link">Новости</a></li>
 					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Отзывы</a></li>
 					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Оплата и доставка</a></li>
 					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
@@ -55,7 +170,7 @@
 					15 лет <span class="home-info--green">с заботой</span><br>
 					о вашем <span class="home-info--orange">друге</span>
 				</p>
-				<a href="#" class="home-link">Узнать подробнее</a>
+				<a href="javascript:openPopUp()" class="home-link">Узнать подробнее</a>
 			</section>
 			
 			<section class="catalog-section">
@@ -126,12 +241,16 @@
 							</li>
 						</ul>
 						<div class="advertising">
-							<div class="advertising-item">
-								<p class="advertising-item__title">Корм для животных</p>
-							</div>
-							<div class="advertising-item">
-								<p class="advertising-item__title">Клетки и Вальеры</p>
-							</div>
+							<a href="#">
+								<div class="advertising-item">
+									<p class="advertising-item__title">Корм для животных</p>
+								</div>
+							</a>
+							<a href="#">
+								<div class="advertising-item">
+									<p class="advertising-item__title">Клетки и Вальеры</p>
+								</div>
+							</a>
 						</div>
 					</aside>
 					<div class="tovar">
@@ -149,19 +268,19 @@
 								<p class="catalog-item__info">Род - <span>макаки</span></p>
 								<p class="catalog-item__price">Цена: 180 000 руб.</p>
 								<div class="catalog-item__buttons">
-									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Купить яванскую макаку</a>
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--orange">Купить яванскую макаку</a>
 								</div>
 							</div>
 						</div>
                         <div class="tovar-images">
-                            <a href="img/tovar/1x.png" class="tovar-images__item tovar-images__item--1x" style="background-image: url('img/tovar/1x.png');"></a>
-                            <a href="img/tovar/2x.png" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
-                            <a href="img/tovar/1x.png" class="tovar-images__item tovar-images__item--1x" style="background-image: url('img/tovar/1x.png');"></a>
-                            <a href="img/tovar/2x.png" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
-                            <a href="img/tovar/2x.png" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
+                            <a href="img/tovar/1x.png" data-fancybox="gallery" class="tovar-images__item tovar-images__item--1x" style="background-image: url('img/tovar/1x.png');"></a>
+                            <a href="img/tovar/2x.png" data-fancybox="gallery" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
+                            <a href="img/tovar/1x.png" data-fancybox="gallery" class="tovar-images__item tovar-images__item--1x" style="background-image: url('img/tovar/1x.png');"></a>
+                            <a href="img/tovar/2x.png" data-fancybox="gallery" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
+                            <a href="img/tovar/2x.png" data-fancybox="gallery" class="tovar-images__item tovar-images__item--2x" style="background-image: url('img/tovar/2x.png');"></a>
                         </div>
                         <div class="tovar-video">
-                            <video src="https://youtu.be/-YZDtQCLNcQ" controls width="500"></video>
+                            <video src="https://youtu.be/-YZDtQCLNcQ" controls></video>
                         </div>
                         <div class="tovar-similar">
                             <h3 class="tovar-similar__title">Похожие животные</h3>
@@ -300,7 +419,7 @@
 						которое вас интересует<br>
 						заполните форму кого вы хотите и мы вам перезвоним
 				</p>
-				<a href="#" class="search-link">Заполнить форму</a>
+				<a href="javascript:openPopUp2()" class="search-link">Заполнить форму</a>
 			</div>
 			</section>
 			<section class="about-section">
@@ -388,8 +507,9 @@
 			</div>
 		</footer>
 	</div>
-<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="slick/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
