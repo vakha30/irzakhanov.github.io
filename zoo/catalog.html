@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zoo Dom</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup/popup-logo.png" alt="Logo"></a>
+			</div>
+			<h2 class="popup__title shadow--orange">
+					Оставьте ваши контактные данные и наш<br>
+					специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="#" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<a href="#" class="popup__link">Пользовательское соглашение</a>
+		</div>
+	</div>	
+
+	<div class="popup-wrap" id="popup2">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup/popup-logo.png" alt="Logo"></a>
+			</div>
+			<h2 class="popup__title shadow--orange">
+					Оставьте ваши контактные данные и наш<br>
+					специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="#" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Какое животное<br>вам инетресно?</label>
+							</td>
+							<td>
+								<textarea class="popup-form__text" name="" id=""></textarea>
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">найти по фото</label>
+							</td>
+							<td>
+								<input class="popup-form__file" type="file">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<a href="#" class="popup__link">Пользовательское соглашение</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="head">
+				<div class="head__logo">
+					<a href="index.html"><img src="img/logo.png" alt="Zoo" class="head__logo-img"></a>
+				</div>
+				<p class="head__info">Экзотические животные<br>с питомника</p>
+				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br>8 800 777 77 77</p>
+				<a href="javascript:openPopUp()" class="head__link">Получить консультацию</a>
+			</div>
+			<nav class="navigation">
+				<ul class="menu">
+					<li class="menu__item"><a href="" class="menu__link">Каталог</a>
+						<ul class="submenu">
+							<li><a class="fa" href="">Обезьяны</a>
+								<ul class="submenu">
+									<li><a href="yavanskaya.html">Яванская макака</a></li>
+									<li><a href="yavanskaya.html">Яванская макака</a></li>
+									<li><a href="catalog.html">Все Обезьяны</a></li>
+								</ul>
+							</li>
+							<li><a class="fa" href="">Попугаи</a></li>
+							<li><a class="fa" href="">Птицы</a></li>
+							<li><a class="fa" href="">Кошачьи</a></li>
+							<li><a class="fa" href="">Псовые</a>
+								<ul class="submenu">
+									<li><a class="fa" href="">Волки</a>
+										<ul class="submenu">
+											<li><a href="">Серый волк</a></li>
+											<li><a href="">Канадский волк</a></li>
+											<li><a href="">Все волки</a></li>
+										</ul>
+									</li>
+									<li><a class="fa" href="">Лисы</a></li>
+								</ul>
+							</li>
+							<li><a class="fa" href="">Копытные</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="articles.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<span id="open-menu" class="open-menu">&#8801;</span>
+				<ul id="mobile-menu" class="mobile-menu">
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Каталог</a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
+					<li class="mobile-menu__item"><a href="articles.html" class="mobile-menu__link">Новости</a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Отзывы</a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Оплата и доставка</a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+					<li id="close-menu" class="close-menu">&#215;</li>
+				</ul>
+			</nav>
+			
+		</header>
+
+		<main>
+			<section class="home-section home-section-catalog">
+				<h1 class="home-title">купить обезьяну с питомника</h1>
+				<p class="home-info">
+					<span class="home-info--orange">Здоровые обезьяны</span> из питомника<br>
+					с документами и доставкой<br>
+					по всей <span class="home-info--green">России и СНГ</span>
+				</p>
+				<p class="home-years">
+					15 лет <span class="home-info--green">с заботой</span><br>
+					о вашем <span class="home-info--orange">друге</span>
+				</p>
+				<a href="javascript:openPopUp()" class="home-link">Узнать подробнее</a>
+			</section>
+			
+			<section class="catalog-section">
+				<div class="links-block-wrap">
+					<div class="links-block">
+						<a href="index.html" class="links-block__home">Главная</a>
+						<a href="#" class="links-block__this">Обезьяны</a>
+					</div>
+				</div>
+				<h2 class="catalog-title section-title">каталог</h2>
+				<div class="catalog-wrap">
+					<aside class="sidebar">
+						<ul class="accordion-menu">
+							<li>
+								<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Обезьяны
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						    	</div>
+								<ul class="submenuItems">
+									<li><a href="yavanskaya.html">Яванская макака</a></li>
+									<li><a href="#">Яванская макака</a></li>
+									<li><a href="#">Яванская макака</a></li>
+									<li><a href="#">Яванская макака</a></li>
+									<li><a href="#">Яванская макака</a></li>
+									<li><a href="#">Яванская макака</a></li>
+									<li class="fa-active"><a href="#">Все обезьяны</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Птицы
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+								<ul class="submenuItems">
+									<li><a href="#">Fiction book 1</a></li>
+									<li><a href="#">Fiction book 2</a></li>
+									<li><a href="#">Fiction book 3</a></li>
+								</ul>
+							</li>
+							<li>
+							    <div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Кошачьи
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							    </div>
+								<ul class="submenuItems">
+									<li><a href="#">Fantasy book 1</a></li>
+									<li><a href="#">Fantasy book 2</a></li>
+									<li><a href="#">Fantasy book 3</a></li>
+								</ul>
+							</li>
+							<li>
+							    <div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Псовые
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+								<ul class="submenuItems">
+									<li><a href="#">Action book 1</a></li>
+									<li><a href="#">Action book 2</a></li>
+									<li><a href="#">Action book 3</a></li>
+								</ul>
+							</li>
+							<li>
+							    <div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Копытные
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+								<ul class="submenuItems">
+									<li><a href="#">Action book 1</a></li>
+									<li><a href="#">Action book 2</a></li>
+									<li><a href="#">Action book 3</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="advertising">
+							<a href="#">
+								<div class="advertising-item">
+									<p class="advertising-item__title">Корм для животных</p>
+								</div>
+							</a>
+							<a href="#">
+								<div class="advertising-item">
+									<p class="advertising-item__title">Клетки и Вальеры</p>
+								</div>
+							</a>
+						</div>
+					</aside>
+					<div class="catalog">
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item1.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Яванская макака</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="yavanskaya.html" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item2.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Зеленая мартышка</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item3.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Бурый капуцин</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item4.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Игрунка</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item5.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Саймири</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<div class="catalog-item__img">
+								<img src="img/catalog/item6.png" alt="Обезьяна">
+								<p class="catalog-item__img-name shadow--orange">Орангутан</p>
+							</div>
+							<div class="catalog-item__description">
+								<p class="catalog-item__info">Тип - <span>хордовые</span></p>
+								<p class="catalog-item__info">Класс- <span>млекопитающие</span></p>
+								<p class="catalog-item__info">Отряд - <span>приматы</span></p>
+								<p class="catalog-item__info">Семейство - <span>мартышковые</span></p>
+								<p class="catalog-item__info">Род - <span>макаки</span></p>
+								<p class="catalog-item__price">Цена: 180 000 руб.</p>
+								<div class="catalog-item__buttons">
+									<a href="javascript:openPopUp()" class="catalog-item__btn catalog-item__btn--green">Заказать</a>
+									<a href="#" class="catalog-item__btn catalog-item__btn--orange">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news-section">
+				<div class="container">
+					<div class="news-title-wrap">
+						<h2 class="news-title section-title">наши новости</h2>
+						<a href="#" class="news-all__link">Все новости</a>
+					</div>
+					<div class="news-wrap">
+						<div class="news-home">
+							<p class="news-item__text news-home__text">Новость Новость Новость Новость ...</p>
+							<div class="news-date">
+								<p>22<br><span>Мая</span></p>
+							</div>
+						</div>
+						<div class="news-all">
+							<div class="news-item">
+								<p class="news-item__text">Новость Новость ...</p>
+								<div class="news-date">
+									<p>22<br><span>Мая</span></p>
+								</div>
+							</div>
+							<div class="news-item">
+								<p class="news-item__text">Новость Новость ...</p>
+								<div class="news-date">
+									<p>22<br><span>Мая</span></p>
+								</div>
+							</div>
+							<div class="news-item">
+								<p class="news-item__text">Новость Новость ...</p>
+								<div class="news-date">
+									<p>22<br><span>Мая</span></p>
+								</div>
+							</div>
+							<div class="news-item">
+								<p class="news-item__text">Новость Новость ...</p>
+								<div class="news-date">
+									<p>22<br><span>Мая</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="news-footer">
+					<div class="news-footer-wrap">
+						<h2 class="news-footer__title">будьте всегда в курсе!</h2>
+						<p class="news-footer__text">
+							Не пропускайте наши новости и события<br>
+							следите за нами в социальных сетях
+						</p>
+					</div>
+					<div class="news-footer__socials">
+						<a href="#" class="news-footer__socials-item"><img src="img/vk.png" alt="Вконтакте"></a>
+						<a href="#" class="news-footer__socials-item"><img src="img/instagram.png" alt="Вконтакте"></a>
+						<a href="#" class="news-footer__socials-item"><img src="img/facebook.png" alt="Вконтакте"></a>
+					</div>
+				</footer>
+			</section>
+			<section class="why-section">
+				<div class="container">
+					<h2 class="why-title section-title">Почему выбирают нас</h2>
+				</div>
+				<div class="why-wrap">
+					<div class="why-item">
+						<div class="why-item__img">
+							<img src="img/why-icon1.png" alt="Why">
+						</div>
+						<div>
+							<h3 class="why-item__title">Большой выбор</h3>
+							<p class="why-item__text">
+									Мы сотрудничаем со
+									многими питомниками
+									по Росии, СНГ и Европе
+							</p>
+						</div>
+					</div>
+					<div class="why-item">
+						<div class="why-item__img">
+							<img src="img/why-icon2.png" alt="Why">
+						</div>
+						<div>
+							<h3 class="why-item__title">Все документы</h3>
+							<p class="why-item__text">
+									На всех животных 
+									выдается полный
+									комплект документов
+							</p>
+						</div>
+					</div>
+					<div class="why-item">
+						<div class="why-item__img">
+							<img src="img/why-icon3.png" alt="Why">
+						</div>
+						<div>
+							<h3 class="why-item__title">Доставка</h3>
+							<p class="why-item__text">
+									Есть возможность
+									доставить животных
+									по всей России и СНГ
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="search-section">
+				<div>
+				<h2 class="search-title">Найдем любое животное!</h2>
+				<p class="search-text">
+						Если вы не нашли животное<br>
+						которое вас интересует<br>
+						заполните форму кого вы хотите и мы вам перезвоним
+				</p>
+				<a href="javascript:openPopUp2()" class="search-link">Заполнить форму</a>
+			</div>
+			</section>
+			<section class="about-section">
+				<div class="container">
+					<div class="content">
+						<h3 class="content-title">Животные семейства приматов – самые умные экзотические питомцы</h3>
+						<p class="content-text">Среди экзотических домашних животных обезьяна занимает одну из первых позиций популярности. Она ассоциируется с интересным времяпрепровождением, умом, игривостью. Но когда приходит время выбирать, какую купить обезьяну, многие сталкиваются с проблемой выбора. Ведь под названием «обезьянка» скрывается очень много подвидов животных, каждый из которых обладает своими особенностями ухода и содержания.<br>
+								Еще иногда сложно выбрать, где купить обезьянку живую, цена которой окажется приемлемой, а здоровье – крепким. В нашем зоомагазине эта проблема теряет свою актуальность. Опытные менеджеры помогут выбрать лучшего представителя и предоставят всю необходимую информацию по его грамотному содержанию дома..</p>
+					
+						<h3 class="content-title">Огромное видовое разнообразие</h3>
+						<p class="content-text">Среда обитания, продолжительность жизни и особенности питания – лишь малая часть факторов, которые оказывали влияние на развитие приматов. Одно только видовое разнообразие заставило зоологов разделить приматов на группы Нового и Старого света. Они насчитывают сотни видов. К группе Нового света относятся животные родом из Центральной и Южной Америки (97 видов). Представители Старого света, изначально проживающие в Африке и Азии, насчитывают более 136 видов животных. Это родина таких известных приматов как шимпанзе, бобоно, гориллы и других человекообразных обезьян.<br> 
+								Уточнение, где именно находится родина разных видов сделано, и сегодня купить ручную обезьяну любой породы несложно, где угодно. Но не всегда она сумеет нормально прижиться в неволе. Важную роль играет питомник, в котором будет содержаться примат. Например, в искусственно созданной замкнутой экосистеме вроде заповедника способен прижиться практически любой вид. А вот содержание в домашних условиях комфортно переносят не все.<br>
+								<br>
+								Домашние приматы, хорошо адаптирующиеся к неволе. Наиболее приспособленными для домашнего содержания считаются следующие виды:<br>
+								<br>
+								Мартышка.<br>
+								Тамарин.<br>
+								Игрунка.<br>
+								Капуцин.<br>
+								Гиббон.<br>
+								<br>
+								Эти виды неплохо адаптируются к неволе, неприхотливы к содержанию, способны при правильном обустройстве клетки проживать в любых климатических условиях. Но важно помнить, что эти приматы исторически развивались в теплом климате. Поэтому условия содержания и рацион должны соответствовать их потребностям. Особенно это актуально для зимнего периода – несмотря на мороз, в гнезде питомца всегда должно быть тепло и сухо.<br>
+								Приматы отличаются пытливым умом и большой склонностью озорничать. Старайтесь относиться с пониманием к тем проделкам, что вытворяет домашняя обезьяна. Избегайте необдуманных действий – кричать на питомца или применять физическое наказание. Мартышка, которую бьют, станет агрессивной, скучной, замкнется в себе. Плохие условия содержания очень быстро приводят к гибели.<br>
+								Поэтому еще только уточняя, сколько стоит выбранная обезьянка, помните, что покупаете совсем не игрушку, а живую радость – которая временами способна доставить хлопоты.</p>
+
+						<h3 class="content-title">Некоторые интересные представители домашних приматов</h3>
+						<p class="content-text">На планете существует огромное видовое разнообразие обезьян, многие из которых содержатся в заповедных или домашних условиях. Самыми известными их представителями являются:</p>
+
+						<h3 class="content-title content-title--mini">Шимпанзе.</h3>
+						<p class="content-text">Этот вид считают наиболее приближенным к человеку животным по уровню интеллекта. Приматы способны проявлять широкий спектр эмоций, быть веселыми, забавными, грустить, способны на агрессию. Животное рассматривает владельца как вожака стаи. Для улучшения его эмоционального состояния рекомендуется регулярно брать его на руки, гладить, позволять рассматривать свои волосы, руки.<br>
+								Данный примат является одним из наиболее популярных видов экзотических животных из-за чистоплотности, уму и интересным живым реакциям. Например, получив лакомство, он практически всегда улыбнется в ответ. Питаются эти обезьяны специальном кормом, приобретаемым в зоомагазине, но могут есть и со стола владельца. При должном обращении они станут прекрасным выбором тем, кто ищет умеренно большую, умную и ласковую обезьяну, подающуюся дрессировке.</p>
+
+						<h3 class="content-title content-title--mini">Мармозетка.</h3>
+						<p class="content-text">Мармозетки являются одними из самых маленьких приматов планеты. Их второе название – игрунка или мини обезьянка. Сложно представить, но настоящую игрунку легко носить в кармане одежды, удивляя окружающих неожиданным появлением из него крошечной мордочки с необычайно серьезным выражением. Вес взрослой мармозетки составляет около 300 граммов, поэтому она достаточно экономна в питании, но требовательна к условиям содержания.<br>
+								Самым важным правилом содержания является защита зверька от сквозняков. Погодные условия в России отличаются суровостью, а родина мармозетки – солнечная Южная Америка. Поэтому эту маленькую обезьянку нельзя подвергать воздействию низких температур, ее крошечное тельце, несмотря на шерстку, быстро переохлаждается. Игрунки очень любят тепло – в этом легко убедиться, установив над клеткой лампу. Место падения теплых лучей практически сразу станет любимым для зверька.<br>
+								Игрунки очень любят общество, поэтому лучше купить сразу две особи. Эти полноценные приматы в естественных условиях живут семьями, вместе воспитывают потомство, да и стоят совсем недорого. Рацион мармозеток составляют фрукты, птичьи яйца, сок деревьев, некоторые насекомые и растения.</p>
+						
+						<h3 class="content-title content-title--mini">Макака.</h3>
+						<p class="content-text">Некрупная яванская макака и макака-резус – это популярные экзотические домашние питомцы, пик интереса к которым пришелся на 2016 год – год Красной обезьяны. Макаку чаще всего выбирают из-за того, что данный зверек наиболее известен. Именно с ней путешествуют по пляжам фотографы, предлагают сделать снимок в цирке или зоопарке.<br>
+								В зависимости от вида и возраста цена приобретаемой макаки может меняться в широком диапазоне. Стоимость покупки примата может составить от пятидесяти до почти двухсот тысяч рублей. Но не стоит сразу принимать предложение стать владельцем обезьянки необычно дешево. Популярный способ мошенничества – продажа не привитых, больных или просто старых животных за бесценок.<br> 
+								Макака неприхотлива к условиям содержания и рациону. Зверек вполне может питаться тем же, что и владелец, но составлять рацион следует с оглядкой. Основой должна выступать растительная пища, а вот острые, копченые, соленые и жареные блюда стоит исключить.<br>
+								Многие виды домашних приматов отличаются умом и веселым характером. За это их любят и владельцы и браконьеры. Ведь учитывая, сколько стоит особь исчезающего вида, на обезьянках несложно заработать. Печальный итог – многие виды приматов, например, яванская макака, находятся на грани исчезновения.<br>
+								Поэтому выбирая, где купить экзотического домашнего питомца, обращайтесь в наш онлайн-зоомагазин.<br>
+								<br>
+								Покупка животных в Москве только в сертифицированных торговых точках позволяет обеспечить двойной эффект:<br>
+								<br>
+								Получить гарантированно здорового, привитого, правильно развитого домашнего питомца и всю необходимую информацию по его содержанию.<br>
+								Снизить спрос на животных, пойманных браконьерами, тем самым спасая диких представителей от отлова ради наживы.<br>
+								Иногда даже самые неочевидные поступки могут помочь защитить разнообразие дикой природы. Покупка </p>
+						
+						<h3 class="content-title content-title--mini">Сайт создан специально для продажи животных с питомника, с документами и доставкой по России и СНГ</h3>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-logo">
+					<a href="index.html"><img class="footer-logo__img" src="img/logo.png" alt="Zoo"></a>
+					<h3 class="footer-logo__title">© Питомник «ZooDom»</h3>
+					<p class="footer-logo__text">Мы сотрудничием с самыми крупными питомниками в России, СНГ и Европе. Предоставляем полный спектр услуг, включая оформление документов, доставку в любой город, </p>
+				</div>
+				<div class="footer-about">
+					<h3 class="footer-title">О нас</h3>
+					<ul class="footer-menu">
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">О питомнике</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Доставка и оплата</a></li>
+					</ul>
+				</div>
+				<div class="footer-popular">
+					<h3 class="footer-title">Популярные животные</h3>
+					<ul class="footer-menu">
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Обезьяны</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Попугаи и Птицы</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Псовые</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Копытные</a></li>
+					</ul>
+				</div>
+				<div class="footer-contacts">
+					<h3 class="footer-title">Контакты</h3>
+					<p class="footer-contacts__item">Доставляем по всей России и СНГ</p>
+					<p class="footer-contacts__item">Ежедневно с 10:00 до 20:00</p>
+					<p class="footer-contacts__item">8 800 777 77 77</p>
+					<p class="footer-contacts__item"><a href="#">info@ekzoticzoo.ru</a></p>
+					<a href="#" class="footer-contacts__link">Политика конфиденциальности</a>
+				</div>
+				<div class="footer-socials">
+					<a href="#" class="footer-socials__link"><img src="img/vk-footer.png" alt="Vk"></a>
+					<a href="#" class="footer-socials__link"><img src="img/instagramm-footer.png" alt="Instagramm"></a>
+					<a href="#" class="footer-socials__link"><img src="img/facebook-footer.png" alt="Facebook"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
