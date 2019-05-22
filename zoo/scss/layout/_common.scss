@@ -1371,7 +1371,10 @@
         line-height: 30px;
         background-color: rgba(255,255,255, .5);
         padding: 15px 0;
-    
+        @media screen and (max-width: 768px) {
+            font-size: 15px;
+            line-height: 19px;
+        }
     }
     &__link { 
         font-size: 13px;
@@ -1390,10 +1393,13 @@
         justify-content: center;
         table {
             border-collapse: separate;
-            border-spacing: 30px 25px;
+            border-spacing: 30px 20px;
+            @media screen and (max-width: 768px) {
+                border-spacing: 10px 15px;
+            }
         }
         tr {
-            height: 30px;
+            height: 25px;
         }
         &__label-td {
             text-align: right;
@@ -1403,6 +1409,10 @@
             color: #fff;
             font-size: 18px;
             line-height: 25px;
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+                line-height: 10px;
+            }
         }
         &__input {
             border: none;
@@ -1413,16 +1423,39 @@
         }
         &__text {
             width: 265px;
-            height: 75px;
+            height: 65px;
             padding: 15px;
             border: none;
             border-radius: 15px;
             resize: none;
+            @media screen and (max-width: 768px) {
+                width: 200px;
+            }
         }
         &__file {
             background-color: $orange;
             color: #fff;
         }
-        
+        &__btn {
+            background-color: $orange;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            display: block;
+            margin: 0 auto;
+            transition: all .3s;
+            &:hover {
+                background-color: $green;
+            }
+        }
+    }
+    .close-popup {
+        color: #000;
+        font-size: 40px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        cursor: pointer;
     }
 }

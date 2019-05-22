@@ -70,6 +70,9 @@ textarea {
 input {
   border: none; }
 
+:focus {
+  outline: none; }
+
 body {
   font-family: 'Open sans', sans-serif;
   color: #333; }
@@ -193,7 +196,7 @@ button {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 100%;
-    padding: 30px 0;
+    padding: 50px 0;
     transition: all .3s;
     transform-origin: top;
     transform: scaleY(0);
@@ -204,13 +207,54 @@ button {
     @media screen and (max-width: 768px) {
       .header .navigation .mobile-menu {
         display: block; } }
-    .header .navigation .mobile-menu__item {
-      margin-bottom: 15px; }
-    .header .navigation .mobile-menu__link {
+    .header .navigation .mobile-menu .dropdownlink {
+      cursor: pointer;
+      display: block;
+      padding: 15px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #ccc;
       color: #fff;
-      font-size: 24px; }
-      .header .navigation .mobile-menu__link:hover {
-        color: #009900; }
+      position: relative;
+      transition: all 0.4s ease-out; }
+      .header .navigation .mobile-menu .dropdownlink i {
+        position: absolute;
+        top: 12px;
+        left: 16px; }
+      .header .navigation .mobile-menu .dropdownlink .fa-chevron-down {
+        right: 30px;
+        left: auto;
+        width: 25px;
+        height: 25px;
+        background: url("../img/catalog/triangle.png") center center no-repeat; }
+    .header .navigation .mobile-menu .submenuItems {
+      display: none;
+      padding-bottom: 20px; }
+      .header .navigation .mobile-menu .submenuItems li {
+        position: relative; }
+      .header .navigation .mobile-menu .submenuItems .submenu3__title {
+        background-color: #009900;
+        font-size: 20px;
+        color: #ff9900;
+        font-weight: bold;
+        padding: 7px 0; }
+    .header .navigation .mobile-menu .submenuItems a {
+      display: block;
+      color: #fff;
+      padding: 22px 0;
+      transition: all 0.4s ease-out;
+      font-size: 20px; }
+      .header .navigation .mobile-menu .submenuItems a:hover {
+        background-color: #CDDC39;
+        color: #fff; }
+  .header .navigation .accordion-menu {
+    width: 100%; }
+  .header .navigation .accordion-menu li.open .dropdownlink {
+    color: #CDDC39;
+    background-color: #009900; }
+    .header .navigation .accordion-menu li.open .dropdownlink .fa-chevron-down {
+      transform: rotate(90deg); }
+  .header .navigation .accordion-menu li:last-child .dropdownlink {
+    border-bottom: 0; }
   .header .navigation .close-menu {
     font-size: 55px;
     color: #fff;
@@ -233,7 +277,7 @@ button {
 .submenu li {
   position: relative; }
 
-.submenu li a {
+.submenu a {
   color: #282828;
   font-size: 16px;
   background-color: #ff9900;
@@ -242,7 +286,7 @@ button {
   color: #fff;
   padding: 10px 0 10px 10px;
   position: relative; }
-  .submenu li a:hover {
+  .submenu a:hover {
     color: #009900; }
 
 .submenu li a.fa:hover::after {
@@ -1386,6 +1430,10 @@ nav li:hover > .submenu {
     line-height: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px 0; }
+    @media screen and (max-width: 768px) {
+      .popup__title {
+        font-size: 15px;
+        line-height: 19px; } }
   .popup__link {
     font-size: 13px;
     color: #000;
@@ -1401,9 +1449,12 @@ nav li:hover > .submenu {
     justify-content: center; }
     .popup .popup-form table {
       border-collapse: separate;
-      border-spacing: 30px 25px; }
+      border-spacing: 30px 20px; }
+      @media screen and (max-width: 768px) {
+        .popup .popup-form table {
+          border-spacing: 10px 15px; } }
     .popup .popup-form tr {
-      height: 30px; }
+      height: 25px; }
     .popup .popup-form__label-td {
       text-align: right; }
     .popup .popup-form__label {
@@ -1411,6 +1462,10 @@ nav li:hover > .submenu {
       color: #fff;
       font-size: 18px;
       line-height: 25px; }
+      @media screen and (max-width: 768px) {
+        .popup .popup-form__label {
+          font-size: 13px;
+          line-height: 10px; } }
     .popup .popup-form__input {
       border: none;
       border-radius: 15px;
@@ -1419,14 +1474,35 @@ nav li:hover > .submenu {
       padding: 0 15px; }
     .popup .popup-form__text {
       width: 265px;
-      height: 75px;
+      height: 65px;
       padding: 15px;
       border: none;
       border-radius: 15px;
       resize: none; }
+      @media screen and (max-width: 768px) {
+        .popup .popup-form__text {
+          width: 200px; } }
     .popup .popup-form__file {
       background-color: #ff9900;
       color: #fff; }
+    .popup .popup-form__btn {
+      background-color: #ff9900;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 15px;
+      display: block;
+      margin: 0 auto;
+      transition: all .3s; }
+      .popup .popup-form__btn:hover {
+        background-color: #009900; }
+  .popup .close-popup {
+    color: #000;
+    font-size: 40px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer; }
 
 .footer {
   background: url("../img/bg-footer.png") center center no-repeat;

@@ -96,7 +96,7 @@
             background-color: rgba(0,0,0,.9);
             text-align: center;
             width: 100%;
-            padding: 30px 0;
+            padding: 50px 0;
             transition: all .3s;
             transform-origin: top;
             transform: scaleY(0);
@@ -107,16 +107,73 @@
             @media screen and (max-width: 768px) {
                 display: block;
             }
-            &__item {
-                margin-bottom: 15px;
+            .dropdownlink {
+                cursor: pointer;
+                display: block;
+                padding: 15px 0;
+                font-size: 24px;
+                border-bottom: 1px solid #ccc;
+                color: #fff;
+                position: relative;
+                transition: all 0.4s ease-out;
+                i {
+                    position: absolute;
+                    top: 12px;
+                    left: 16px;
+                }
+                .fa-chevron-down {
+                    right: 30px;
+                    left: auto;
+                    width: 25px;
+                    height: 25px;
+                    background: url('../img/catalog/triangle.png') center center no-repeat;
+                }
             }
-            &__link {
-            color: #fff;
-            font-size: 24px;
-            &:hover {
-                color: $green;
-            } 
+              
+            .submenuItems {
+                display: none;
+                padding-bottom: 20px;
+                li {
+                    position: relative;
+                }
+                .submenu3 {
+                    &__title {
+                        background-color: $green;
+                        font-size: 20px;
+                        color: $orange;
+                        font-weight: bold;
+                        padding: 7px 0;
+                    }
+                }
             }
+            .submenuItems a {
+                display: block;
+                color: #fff;
+                padding: 22px 0;
+                transition: all 0.4s ease-out;
+                font-size: 20px;
+                &:hover {
+                  background-color: #CDDC39;
+                  color: #fff;
+                }
+            }
+        }
+        .accordion-menu {
+            width: 100%;
+        }
+
+        .accordion-menu li .dropdownlink {
+            
+        }
+        .accordion-menu li.open .dropdownlink {
+            color: #CDDC39;
+            background-color: $green;
+            .fa-chevron-down {
+              transform: rotate(90deg);
+            }
+        }
+        .accordion-menu li:last-child .dropdownlink {
+            border-bottom: 0;
         }
         .close-menu {
             font-size: 55px;
@@ -142,7 +199,7 @@
     transition: .3s linear;
 }
 .submenu li {position: relative;}
-.submenu li a {
+.submenu a  {
   color: #282828;
   font-size: 16px;
   background-color: $orange;
@@ -184,8 +241,11 @@
     transition: .3s linear;
 
 }
-nav li:hover > .submenu {
+
+nav li:hover > .submenu{
     transform: rotateX(0deg);
     visibility: visible;
     opacity: 1;
+    
 }
+

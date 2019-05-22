@@ -70,6 +70,9 @@ $(function() {
 // PopUP
 
 let popup1 = document.getElementById('popup1');
+let closePopup1 = document.getElementById('close-popup1');
+closePopup1.onclick = closePopUp;
+
 
 function openPopUp () {
 	popup1.style.transform = 'scale(1)';
@@ -85,6 +88,8 @@ $('#popup1').click(closePopUp);
 });
 
 let popup2 = document.getElementById('popup2');
+let closePopup2 = document.getElementById('close-popup2');
+closePopup2.onclick = closePopUp2;
 
 function openPopUp2 () {
 	popup2.style.transform = 'scale(1)';
@@ -99,5 +104,9 @@ $('#popup2').click(closePopUp2);
         e.stopPropagation();
 });
 
+// Menu 
 
+// $('nav li').on('click', function() {
+//     $('nav li > .submenu').css('transform', 'rotateX(0deg)').css('visibility','visible').css('opacity','1');
+// })
 

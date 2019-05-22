@@ -41,9 +41,11 @@
 							</td>
 						</tr>
 					</table>
+					<button class="popup-form__btn">Отправить</button>
 				</form>
 			</div>
 			<a href="#" class="popup__link">Пользовательское соглашение</a>
+			<span id="close-popup1" class="close-popup">&#215;</span>
 		</div>
 	</div>	
 
@@ -92,9 +94,11 @@
 							</td>
 						</tr>
 					</table>
+					<button class="popup-form__btn">Отправить</button>
 				</form>
 			</div>
 			<a href="#" class="popup__link">Пользовательское соглашение</a>
+			<span id="close-popup2" class="close-popup">&#215;</span>
 		</div>
 	</div>
 
@@ -145,15 +149,154 @@
 				</ul>
 
 				<span id="open-menu" class="open-menu">&#8801;</span>
-				<ul id="mobile-menu" class="mobile-menu">
-					<li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
-					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
-					<li class="mobile-menu__item"><a href="articles.html" class="mobile-menu__link">Новости</a></li>
-					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Отзывы</a></li>
-					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Оплата и доставка</a></li>
-					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+				<ul id="mobile-menu" class="mobile-menu accordion-menu">
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Обезьяны
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="yavanskaya.html">Яванская макака</a></li>
+							<li><a href="#">Яванская макака</a></li>
+							<li><a href="#">Яванская макака</a></li>
+							<li><a href="#">Яванская макака</a></li>
+							<li><a href="#">Яванская макака</a></li>
+							<li><a href="#">Яванская макака</a></li>
+							<li><a href="catalog.html">Все обезьяны</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Попугаи
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Попугай 1</a></li>
+							<li><a href="#">Попугай 2</a></li>
+							<li><a href="#">Все попугаи</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Птицы
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Птица 1</a></li>
+							<li><a href="#">Птица 2</a></li>
+							<li><a href="#">Все птицы</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Кошачьи
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li>
+								<ul class="submenu3">
+									<div class="submenu3__title">Тигры</div>
+									<li><a href="">Тигр 1</a></li>
+									<li><a href="">Тигр 2</a></li>
+									<li><a href="">Все тигры</a></li>
+									<div class="submenu3__title">Рыси</div>
+									<li><a href="">Рысь 1</a></li>
+									<li><a href="">Рысь 2</a></li>
+									<li><a href="">Все рыси</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Псовые
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li>
+								<ul class="submenu3">
+									<div class="submenu3__title">Волки</div>
+									<li><a href="">Серый волк</a></li>
+									<li><a href="">Канадский волк</a></li>
+									<li><a href="">Все волки</a></li>
+									<div class="submenu3__title">Лисы</div>
+									<li><a href="">Лиса 1</a></li>
+									<li><a href="">Лиса 2</a></li>
+									<li><a href="">Все лисы</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Копытные
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li>
+								<ul class="submenu3">
+									<div class="submenu3__title">Копытные 1</div>
+									<li><a href="">Копытные 1</a></li>
+									<li><a href="">Копытные 2</a></li>
+									<li><a href="">Все копытные</a></li>
+									<div class="submenu3__title">Копытные 2</div>
+									<li><a href="">Копытные 1</a></li>
+									<li><a href="">Копытные 1</a></li>
+									<li><a href="">Все копытные</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> О нас
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Action book 1</a></li>
+							<li><a href="#">Action book 2</a></li>
+							<li><a href="#">Action book 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Новости
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Action book 1</a></li>
+							<li><a href="#">Action book 2</a></li>
+							<li><a href="#">Action book 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Отзывы
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Action book 1</a></li>
+							<li><a href="#">Action book 2</a></li>
+							<li><a href="#">Action book 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Оплата и доставка
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Action book 1</a></li>
+							<li><a href="#">Action book 2</a></li>
+							<li><a href="#">Action book 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> Контакты
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<ul class="submenuItems">
+							<li><a href="#">Action book 1</a></li>
+							<li><a href="#">Action book 2</a></li>
+							<li><a href="#">Action book 3</a></li>
+						</ul>
+					</li>
+					
 					<li id="close-menu" class="close-menu">&#215;</li>
 				</ul>
+
 			</nav>
 			
 		</header>

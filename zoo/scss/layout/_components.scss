@@ -46,6 +46,9 @@ input {
     border: none;
 }
 
+:focus {
+    outline: none;
+}
 
 body {
     font-family: 'Open sans', sans-serif;
