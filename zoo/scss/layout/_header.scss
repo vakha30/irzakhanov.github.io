@@ -129,6 +129,28 @@
                     background: url('../img/catalog/triangle.png') center center no-repeat;
                 }
             }
+            .dropdownlink2 {
+                cursor: pointer;
+                display: block;
+                padding: 15px 0;
+                font-size: 24px;
+                border-bottom: 1px solid #ccc;
+                color: #CDDC39;
+                position: relative;
+                transition: all 0.4s ease-out;
+                i {
+                    position: absolute;
+                    top: 12px;
+                    left: 16px;
+                }
+                .fa-chevron-down {
+                    right: 30px;
+                    left: auto;
+                    width: 25px;
+                    height: 25px;
+                    background: url('../img/catalog/triangle.png') center center no-repeat;
+                }
+            }
               
             .submenuItems {
                 display: none;
@@ -136,19 +158,29 @@
                 li {
                     position: relative;
                 }
-                .submenu3 {
-                    &__title {
-                        background-color: $green;
-                        font-size: 20px;
-                        color: $orange;
-                        font-weight: bold;
-                        padding: 7px 0;
-                    }
+            }
+            .submenuItems2 {
+                display: none;
+                padding-bottom: 20px;
+                li {
+                    position: relative;
                 }
             }
+
             .submenuItems a {
                 display: block;
-                color: #fff;
+                color: #CDDC39;
+                padding: 22px 0;
+                transition: all 0.4s ease-out;
+                font-size: 20px;
+                &:hover {
+                  background-color: #CDDC39;
+                  color: #fff;
+                }
+            }
+            .submenuItems2 a {
+                display: block;
+                color: #CDDC39;
                 padding: 22px 0;
                 transition: all 0.4s ease-out;
                 font-size: 20px;
@@ -159,6 +191,9 @@
             }
         }
         .accordion-menu {
+            width: 100%;
+        }
+        .accordion-menu2 {
             width: 100%;
         }
 
@@ -172,8 +207,18 @@
               transform: rotate(90deg);
             }
         }
+        .accordion-menu2 li.open .dropdownlink2 {
+            color: #CDDC39;
+            background-color: $green;
+            .fa-chevron-down {
+              transform: rotate(90deg);
+            }
+        }
         .accordion-menu li:last-child .dropdownlink {
             border-bottom: 0;
+        }
+        .accordion-menu2 li:last-child .dropdownlink2 {
+            border-bottom: 1px solid #ccc;
         }
         .close-menu {
             font-size: 55px;

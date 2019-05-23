@@ -226,35 +226,71 @@ button {
         width: 25px;
         height: 25px;
         background: url("../img/catalog/triangle.png") center center no-repeat; }
+    .header .navigation .mobile-menu .dropdownlink2 {
+      cursor: pointer;
+      display: block;
+      padding: 15px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #ccc;
+      color: #CDDC39;
+      position: relative;
+      transition: all 0.4s ease-out; }
+      .header .navigation .mobile-menu .dropdownlink2 i {
+        position: absolute;
+        top: 12px;
+        left: 16px; }
+      .header .navigation .mobile-menu .dropdownlink2 .fa-chevron-down {
+        right: 30px;
+        left: auto;
+        width: 25px;
+        height: 25px;
+        background: url("../img/catalog/triangle.png") center center no-repeat; }
     .header .navigation .mobile-menu .submenuItems {
       display: none;
       padding-bottom: 20px; }
       .header .navigation .mobile-menu .submenuItems li {
         position: relative; }
-      .header .navigation .mobile-menu .submenuItems .submenu3__title {
-        background-color: #009900;
-        font-size: 20px;
-        color: #ff9900;
-        font-weight: bold;
-        padding: 7px 0; }
+    .header .navigation .mobile-menu .submenuItems2 {
+      display: none;
+      padding-bottom: 20px; }
+      .header .navigation .mobile-menu .submenuItems2 li {
+        position: relative; }
     .header .navigation .mobile-menu .submenuItems a {
       display: block;
-      color: #fff;
+      color: #CDDC39;
       padding: 22px 0;
       transition: all 0.4s ease-out;
       font-size: 20px; }
       .header .navigation .mobile-menu .submenuItems a:hover {
         background-color: #CDDC39;
         color: #fff; }
+    .header .navigation .mobile-menu .submenuItems2 a {
+      display: block;
+      color: #CDDC39;
+      padding: 22px 0;
+      transition: all 0.4s ease-out;
+      font-size: 20px; }
+      .header .navigation .mobile-menu .submenuItems2 a:hover {
+        background-color: #CDDC39;
+        color: #fff; }
   .header .navigation .accordion-menu {
+    width: 100%; }
+  .header .navigation .accordion-menu2 {
     width: 100%; }
   .header .navigation .accordion-menu li.open .dropdownlink {
     color: #CDDC39;
     background-color: #009900; }
     .header .navigation .accordion-menu li.open .dropdownlink .fa-chevron-down {
       transform: rotate(90deg); }
+  .header .navigation .accordion-menu2 li.open .dropdownlink2 {
+    color: #CDDC39;
+    background-color: #009900; }
+    .header .navigation .accordion-menu2 li.open .dropdownlink2 .fa-chevron-down {
+      transform: rotate(90deg); }
   .header .navigation .accordion-menu li:last-child .dropdownlink {
     border-bottom: 0; }
+  .header .navigation .accordion-menu2 li:last-child .dropdownlink2 {
+    border-bottom: 1px solid #ccc; }
   .header .navigation .close-menu {
     font-size: 55px;
     color: #fff;

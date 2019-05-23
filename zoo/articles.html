@@ -21,14 +21,14 @@
 					специалист свяжется с вами
 			</h2>
 			<div class="popup-form">
-				<form action="#" method="POST">
+				<form action="send.php" method="POST">
 					<table>
 						<tr class="input-wrap">
 							<td class="popup-form__label-td">
 								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
 							</td>
 							<td>
-								<input class="popup-form__input" type="text">
+								<input class="popup-form__input" type="text" name="name">
 							</td>
 						</tr>
 						<tr class="input-wrap">
@@ -36,11 +36,11 @@
 								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
 							</td>
 							<td>
-								<input class="popup-form__input" type="text">
+								<input class="popup-form__input" type="text" name="phone">
 							</td>
 						</tr>
 					</table>
-					<button class="popup-form__btn">Отправить</button>
+					<input type="submit" class="popup-form__btn" name="otprav">
 				</form>
 			</div>
 			<a href="#" class="popup__link">Пользовательское соглашение</a>
@@ -58,14 +58,14 @@
 					специалист свяжется с вами
 			</h2>
 			<div class="popup-form">
-				<form action="#" method="POST">
+				<form action="send.php" method="POST">
 					<table>
 						<tr class="input-wrap">
 							<td class="popup-form__label-td">
 								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
 							</td>
 							<td>
-								<input class="popup-form__input" type="text">
+								<input class="popup-form__input" type="text" name="name">
 							</td>
 						</tr>
 						<tr class="input-wrap">
@@ -73,7 +73,7 @@
 								<label class="popup-form__label shadow--black" for="">Ваш телефон</label>
 							</td>
 							<td>
-								<input class="popup-form__input" type="text">
+								<input class="popup-form__input" type="text" name="number">
 							</td>
 						</tr>
 						<tr class="input-wrap">
@@ -81,7 +81,7 @@
 								<label class="popup-form__label shadow--black" for="">Какое животное<br>вам инетресно?</label>
 							</td>
 							<td>
-								<textarea class="popup-form__text" name="" id=""></textarea>
+								<textarea class="popup-form__text" name="" id="" name="message"></textarea>
 							</td>
 						</tr>
 						<tr class="input-wrap">
@@ -93,7 +93,7 @@
 							</td>
 						</tr>
 					</table>
-					<button class="popup-form__btn">Отправить</button>
+					<input type="submit" class="popup-form__btn" name="otprav">
 				</form>
 			</div>
 			<a href="#" class="popup__link">Пользовательское соглашение</a>
@@ -189,17 +189,30 @@
 						</div>
 						<ul class="submenuItems">
 							<li>
-								<ul class="submenu3">
-									<div class="submenu3__title">Тигры</div>
-									<li><a href="">Тигр 1</a></li>
-									<li><a href="">Тигр 2</a></li>
-									<li><a href="">Все тигры</a></li>
-									<div class="submenu3__title">Рыси</div>
-									<li><a href="">Рысь 1</a></li>
-									<li><a href="">Рысь 2</a></li>
-									<li><a href="">Все рыси</a></li>
+								<ul class="accordion-menu2">
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Тигры
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Тигр 1</a></li>
+											<li><a href="#">Тигр 2</a></li>
+											<li><a href="#">Все тигры</a></li>
+										</ul>
+									</li>
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Рыси
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Рысь 1</a></li>
+											<li><a href="#">Рысь 2</a></li>
+											<li><a href="#">Все рыси</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
+						
 						</ul>
 					</li>
 					<li>
@@ -208,17 +221,30 @@
 						</div>
 						<ul class="submenuItems">
 							<li>
-								<ul class="submenu3">
-									<div class="submenu3__title">Волки</div>
-									<li><a href="">Серый волк</a></li>
-									<li><a href="">Канадский волк</a></li>
-									<li><a href="">Все волки</a></li>
-									<div class="submenu3__title">Лисы</div>
-									<li><a href="">Лиса 1</a></li>
-									<li><a href="">Лиса 2</a></li>
-									<li><a href="">Все лисы</a></li>
+								<ul class="accordion-menu2">
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Волки
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Серый волк</a></li>
+											<li><a href="#">Канадский волк</a></li>
+											<li><a href="#">Все волки</a></li>
+										</ul>
+									</li>
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Лисы
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Лиса 1</a></li>
+											<li><a href="#">Лиса 2</a></li>
+											<li><a href="#">Все лисы</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
+							
 						</ul>
 					</li>
 					<li>
@@ -227,20 +253,31 @@
 						</div>
 						<ul class="submenuItems">
 							<li>
-								<ul class="submenu3">
-									<div class="submenu3__title">Копытные 1</div>
-									<li><a href="">Копытные 1</a></li>
-									<li><a href="">Копытные 2</a></li>
-									<li><a href="">Все копытные</a></li>
-									<div class="submenu3__title">Копытные 2</div>
-									<li><a href="">Копытные 1</a></li>
-									<li><a href="">Копытные 1</a></li>
-									<li><a href="">Все копытные</a></li>
+								<ul class="accordion-menu2">
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Копытные 1
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Копытные 1</a></li>
+											<li><a href="#">Копытные 2</a></li>
+											<li><a href="#">Все копытные</a></li>
+										</ul>
+									</li>
+									<li>
+										<div class="dropdownlink2"><i class="fa fa-line" aria-hidden="true"></i> Копытные 2
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</div>
+										<ul class="submenuItems2">
+											<li><a href="#">Копытные 1</a></li>
+											<li><a href="#">Копытные 2</a></li>
+											<li><a href="#">Все копытные</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-
 
 					<li>
 						<div class="dropdownlink"><i class="fa fa-line" aria-hidden="true"></i> О нас
@@ -295,6 +332,7 @@
 					
 					<li id="close-menu" class="close-menu">&#215;</li>
 				</ul>
+					
 
 			</nav>
 			
