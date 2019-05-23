@@ -1592,19 +1592,19 @@ nav li:hover > .submenu {
     color: #fff; }
     .footer .footer-contacts__link:hover {
       color: #48946c; }
-  .footer .footer-socials {
+  .footer .footer-socials .social {
     display: flex;
     position: absolute;
     bottom: 30px;
     left: calc(50% - 130px); }
     @media screen and (max-width: 768px) {
-      .footer .footer-socials {
+      .footer .footer-socials .social {
         position: static;
         padding-top: 25px;
         display: block; } }
-    .footer .footer-socials__link {
+    .footer .footer-socials .social .footer-socials__link {
       margin: 0 15px; }
-      .footer .footer-socials__link:hover {
+      .footer .footer-socials .social .footer-socials__link:hover {
         transform: translateY(-7px); }
 
 /*# sourceMappingURL=style.css.map */
