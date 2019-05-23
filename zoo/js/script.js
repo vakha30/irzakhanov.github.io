@@ -133,9 +133,22 @@ $('#popup2').click(closePopUp2);
         e.stopPropagation();
 });
 
-// Menu 
+// Video 
 
-// $('nav li').on('click', function() {
-//     $('nav li > .submenu').css('transform', 'rotateX(0deg)').css('visibility','visible').css('opacity','1');
-// })
+var vids = $("video"); 
+$.each(vids, function(){
+       this.controls = false;
+}); 
+//Loop though all Video tags and set Controls as false
+
+$("video").click(function() {
+    this.controls = true;
+    this.paused();
+  //console.log(this); 
+  if (this.paused) {
+    this.play();
+  } else {
+    this.pause();
+  }
+});
 
