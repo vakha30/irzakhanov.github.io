@@ -1,0 +1,40 @@
+.included-section {
+    background-color: #f3f3f3;
+    color: #666;
+    font-weight: 300;
+    padding: 51px 0;
+    .included-title {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 80px;
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+    .included-wrap {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+    .included-item {
+        text-align: center;
+        width: 15%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+        &__img {
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+            }
+        }
+        &__name {
+            font-size: 24px;
+        }
+    }
+}

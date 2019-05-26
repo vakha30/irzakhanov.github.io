@@ -1,0 +1,31 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, button {
+	border: none;
+	background: none;
+}
+input {
+	background-color: #fff;
+}
+button {
+	transition: all .2s;
+}
