@@ -298,7 +298,8 @@ button[type="button"] {
     width: 77%; }
     @media screen and (max-width: 768px) {
       .main-catalog .catalog-content {
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
   .main-catalog .catalog {
     display: -webkit-box;
     display: -ms-flexbox;
