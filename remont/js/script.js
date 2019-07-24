@@ -22,7 +22,8 @@ window.onload = function () {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false
+                    arrows: false,
+                    dots: true
                 }
             }]
     });
@@ -37,6 +38,22 @@ window.onload = function () {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
+                }
+            }]
+    });
+
+    // Слайдер отзывов
+    $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    dots: true
                 }
             }]
     });

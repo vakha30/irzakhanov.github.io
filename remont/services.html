@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ремонт</title>
+	<title>Услуги</title>
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="service-page">
 	<div class="wrapper">
 		<header class="header">
 			<div class="head">
@@ -24,9 +24,10 @@
 			</div>
 			<nav class="navigation">
 				<ul class="nav-menu">
-					<li class="nav-menu__item"><a href="index.html" class="nav-menu__link active-link">Главная</a></li>
+					<li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Главная</a></li>
 					<li class="nav-menu__item"><a href="about.html" class="nav-menu__link">О нас</a></li>
-					<li class="nav-menu__item"><a href="services.html" class="nav-menu__link">Услуги</a></li>
+					<li class="nav-menu__item"><a href="services.html" class="nav-menu__link active-link">Услуги</a>
+					</li>
 					<li class="nav-menu__item"><a href="price.html" class="nav-menu__link">Цены</a></li>
 					<li class="nav-menu__item"><a href="works.html" class="nav-menu__link">Наши работы</a></li>
 					<li class="nav-menu__item"><a href="dostavka.html" class="nav-menu__link">Доставка</a></li>
@@ -35,9 +36,11 @@
 				</ul>
 
 				<ul class="mobile-menu">
-					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link active-link">Главная</a></li>
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a>
+					</li>
 					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
-					<li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+					<li class="mobile-menu__item"><a href="services.html"
+							class="mobile-menu__link active-link">Услуги</a></li>
 					<li class="mobile-menu__item"><a href="price.html" class="mobile-menu__link">Цены</a></li>
 					<li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">Наши работы</a></li>
 					<li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
@@ -50,66 +53,11 @@
 			</nav>
 		</header>
 		<main>
-			<section class="home-section">
-				<div class="container">
-					<div class="home">
-						<h1 class="home__title">Ремонт и реставрация мебели</h1>
-						<div class="home__region">В москве и МО</div>
-						<div class="home__info">
-							<img class="home__info-img" src="img/warranty.png" alt="">
-							<p class="home__info-text">Гарантия <br> 2 года</p>
-						</div>
-						<div class="home__info">
-							<img class="home__info-img" src="img/work.png" alt="">
-							<p class="home__info-text">Работаем без предоплаты</p>
-						</div>
-						<a href="#" class="my-btn home__link">Узнать подробнее</a>
-					</div>
-				</div>
-			</section>
-			<section class="repair-section">
-				<div class="container">
-					<div class="repair-wrap">
-						<div class="repair-info">
-							<h2 class="repair-info__title section-title">
-								Ремонтируем то, что вам дорого
-							</h2>
-							<p class="repair-info__text">
-								Вы экономите до 60% бюджета благодаря ремонту
-								и реставрации любимой мебели
-							</p>
-							<div class="repair-service">
-								<div class="repair-srvice__img">
-									<img src="img/repair.png" alt="">
-								</div>
-								<div class="repair-service__item-wrap">
-									<p class="repair-service__item">Бесплатный проект кухни</p>
-									<p class="repair-service__item">Бесплатный замер</p>
-									<p class="repair-service__item">Собственное производство</p>
-								</div>
-							</div>
-						</div>
-						<div class="repair-form-wrap">
-							<div class="repair-form">
-								<h4 class="repair-form__title">Вызов замерщика</h4>
-								<p class="repair-form__subtitle">
-									Оставьте заявку и мы перезвоним
-									вам через 5 минут
-								</p>
-								<form action="#">
-									<input type="text" class="repair-form__input">
-									<input type="text" class="repair-form__input">
-									<button type="button" class="repair-form__btn">Оставить заявку</button>
-								</form>
-								<p class="repair-form__consent">
-									Отправляя форму, вы даете <a href="#">согласие</a>
-									на обработку персональных данных
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<ul class="links-block">
+				<li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+				<li class="links-block__item"><a href="about.html" class="links-block__link">Услуги</a>
+				</li>
+			</ul>
 			<section class="service-section">
 				<div class="container">
 					<h2 class="section-title">Наши услуги</h2>
@@ -246,7 +194,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="services.html" class="my-btn service__btn">Все услуги</a>
+						<a href="#" class="my-btn service__btn">Показать еще</a>
 					</div>
 				</div>
 			</section>
@@ -305,119 +253,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="who-section">
-				<div class="container">
-					<h2 class="section-title who-title">
-						Как мы работаем?
-					</h2>
-					<div class="who">
-						<div class="who-item">
-							<span class="who-item__number">1</span>
-							<div class="who-item__img">
-								<img src="img/who-item1.png" alt="">
-							</div>
-							<p class="who-item__title">
-								Вывоз замерщика
-							</p>
-						</div>
-						<div class="who-item">
-							<span class="who-item__number">2</span>
-							<div class="who-item__img">
-								<img src="img/who-item2.png" alt="">
-							</div>
-							<p class="who-item__title">
-								Составление сметы
-							</p>
-						</div>
-						<div class="who-item">
-							<span class="who-item__number">3</span>
-							<div class="who-item__img">
-								<img src="img/who-item3.png" alt="">
-							</div>
-							<p class="who-item__title">
-								Ремонт мебели
-							</p>
-						</div>
-						<div class="who-item">
-							<span class="who-item__number">4</span>
-							<div class="who-item__img">
-								<img src="img/who-item4.png" alt="">
-							</div>
-							<p class="who-item__title">
-								Доставка и оплата
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="assessment-section">
-				<div class="assessment-top">
-					<div class="container">
-						<h2 class="assessment-title">Быстрая оценка ремонта</h2>
-						<div class="assessment-wrap">
-							<div class="assessment-info">
-								<div class="assessment-info__text">
-									Получите расчет сметы бесплатно уже сегодня!<br>
-									Получите качественный ремонт мебели:
-								</div>
-								<div class="assessment-info__item-wrap">
-									<div>
-										<p class="assessment-info__item">Только качественные матириалы</p>
-										<p class="assessment-info__item">Гарантия 2 года</p>
-										<p class="assessment-info__item">Не требуем предоплаты</p>
-									</div>
-								</div>
-							</div>
-							<div class="assessment-form">
-								<form action="#">
-									<div class="assessment-form-wrap">
-										<div class="assessment-form__input-wrap">
-											<div class="assessment-form__input assessment-form__input-name">
-												<input type="text" name="text" placeholder="Ваше имя">
-											</div>
-											<div class="assessment-form__input assessment-form__input-phone">
-												<input type="text" name="phone" placeholder="Ваш телефон">
-											</div>
 
-											<div class="assessment-form__input assessment-form__input-email">
-												<input type="email" name="e-mail" placeholder="Ваш e-mail">
-											</div>
-										</div>
-										<div class="assessment-form__textarea-wrap">
-											<div class="assessment-form__input assessment-form__input-text">
-												<textarea name="text" placeholder="Ваше сообщение, формата:
-													1. Что ремонтаруем: столешница, кухонная фурнитура
-													2. Габариты, мм"></textarea>
-											</div>
-										</div>
-									</div>
-									<button class="assessment-form__input-btn">Получить оценку</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<footer class="assessment-footer">
-					<div class="container">
-						<div class="assessment-footer-wrap">
-							<div class="assessment-footer__text-wrap">
-								<h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
-								<p class="assessment-footer__subtitle">Получите оценку в один клик</p>
-							</div>
-							<div class="assessment-footer__form">
-								<form action="se.php" method="POST">
-									<div class="assessment-footer__form-wrap">
-										<div class="assessment-footer__input-wrap">
-											<input class="assessment-footer__input" type="text" placeholder="Ваше имя">
-										</div>
-										<button class="assessment-footer__btn">оценка в 1 клик</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</footer>
-			</section>
 			<section class="provide-section">
 				<div class="container">
 					<h2 class="section-title provide-title">Мы предоставляем</h2>
