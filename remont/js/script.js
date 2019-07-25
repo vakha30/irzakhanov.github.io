@@ -1,5 +1,4 @@
-window.onload = function () {
-    let btn = document.querySelector('.btn');
+let btn = document.querySelector('.btn');
     let menu = document.querySelector('.mobile-menu');
 
     btn.addEventListener('click', function () {
@@ -57,4 +56,21 @@ window.onload = function () {
                 }
             }]
     });
+
+let popup1 = document.getElementById('popup1');
+let closePopup1 = document.getElementById('close-popup1');
+closePopup1.onclick = closePopUp;
+
+
+function openPopUp() {
+    popup1.style.transform = 'scale(1)';
 }
+
+function closePopUp() {
+    popup1.style.transform = 'scale(0)';
+}
+
+$('#popup1').click(closePopUp);
+$("#popup1 div").click(function (e) {
+    e.stopPropagation();
+});

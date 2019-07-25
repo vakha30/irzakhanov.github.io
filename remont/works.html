@@ -12,6 +12,46 @@
 </head>
 
 <body>
+	<div class="body-bg"></div>
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"></a>
+			</div>
+			<h2 class="popup__title">
+				Оставьте ваши контактные данные и наш<br>
+				специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="send.php" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="name">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+					<input type="submit" class="popup-form__btn" name="otprav">
+				</form>
+			</div>
+			<div class="popup__soglashenie">
+				Отправляя форму, вы даете <a href="#">согласие</a><br>
+				на обработку персональных данных
+			</div>
+			<span id="close-popup1" class="close-popup">&#215;</span>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="head">
@@ -20,8 +60,9 @@
 				</div>
 				<p class="head__info">Фабрика по изготовлению, ремонту<br>
 					и реставрации мебели</p>
-				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br><span class="head__phone">8 800 777 77 77</span></p>
-				<a href="#" class="head__link">Получить консультацию</a>
+				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br><a href="tel:88007777777" class="head__phone">8 800 777
+						77 77</a></p>
+				<a href="javascript:openPopUp()" class="head__link">Получить консультацию</a>
 			</div>
 			<nav class="navigation">
 				<ul class="nav-menu">

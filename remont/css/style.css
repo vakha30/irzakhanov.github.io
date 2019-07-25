@@ -231,7 +231,8 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 15px 0;
-  border-bottom: 4px solid #e8e8e8; }
+  border-bottom: 4px solid #e8e8e8;
+  background-color: #fff; }
   .links-block__item {
     margin: 0 50px;
     position: relative; }
@@ -264,6 +265,18 @@ button {
 
 .hide {
   display: none !important; }
+
+.body-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/bg-body.jpg") center top no-repeat;
+  background-size: cover;
+  z-index: -11; }
 
 .header .head {
   background-color: #282828;
@@ -313,7 +326,8 @@ button {
         margin: 0 auto;
         margin-bottom: 30px; } }
   .header .head__phone {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #fff; }
   .header .head__link {
     font-size: 16px;
     background-color: #009900;
@@ -461,9 +475,19 @@ button {
 .home-section {
   background: url("../img/bg1.jpg") top left no-repeat;
   background-size: cover;
-  border-bottom: 4px solid #e8e8e8; }
+  border-bottom: 4px solid #e8e8e8;
+  position: relative; }
+  .home-section .home-img {
+    position: absolute;
+    top: 50%;
+    left: 404px;
+    -webkit-transform: translateY(-44%);
+    -ms-transform: translateY(-44%);
+    transform: translateY(-44%); }
   .home-section .home {
-    padding: 66px 68px 56px; }
+    padding: 66px 68px 56px;
+    position: relative;
+    z-index: 55; }
     @media screen and (max-width: 768px) {
       .home-section .home {
         padding: 30px;
@@ -668,7 +692,8 @@ button {
 
 .service-section {
   padding-top: 32px;
-  padding-bottom: 31px; }
+  padding-bottom: 31px;
+  background-color: #fff; }
   @media screen and (max-width: 768px) {
     .service-section {
       padding-bottom: 80px; } }
@@ -879,7 +904,8 @@ button {
     margin: 0 auto; }
 
 .who-section {
-  padding: 54px 0 24px; }
+  padding: 54px 0 24px;
+  background-color: #fff; }
   .who-section .who-title {
     margin-left: 66px;
     margin-bottom: 135px;
@@ -1225,8 +1251,7 @@ button {
   background-size: cover;
   padding: 56px 0 27px;
   position: relative;
-  border-bottom: 4px solid #e8e8e8;
-  z-index: -2; }
+  border-bottom: 4px solid #e8e8e8; }
   .provide-section::after {
     content: "";
     width: 380px;
@@ -1234,8 +1259,7 @@ button {
     background: url("../img/provide-img.png") center no-repeat;
     position: absolute;
     bottom: -6px;
-    right: 6px;
-    z-index: -1; }
+    right: 6px; }
   .provide-section .container {
     padding-left: 82px; }
     @media screen and (max-width: 768px) {
@@ -1271,7 +1295,9 @@ button {
     align-items: center;
     padding: 0 20px;
     margin-right: 31px;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 22; }
     @media screen and (max-width: 768px) {
       .provide-section .provide-item {
         width: 100%;
@@ -1349,7 +1375,8 @@ button {
     margin-right: 25px; }
 
 .about-section {
-  padding: 40px 0 30px; }
+  padding: 40px 0 30px;
+  background-color: #fff; }
   @media screen and (max-width: 768px) {
     .about-section {
       padding-bottom: 90px; } }
@@ -1402,7 +1429,8 @@ button {
     right: 17px; }
 
 .price-section {
-  padding: 41px 0 19px; }
+  padding: 41px 0 19px;
+  background-color: #fff; }
   .price-section .section-title {
     margin-bottom: 110px;
     margin-left: 90px; }
@@ -1537,7 +1565,8 @@ button {
         color: #fff; }
 
 .dostavka-section {
-  padding: 40px 0 30px; }
+  padding: 40px 0 30px;
+  background-color: #fff; }
   @media screen and (max-width: 768px) {
     .dostavka-section {
       padding-bottom: 90px; } }
@@ -1575,7 +1604,8 @@ button {
           line-height: 35px; } }
 
 .contacts-section {
-  padding: 35px 0 16px; }
+  padding: 35px 0 16px;
+  background-color: #fff; }
   @media screen and (max-width: 768px) {
     .contacts-section {
       padding-bottom: 60px; } }
@@ -1606,7 +1636,8 @@ button {
         color: #3d3e42; }
 
 .map-section {
-  border-bottom: 4px solid #e8e8e8; }
+  border-bottom: 4px solid #e8e8e8;
+  background-color: #fff; }
   .map-section .map {
     min-height: 448px;
     font-size: 101px;
@@ -1626,7 +1657,8 @@ button {
 
 .one-service-section {
   padding: 46px 0 46px;
-  border-bottom: 4px solid #e8e8e8; }
+  border-bottom: 4px solid #e8e8e8;
+  background-color: #fff; }
   .one-service-section .service-info {
     padding: 15px 42px 15px 79px; }
     @media screen and (max-width: 768px) {
@@ -1666,7 +1698,8 @@ button {
   padding: 13px 0;
   border-bottom: 4px solid #e8e8e8;
   border-top: 4px solid #e8e8e8;
-  min-height: 340px; }
+  min-height: 340px;
+  background-color: #fff; }
   .one-price-section .one-price-title {
     font-size: 50px;
     width: 253px;
@@ -1707,11 +1740,11 @@ button {
     padding: 60px 0;
     position: relative; }
     .reviews-section .reviews::after {
-      content: '';
+      content: "";
       width: 513px;
       height: 236px;
       background-color: #ff9900;
-      opacity: .1;
+      opacity: 0.1;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1879,6 +1912,136 @@ button {
         top: 8px; }
       .blog-section .blog-item__info:after {
         bottom: 6px; }
+
+.popup-wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#popup1 {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+.popup {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 500px;
+  height: 430px;
+  background: url("../img/bg-popup.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden; }
+  .popup__logo {
+    padding: 35px 0; }
+    .popup__logo a {
+      display: block;
+      width: 150px;
+      height: 60px;
+      background-color: #fff;
+      margin: 0 auto;
+      position: relative; }
+      .popup__logo a::before, .popup__logo a::after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%; }
+      .popup__logo a::before {
+        left: -80px; }
+      .popup__logo a::after {
+        right: -80px; }
+  .popup__title {
+    font-size: 19px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 0;
+    color: #3d3e42; }
+    @media screen and (max-width: 768px) {
+      .popup__title {
+        font-size: 15px;
+        line-height: 19px; } }
+  .popup__soglashenie {
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff9900;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 20px;
+    padding: 5px 0; }
+  .popup .popup-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .popup .popup-form table {
+      border-collapse: separate;
+      border-spacing: 30px 20px; }
+      @media screen and (max-width: 768px) {
+        .popup .popup-form table {
+          border-spacing: 10px 15px; } }
+    .popup .popup-form tr {
+      height: 25px; }
+    .popup .popup-form__label-td {
+      text-align: right; }
+    .popup .popup-form__label {
+      color: #000;
+      font-size: 16px;
+      line-height: 25px; }
+      @media screen and (max-width: 768px) {
+        .popup .popup-form__label {
+          font-size: 13px;
+          line-height: 10px; } }
+    .popup .popup-form__input {
+      border: none;
+      border-radius: 11px;
+      width: 158px;
+      height: 30px;
+      padding: 0 15px; }
+    .popup .popup-form__btn {
+      background-color: #46a746;
+      color: #fff;
+      border: none;
+      border-radius: 11px;
+      padding: 8px 35px;
+      display: block;
+      margin: 0 auto;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .popup .popup-form__btn:hover {
+        background-color: #ff9900; }
+  .popup .close-popup {
+    color: #000;
+    font-size: 40px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer; }
 
 .footer {
   background-color: #282828;
