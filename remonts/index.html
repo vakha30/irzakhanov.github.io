@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ремонт</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="body-bg"></div>
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"></a>
+			</div>
+			<h2 class="popup__title">
+				Оставьте ваши контактные данные и наш<br>
+				специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="send.php" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="name">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+					<input type="submit" class="popup-form__btn" name="otprav">
+				</form>
+			</div>
+			<div class="popup__soglashenie">
+				Отправляя форму, вы даете <a href="#">согласие</a><br>
+				на обработку персональных данных
+			</div>
+			<span id="close-popup1" class="close-popup">&#215;</span>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="head">
+				<div class="head__logo">
+					<a href="index.html"></a>
+				</div>
+				<p class="head__info">Фабрика по изготовлению, ремонту<br>
+					и реставрации мебели</p>
+				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br><a href="tel:88007777777" class="head__phone">8 800 777
+						77 77</a></p>
+				<a href="javascript:openPopUp()" class="head__link">Получить консультацию</a>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-menu">
+					<li class="nav-menu__item"><a href="index.html" class="nav-menu__link active-link">Главная</a></li>
+					<li class="nav-menu__item"><a href="about.html" class="nav-menu__link">О нас</a></li>
+					<li class="nav-menu__item"><a href="services.html" class="nav-menu__link">Услуги</a></li>
+					<li class="nav-menu__item"><a href="price.html" class="nav-menu__link">Цены</a></li>
+					<li class="nav-menu__item"><a href="works.html" class="nav-menu__link">Наши работы</a></li>
+					<li class="nav-menu__item"><a href="dostavka.html" class="nav-menu__link">Доставка</a></li>
+					<li class="nav-menu__item"><a href="contacts.html" class="nav-menu__link">Контакты</a></li>
+					<li class="nav-menu__item"><a href="blog/blog.html" class="nav-menu__link">Блог</a></li>
+				</ul>
+
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link active-link">Главная</a>
+					</li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+					<li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+					<li class="mobile-menu__item"><a href="price.html" class="mobile-menu__link">Цены</a></li>
+					<li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">Наши работы</a></li>
+					<li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+					<li class="mobile-menu__item"><a href="blog/blog.html" class="mobile-menu__link">Блог</a></li>
+				</ul>
+				<button class="btn">
+					<i class="btn__line"></i>
+				</button>
+			</nav>
+		</header>
+		<main>
+			<section class="home-section">
+				<div class="container">
+					<div class="home">
+						<h1 class="home__title">Ремонт и реставрация мебели</h1>
+						<div class="home__region">В москве и МО</div>
+						<div class="home__info">
+							<img class="home__info-img" src="img/warranty.png" alt="">
+							<p class="home__info-text">Гарантия <br> 2 года</p>
+						</div>
+						<div class="home__info">
+							<img class="home__info-img" src="img/work.png" alt="">
+							<p class="home__info-text">Работаем без предоплаты</p>
+						</div>
+						<a href="javascript:openPopUp()" class="my-btn home__link">Узнать подробнее</a>
+					</div>
+					<div class="home-img">
+						<img src="img/home-img.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="repair-section">
+				<div class="container">
+					<div class="repair-wrap">
+						<div class="repair-info">
+							<h2 class="repair-info__title section-title">
+								Ремонтируем то, что вам дорого
+							</h2>
+							<p class="repair-info__text">
+								Вы экономите до 60% бюджета благодаря ремонту
+								и реставрации любимой мебели
+							</p>
+							<div class="repair-service">
+								<div class="repair-srvice__img">
+									<img src="img/repair.png" alt="">
+								</div>
+								<div class="repair-service__item-wrap">
+									<p class="repair-service__item">Бесплатный проект кухни</p>
+									<p class="repair-service__item">Бесплатный замер</p>
+									<p class="repair-service__item">Собственное производство</p>
+								</div>
+							</div>
+						</div>
+						<div class="repair-form-wrap">
+							<div class="repair-form">
+								<h4 class="repair-form__title">Вызов замерщика</h4>
+								<p class="repair-form__subtitle">
+									Оставьте заявку и мы перезвоним
+									вам через 5 минут
+								</p>
+								<form action="#">
+									<input type="text" class="repair-form__input" placeholder="Ваше имя">
+									<input type="text" class="repair-form__input" placeholder="Ваш телефон">
+									<button type="button" class="repair-form__btn">Оставить заявку</button>
+								</form>
+								<p class="repair-form__consent">
+									Отправляя форму, вы даете <a href="#">согласие</a>
+									на обработку персональных данных
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="service-section">
+				<div class="container">
+					<h2 class="section-title">Наши услуги</h2>
+					<div class="service">
+						<a href="oneservice.html" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="#" class="service__link">
+							<div class="service-item">
+								<div class="service-item__img">
+									<img src="img/service-item.png" alt="">
+								</div>
+								<div class="service-item__description">
+									Замена установка пристеночного
+									бортика или плинтуса для столешницы
+								</div>
+							</div>
+						</a>
+						<a href="services.html" class="my-btn service__btn">Все услуги</a>
+					</div>
+				</div>
+			</section>
+			<section class="socials-section">
+				<div class="socials-wrap">
+					<h2 class="socials-section__title">Будьте всегда в курсе!</h2>
+					<p class="socials-section__text">
+						Не пропускайте наши новости и события<br>
+						следите за нами в социальных сетях
+					</p>
+				</div>
+				<div class="socials-section__socials">
+					<a href="#" class="socials-section__socials-item"><img src="img/vk.png" alt="Вконтакте"></a>
+					<a href="#" class="socials-section__socials-item"><img src="img/instagram.png" alt="Вконтакте"></a>
+					<a href="#" class="socials-section__socials-item"><img src="img/facebook.png" alt="Вконтакте"></a>
+				</div>
+			</section>
+			<section class="works-section">
+				<div class="container">
+					<h2 class="section-title works-title">
+						Просто посмотрите наши работы
+					</h2>
+					<div class="works-roulette">
+						<img src="img/roulette.png" alt="Рулетка">
+						<span class="works-roulette__title">мы ценим то , что делаем</span>
+					</div>
+					<div class="works-wrap">
+						<div class="works-slider">
+							<div class="works-item service-item">
+								<div class="service-item__img">
+									<a href="img/service-item.png" data-fancybox1="gallery"><img
+											src="img/service-item.png" alt=""></a>
+								</div>
+							</div>
+							<div class="works-item service-item">
+								<div class="service-item__img">
+									<a href="img/service-item.png" data-fancybox1="gallery"><img
+											src="img/service-item.png" alt=""></a>
+								</div>
+							</div>
+							<div class="works-item service-item">
+								<div class="service-item__img">
+									<a href="img/service-item.png" data-fancybox1="gallery"><img
+											src="img/service-item.png" alt=""></a>
+								</div>
+							</div>
+							<div class="works-item service-item">
+								<div class="service-item__img">
+									<a href="img/service-item.png" data-fancybox1="gallery"><img
+											src="img/service-item.png" alt=""></a>
+								</div>
+							</div>
+							<div class="works-item service-item">
+								<div class="service-item__img">
+									<a href="img/service-item.png" data-fancybox1="gallery"><img
+											src="img/service-item.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<a href="works.html" class="my-btn works-btn">Смотреть все работы</a>
+					</div>
+				</div>
+			</section>
+			<section class="who-section">
+				<div class="container">
+					<h2 class="section-title who-title">
+						Как мы работаем?
+					</h2>
+					<div class="who">
+						<div class="who-item">
+							<span class="who-item__number">1</span>
+							<div class="who-item__img">
+								<img src="img/who-item1.png" alt="">
+							</div>
+							<p class="who-item__title">
+								Вывоз замерщика
+							</p>
+						</div>
+						<div class="who-item">
+							<span class="who-item__number">2</span>
+							<div class="who-item__img">
+								<img src="img/who-item2.png" alt="">
+							</div>
+							<p class="who-item__title">
+								Составление сметы
+							</p>
+						</div>
+						<div class="who-item">
+							<span class="who-item__number">3</span>
+							<div class="who-item__img">
+								<img src="img/who-item3.png" alt="">
+							</div>
+							<p class="who-item__title">
+								Ремонт мебели
+							</p>
+						</div>
+						<div class="who-item">
+							<span class="who-item__number">4</span>
+							<div class="who-item__img">
+								<img src="img/who-item4.png" alt="">
+							</div>
+							<p class="who-item__title">
+								Доставка и оплата
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="assessment-section">
+				<div class="assessment-top">
+					<div class="container">
+						<h2 class="assessment-title">Быстрая оценка ремонта</h2>
+						<div class="assessment-wrap">
+							<div class="assessment-info">
+								<div class="assessment-info__text">
+									Получите расчет сметы бесплатно уже сегодня!<br>
+									Получите качественный ремонт мебели:
+								</div>
+								<div class="assessment-info__item-wrap">
+									<div>
+										<p class="assessment-info__item">Только качественные матириалы</p>
+										<p class="assessment-info__item">Гарантия 2 года</p>
+										<p class="assessment-info__item">Не требуем предоплаты</p>
+									</div>
+								</div>
+							</div>
+							<div class="assessment-form">
+								<form action="#">
+									<div class="assessment-form-wrap">
+										<div class="assessment-form__input-wrap">
+											<div class="assessment-form__input assessment-form__input-name">
+												<input type="text" name="text" placeholder="Ваше имя">
+											</div>
+											<div class="assessment-form__input assessment-form__input-phone">
+												<input type="text" name="phone" placeholder="Ваш телефон">
+											</div>
+
+											<div class="assessment-form__input assessment-form__input-email">
+												<input type="email" name="e-mail" placeholder="Ваш e-mail">
+											</div>
+										</div>
+										<div class="assessment-form__textarea-wrap">
+											<div class="assessment-form__input assessment-form__input-text">
+												<textarea name="text" placeholder="Ваше сообщение, формата:
+													1. Что ремонтаруем: столешница, кухонная фурнитура
+													2. Габариты, мм"></textarea>
+											</div>
+										</div>
+									</div>
+									<button class="assessment-form__input-btn">Получить оценку</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="assessment-footer">
+					<div class="container">
+						<div class="assessment-footer-wrap">
+							<div class="assessment-footer__text-wrap">
+								<h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
+								<p class="assessment-footer__subtitle">Получите оценку в один клик</p>
+							</div>
+							<div class="assessment-footer__form">
+								<form action="se.php" method="POST">
+									<div class="assessment-footer__form-wrap">
+										<div class="assessment-footer__input-wrap">
+											<input class="assessment-footer__input" type="text" placeholder="Ваше имя">
+										</div>
+										<button class="assessment-footer__btn">оценка в 1 клик</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+			<section class="provide-section">
+				<div class="container">
+					<h2 class="section-title provide-title">Мы предоставляем</h2>
+					<div class="provide-wrap">
+						<div class="provide-item">
+							<div class="provide-item__img">
+								<img src="img/provide-item1.png" alt="">
+							</div>
+							<div class="provide-item__info">
+								<h5 class="provide-item__title">Лучшие материалы</h5>
+								<p class="provide-item__text">Используем только качественные материалы</p>
+							</div>
+						</div>
+						<div class="provide-item">
+							<div class="provide-item__img">
+								<img src="img/provide-item2.png" alt="">
+							</div>
+							<div class="provide-item__info">
+								<h5 class="provide-item__title">Надежную доставку</h5>
+								<p class="provide-item__text">Тщательно упакуем и доставим мебель</p>
+							</div>
+						</div>
+						<div class="provide-item">
+							<div class="provide-item__img">
+								<img src="img/provide-item3.png" alt="">
+							</div>
+							<div class="provide-item__info">
+								<h5 class="provide-item__title">Неизменную цену</h5>
+								<p class="provide-item__text">Гарантируем что цена не изменится во время работ</p>
+							</div>
+						</div>
+						<div class="provide-item">
+							<div class="provide-item__img">
+								<img src="img/provide-item4.png" alt="">
+							</div>
+							<div class="provide-item__info">
+								<h5 class="provide-item__title">Соблюдение сроков</h5>
+								<p class="provide-item__text">Делаем ремонты всегда вовремя</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brands-section">
+				<div class="container">
+					<div class="brands-wrap">
+						<div class="brands-slider">
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-logo">
+					<a href="index.html" class="footer-logo__logo"></a>
+					<h3 class="footer-logo__title"><span>© </span>Ремонт и рестоврация мебели</h3>
+					<p class="footer-logo__text">Вы экономите до 60% бюджета благодаря ремонту и реставрации любимой
+						мебели</p>
+				</div>
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О нас</a></li>
+					<li class="footer-menu__item"><a href="services.html" class="footer-menu__link">Услуги</a></li>
+					<li class="footer-menu__item"><a href="price.html" class="footer-menu__link">Цены</a></li>
+				</ul>
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="works.html" class="footer-menu__link">Наши работы</a></li>
+					<li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+					<li class="footer-menu__item"><a href="blog/blog.html" class="footer-menu__link">Блог</a></li>
+				</ul>
+
+				<div class="footer-contacts">
+					<h3 class="footer-title">Контакты</h3>
+					<p class="footer-contacts__item">Ежедневно с 10:00 до 20:00</p>
+					<p class="footer-contacts__item"><a href="tel:88007777777">8 800 777 77 77</a></p>
+					<p class="footer-contacts__item"><a href="#">info@remont.ru</a></p>
+					<a href="#" class="footer-contacts__link">Политика конфиденциальности</a>
+				</div>
+				<div class="footer-socials">
+					<div id="share">
+						<div class="social" data-url="https://webliberty.ru/share/"
+							data-title="Кнопки поделиться в социальных сетях">
+							<a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+							<a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+									alt="Facebook"></a>
+							<a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+									alt="Instagramm"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(function () {
+			$("[data-fancybox1]").fancybox();
+		});
+	</script>
+</body>
+
+</html>
