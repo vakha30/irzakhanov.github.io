@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="body-bg"></div>
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"></a>
+			</div>
+			<h2 class="popup__title">
+				Оставьте ваши контактные данные и наш<br>
+				специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="send.php" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="name">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+					<input type="submit" class="popup-form__btn" name="otprav">
+				</form>
+			</div>
+			<div class="popup__soglashenie">
+				Отправляя форму, вы даете <a href="#">согласие</a><br>
+				на обработку персональных данных
+			</div>
+			<span id="close-popup1" class="close-popup">&#215;</span>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="head">
+				<div class="head__logo">
+					<a href="index.html"></a>
+				</div>
+				<p class="head__info">Фабрика по изготовлению, ремонту<br>
+					и реставрации мебели</p>
+				<p class="head__date">Пн-Вс: с 10-00 до 20-00<br><a href="tel:88007777777" class="head__phone">8 800 777
+						77 77</a></p>
+				<a href="javascript:openPopUp()" class="head__link">Получить консультацию</a>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-menu">
+					<li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Главная</a></li>
+					<li class="nav-menu__item"><a href="about.html" class="nav-menu__link">О нас</a></li>
+					<li class="nav-menu__item"><a href="services.html" class="nav-menu__link">Услуги</a></li>
+					<li class="nav-menu__item"><a href="price.html" class="nav-menu__link">Цены</a></li>
+					<li class="nav-menu__item"><a href="works.html" class="nav-menu__link">Наши работы</a></li>
+					<li class="nav-menu__item"><a href="dostavka.html" class="nav-menu__link">Доставка</a>
+					</li>
+					<li class="nav-menu__item"><a href="contacts.html" class="nav-menu__link active-link">Контакты</a>
+					</li>
+					<li class="nav-menu__item"><a href="blog/blog.html" class="nav-menu__link">Блог</a></li>
+				</ul>
+
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+					<li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+					<li class="mobile-menu__item"><a href="price.html" class="mobile-menu__link">Цены</a></li>
+					<li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">Наши работы</a></li>
+					<li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html"
+							class="mobile-menu__link active-link">Контакты</a></li>
+					<li class="mobile-menu__item"><a href="blog/blog.html" class="mobile-menu__link">Блог</a></li>
+				</ul>
+				<button class="btn">
+					<i class="btn__line"></i>
+				</button>
+			</nav>
+		</header>
+		<main>
+			<ul class="links-block">
+				<li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+				<li class="links-block__item"><a href="contacts.html" class="links-block__link">Контакты</a>
+				</li>
+			</ul>
+			<section class="contacts-section">
+				<div class="container">
+					<h2 class="section-title contacts-title">Наши контакты</h2>
+					<div class="contacts">
+						<p class="contacts__item">Адрес</p>
+						<p class="contacts__item"><a href="tel:7777777">Телефон</a></p>
+						<p class="contacts__item"><a href="tel:7777777">Почта</a></p>
+						<p class="contacts__item">Время работы</p>
+					</div>
+				</div>
+			</section>
+			<section class="socials-section">
+				<div class="socials-wrap">
+					<h2 class="socials-section__title">Будьте всегда в курсе!</h2>
+					<p class="socials-section__text">
+						Не пропускайте наши новости и события<br>
+						следите за нами в социальных сетях
+					</p>
+				</div>
+				<div class="socials-section__socials">
+					<a href="#" class="socials-section__socials-item"><img src="img/vk.png" alt="Вконтакте"></a>
+					<a href="#" class="socials-section__socials-item"><img src="img/instagram.png" alt="Вконтакте"></a>
+					<a href="#" class="socials-section__socials-item"><img src="img/facebook.png" alt="Вконтакте"></a>
+				</div>
+			</section>
+			<section class="map-section">
+				<div class="container">
+					<div class="map">
+						Карта
+					</div>
+				</div>
+			</section>
+			<section class="brands-section">
+				<div class="container">
+					<div class="brands-wrap">
+						<div class="brands-slider">
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+							<div class="brands-item">
+								<img src="img/brands-item.png" alt="" class="brands-item__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-logo">
+					<a href="index.html" class="footer-logo__logo"></a>
+					<h3 class="footer-logo__title"><span>© </span>Ремонт и рестоврация мебели</h3>
+					<p class="footer-logo__text">Вы экономите до 60% бюджета благодаря ремонту и реставрации любимой
+						мебели</p>
+				</div>
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О нас</a></li>
+					<li class="footer-menu__item"><a href="services.html" class="footer-menu__link">Услуги</a></li>
+					<li class="footer-menu__item"><a href="price.html" class="footer-menu__link">Цены</a></li>
+				</ul>
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="works.html" class="footer-menu__link">Наши работы</a></li>
+					<li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+					<li class="footer-menu__item"><a href="blog/blog.html" class="footer-menu__link">Блог</a></li>
+				</ul>
+
+				<div class="footer-contacts">
+					<h3 class="footer-title">Контакты</h3>
+					<p class="footer-contacts__item">Ежедневно с 10:00 до 20:00</p>
+					<p class="footer-contacts__item"><a href="tel:88007777777">8 800 777 77 77</a></p>
+					<p class="footer-contacts__item"><a href="#">info@remont.ru</a></p>
+					<a href="#" class="footer-contacts__link">Политика конфиденциальности</a>
+				</div>
+				<div class="footer-socials">
+					<div id="share">
+						<div class="social" data-url="https://webliberty.ru/share/"
+							data-title="Кнопки поделиться в социальных сетях">
+							<a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+							<a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+									alt="Facebook"></a>
+							<a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+									alt="Instagramm"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
