@@ -491,12 +491,11 @@ button {
     position: relative;
     width: 95px;
     padding: 10px; }
-  .price-section .price-table .empty-tr {
-    border-bottom: none; }
-    .price-section .price-table .empty-tr td:after, .price-section .price-table .empty-tr th:after {
-      display: none; }
-    .price-section .price-table .empty-tr td:last-of-type:before, .price-section .price-table .empty-tr .last-td:before {
-      display: none; }
+  .price-section .price-table .line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffc800;
+    margin: 40px 0 25px; }
   .price-section .price-table td:after, .price-section .price-table th:after {
     content: '';
     width: 1px;
