@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Свайно винтовой фундамент</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="vintovoi-page">
+    <div class="body-bg"></div>
+
+    <div class="popup-wrap" id="popup1">
+        <div class="popup">
+            <div class="popup__logo">
+                <a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+            </div>
+            <h2 class="popup__title">
+                Оставьте ваши контактные данные и наш<br>
+                специалист свяжется с вами
+            </h2>
+            <div class="popup-form">
+                <form action="send.php" method="POST">
+                    <table>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="">Ваше имя</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text" name="name">
+                            </td>
+                        </tr>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="popup-form__btn" name="otprav">
+                </form>
+            </div>
+            <div class="popup__soglashenie">
+                Отправляя форму, вы даете <a href="#">согласие</a><br>
+                на обработку персональных данных
+            </div>
+            <span id="close-popup1" class="close-popup">&#215;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="dostavka.html" class="menu__link">Доставка</a></li>
+                    <li class="menu__item"><a href="garantiya.html" class="menu__link">Гарантия</a></li>
+                    <li class="menu__item"><a href="proekty.html" class="menu__link">Наши проекты</a></li>
+                    <li class="menu__item"><a href="akcii.html" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
+                    <li class="mobile-menu__item"><a href="garantiya.html" class="mobile-menu__link">Гарантия</a></li>
+                    <li class="mobile-menu__item"><a href="proekty.html" class="mobile-menu__link">Наши проекты</a></li>
+                    <li class="mobile-menu__item"><a href="akcii.html" class="mobile-menu__link">Акции</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+                <button class="btn">
+                    <i class="btn__line"></i>
+                </button>
+            </nav>
+            <div class="head">
+                <div class="head__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+                </div>
+                <div class="head__adress">
+                    <strong>143443, г.Красногорск</strong>
+                    ул. Ново-Никольская д. 122 стр. 1 ТЦ КЛЁН 2 этаж
+                </div>
+                <div class="head__phone">
+                    <a href="tel:89264748899">8 (926) 474-88-99</a><br>
+                    По всем вопросам 24/7
+                </div>
+                <a href="javascript:openPopUp()" class="head__link my-btn my-btn--orange">обратный звонок</a>
+            </div>
+            <div class="navigation-down">
+                <ul class="menu-down">
+                    <li class="menu-down__item"><a href="index.html" class="menu-down__link">Монтаж и установка
+                            свай</a></li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Винтовые сваи</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома1</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Свайный
+                            фундамент</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома2</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="praic.html" class="menu-down__link">Прайс</a></li>
+                    <li class="menu-down__item"><a href="calc.html" class="menu-down__link">Калькулятор</a></li>
+                    <li class="menu-down__item">
+                        <a href="vk.com" class="menu-down__link"><img src="img/icons/vk-icon.png" alt=""></a>
+                        <a href="facebook.com" class="menu-down__link"><img src="img/icons/facebook-icon.png"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <ul class="links-block">
+                <li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+                <li class="links-block__item"><a href="#" class="links-block__link">Винтовые сваи</a></li>
+            </ul>
+            <div class="svaiob-home">
+                <div class="svaiob-home__info">
+                    <h1 class="svaiob-home__title">
+                        Винтовые сваи -
+                        <span>цены</span>
+                    </h1>
+                    <p class="svaiob-home__text">
+                        Наша фирма предлагает качественные винтовые сваи цена которых позволит обеспечить экономную и
+                        одновременно надёжную опору будущей постройке. Представленные вашему вниманию изделия подходят
+                        для строительства опорной жесткой конструкции на:
+                    </p>
+                    <div class="svaiob-home__items-wrap">
+                        <p class="svaiob-home__text-item">
+                            твёрдом грунте, залегающем близко к поверхности;
+                        </p>
+                        <p class="svaiob-home__text-item">
+                            в зонах вечной мерзлоты;
+                        </p>
+                        <p class="svaiob-home__text-item">
+                            на склона, холмистой местности и местности со сложным рельефом;
+                        </p>
+                        <p class="svaiob-home__text-item">
+                            в прибрежной зоне и непосредственно на воде;
+                        </p>
+                        <p class="svaiob-home__text-item">
+                            на смешанном грунте – песок, глина, суглинок, супесь, их комбинации.
+                        </p>
+                    </div>
+
+                    <p class="svaiob-home__text">
+                        Использование наших винтовых свай помогает значительно ускорить, упростить индивидуальное
+                        строительство и сделать его дешевле. Качественные стройматериалы могут быть доступными – для
+                        этого
+                        их достаточно просто правильно выбрать.
+                    </p>
+                    <div class="svaiob-home__link">
+                        <a href="praic.html" class="my-btn my-btn--orange">Узнать стоимость</a>
+                    </div>
+
+                </div>
+                <div class="svaiob-home__img">
+                    <img src="img/svai-ob/svaiob-item1.png" alt="">
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item1.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Бесплатная доставка
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item2.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка за 1 день
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item3.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка в любое время года
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item4.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Оплата по договору на месте
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item5.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Возможность использования в самых сложных грунтах
+                    </div>
+                </div>
+            </div>
+
+            <div class="better-section">
+                <div class="better">
+                    <div class="better__left">
+                        <div class="better__img">
+                            <img src="img/svai-ob/svaiob-item2.png" alt="">
+                        </div>
+                        <div class="better__link">
+                            <a href="javascript:openPopUp();" class="my-btn my-btn--green">Узнать подробности</a>
+                        </div>
+                    </div>
+                    <div class="better__right">
+                        <h2 class="better__title">
+                            Чем винтовые сваи лучше классического фундамента
+                        </h2>
+                        <p class="better__text">
+                            Капитальная несущая конструкция в традиционном её понимании многим представляется только
+                            мощным монолитным железобетонным сооружением. Но, хотя она и выглядит надёжно, чтобы залить
+                            кубический метр бетона нужно вложить множество времени, сил и денег. И чем больше его длина,
+                            тем выше итоговая стоимость. Особенно когда речь идет о строительстве на сложных участках
+                            грунта.
+                        </p>
+                        <p class="better__text">
+                            Дорогой и трудоёмкий бетонный фундамент могут заменить несущие конструкции на винтовых
+                            сваях, цена которых значительно выгоднее. Особенно хорошо экономия бюджета заметна при
+                            возведении построек на рельефной местности или слабых грунтах. Трудоёмкая дорогостоящая
+                            работа по созданию глубоких широких траншей, утилизация
+                            грунта, перерасход средств на строительные материалы – всё это заменяет простое
+                            использование свайных конструкций. Подобное основание считается одним из лучших для целого
+                            ряда «строительных ситуаций». При этом дом получает надёжную опору – неподвижную и
+                            долговечную.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saving">
+                <div class="saving__left">
+                    <h2 class="saving__title">
+                        Наша цена на сваи – основа
+                        экономного строительства
+                    </h2>
+                    <p class="saving__text">
+                        Винтовой фундаментный каркас является простым доступным видом основания для жилых и
+                        хозяйственных построек. Его монтаж легко провести своими руками, а использование специального
+                        оборудования позволит заметно ускорить процесс. В зависимости от размеров постройки, типа грунта
+                        и принятого решения по поводу аренды оборудования для вкручивания свай в землю – конструкция
+                        может быть полностью готова всего за один рабочий день.
+                    </p>
+                </div>
+                <div class="saving__right">
+                    <p class="saving__text">
+                        Затраты в данном случае складываются только из непосредственной стоимости каждой опоры и оплаты
+                        услуг на её закручивание. Потому итоговая стоимость намного превосходит экономически стандартные
+                        бетонно-заливные варианты. Также железный каркас сразу готов к дальнейшему строительству, не
+                        требуя времени на усадку. Значит, использовать винтовые сваи в строительстве выгодно вдвойне –
+                        они предлагают экономию бюджета и времени. А единственное условие чтобы этого достичь звучит так
+                        – покупать сваи необходимо в правильном месте.
+                    </p>
+                </div>
+            </div>
+
+            <div class="views-section">
+                <h2 class="views-title">Виды свай</h2>
+                <div class="views-slider">
+                    <div class="views-item">
+                        <div class="views-item__img">
+                            <img src="img/svai-ob/svaiob-slider.png" alt="">
+                        </div>
+                        <p class="views-item__text">Винтовая свая 108 мм</p>
+                        <a href="" class="views-item__link my-btn my-btn--orange">Подробнее</a>
+                    </div>
+                    <div class="views-item">
+                        <div class="views-item__img">
+                            <img src="img/svai-ob/svaiob-slider.png" alt="">
+                        </div>
+                        <p class="views-item__text">Винтовая свая 108 мм</p>
+                        <a href="" class="views-item__link my-btn my-btn--orange">Подробнее</a>
+                    </div>
+                    <div class="views-item">
+                        <div class="views-item__img">
+                            <img src="img/svai-ob/svaiob-slider.png" alt="">
+                        </div>
+                        <p class="views-item__text">Винтовая свая 108 мм</p>
+                        <a href="" class="views-item__link my-btn my-btn--orange">Подробнее</a>
+                    </div>
+                    <div class="views-item">
+                        <div class="views-item__img">
+                            <img src="img/svai-ob/svaiob-slider.png" alt="">
+                        </div>
+                        <p class="views-item__text">Винтовая свая 108 мм</p>
+                        <a href="" class="views-item__link my-btn my-btn--orange">Подробнее</a>
+                    </div>
+                    <div class="views-item">
+                        <div class="views-item__img">
+                            <img src="img/svai-ob/svaiob-slider.png" alt="">
+                        </div>
+                        <p class="views-item__text">Винтовая свая 108 мм</p>
+                        <a href="" class="views-item__link my-btn my-btn--orange">Подробнее</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-section">
+                <div class="assessment-top">
+                    <div class="container">
+                        <div class="assessment-wrap">
+                            <div class="assessment-info">
+                                <h2 class="assessment-info__title">
+                                    Быстрая оценка Вашего монтажа
+                                </h2>
+                                <div class="assessment-info__text">
+                                    Получите расчет сметы бесплатно уже сегодня!<br>
+                                    Вы получите расчет сметы с учетом:
+                                </div>
+                                <div class="assessment-info__item-wrap">
+                                    <div>
+                                        <p class="assessment-info__item">На каменистой почве для адгезии фундамента и
+                                            грунта.</p>
+                                        <p class="assessment-info__item">В малоэтажном жилом индивидуальном
+                                            строительстве.</p>
+                                        <p class="assessment-info__item">При постройке частной подсобной недвижимости
+                                            и аналогичных элементов комфорта.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assessment-form">
+                                <form action="#">
+                                    <div class="assessment-form-wrap">
+                                        <div class="assessment-form__input-wrap">
+                                            <div class="assessment-form__input assessment-form__input-name">
+                                                <input type="text" name="text" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="assessment-form__input assessment-form__input-phone">
+                                                <input type="text" name="phone" placeholder="Ваш телефон">
+                                            </div>
+
+                                            <div class="assessment-form__input assessment-form__input-email">
+                                                <input type="email" name="e-mail" placeholder="Ваш e-mail">
+                                            </div>
+                                        </div>
+                                        <div class="assessment-form__textarea-wrap">
+                                            <div class="assessment-form__input assessment-form__input-text">
+                                                <textarea name="text" placeholder="Ваше сообщение, формата:
+												1. Вид строения: баня, терасса, дом
+												2. Материал: брус, сруб, 
+												каркас, ЛСТК
+												3. Габариты, мм
+												"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="assessment-form__input-btn">Получить оценку</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="assessment-footer">
+                    <div class="container">
+                        <div class="assessment-footer-wrap">
+                            <div class="assessment-footer__text-wrap">
+                                <h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
+                                <p class="assessment-footer__subtitle">Получите оценку в один клик</p>
+                            </div>
+                            <div class="assessment-footer__form">
+                                <form action="se.php" method="POST">
+                                    <div class="assessment-footer__form-wrap">
+                                        <div class="assessment-footer__input-wrap">
+                                            <input class="assessment-footer__input" type="text" placeholder="Ваше имя">
+                                        </div>
+                                        <button class="assessment-footer__btn">оценка в 1 клик</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="price-section">
+                <h2 class="price-title">Цены на винтовые сваи</h2>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="price-name">Условное обозначение</th>
+                                <th>Диаметр ствола мм</th>
+                                <th>Толщина стенки ствола мм</th>
+                                <th>Диаметр лопасти мм</th>
+                                <th>Толщина лопасти мм</th>
+                                <th>Длина ствола мм</th>
+                                <th>Стоимость СВС</th>
+                                <th>Стоимость оголовка 200x200</th>
+                                <th>Стоимость монтажа</th>
+                                <th>Стоимость комплекта</th>
+                                <th>Технические характеристики</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td rowspan="7" class="price-name"><span>свс 57</span></td>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td class="last-td">1950</td>
+                            <td rowspan="7" class="price-img">
+                                <img src="img/svai-size.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="line-praic"></div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="price-name">Условное обозначение</th>
+                                <th>Диаметр ствола мм</th>
+                                <th>Толщина стенки ствола мм</th>
+                                <th>Диаметр лопасти мм</th>
+                                <th>Толщина лопасти мм</th>
+                                <th>Длина ствола мм</th>
+                                <th>Стоимость СВС</th>
+                                <th>Стоимость оголовка 200x200</th>
+                                <th>Стоимость монтажа</th>
+                                <th>Стоимость комплекта</th>
+                                <th>Технические характеристики</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td rowspan="7" class="price-name"><span>свс 76</span></td>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td class="last-td">1950</td>
+                            <td rowspan="7" class="price-img">
+                                <img src="img/svai-size.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>4</td>
+                            <td>1500</td>
+                            <td>850</td>
+                            <td>200</td>
+                            <td>900</td>
+                            <td>1950</td>
+                        </tr>
+                    </table>
+
+                    <div class="line-praic"></div>
+                </div>
+            </div>
+
+            <div class="reliable">
+                <h2 class="reliable__title">
+                    Недорогие и надёжные винтовые сваи от производителя
+                </h2>
+                <p class="reliable__text">
+                    Наиболее выгодная цена на винтовые сваи для фундамента предлагается только производителем. Каждый
+                    посредник, вне зависимости от того насколько выгодной окажется стоимость его винтовых свай, всегда
+                    проводит наценку. Потому винтовые опоры от производителя – наш выбор по следующим причинам:
+                </p>
+                <div class="reliable-items-wrap">
+                    <div class="reliable-item">
+                        <div class="reliable-item__img" style="background-image: url('img/svai-ob/reliable-item1.png')">
+                        </div>
+                        <p class="reliable-item__text">
+                            Цена каждой опоры всегда экономически оправдана
+                        </p>
+                    </div>
+                    <div class="reliable-item">
+                        <div class="reliable-item__img" style="background-image: url('img/svai-ob/reliable-item2.png')">
+                        </div>
+                        <p class="reliable-item__text">
+                            Покупатель надёжно защищён от подделок или брака
+                        </p>
+                    </div>
+                    <div class="reliable-item">
+                        <div class="reliable-item__img" style="background-image: url('img/svai-ob/reliable-item3.png')">
+                        </div>
+                        <p class="reliable-item__text">
+                            На каждое изделие распространяется реальная гарантия
+                        </p>
+                    </div>
+                    <div class="reliable-item">
+                        <div class="reliable-item__img" style="background-image: url('img/svai-ob/reliable-item4.png')">
+                        </div>
+                        <p class="reliable-item__text">
+                            Купить можно любой необходимый объём опор, что очень удобно для массовой застройки
+                        </p>
+                    </div>
+                    <div class="reliable-item">
+                        <div class="reliable-item__img" style="background-image: url('img/svai-ob/reliable-item5.png')">
+                        </div>
+                        <p class="reliable-item__text">
+                            Клиент знакомится с реальными, а не рекламными несущими характеристиками каждой
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hard-buy">
+                <div class="hard-buy__img">
+                    <img src="img/svai-ob/svaiob-item3.png" alt="">
+                </div>
+                <div class="hard-buy__info">
+                    <p class="hard-buy__text">
+                        Иногда возникает ситуация когда купить непосредственно у производителя винтовые сваи для
+                        фундамента сложно по географическим причинам. Но это не значит, что возможность дешево
+                        приобрести необходимый строительный материал отсутствует полностью. Существует как минимум два
+                        варианта решения. Первый – обратиться к нам для обсуждения вопросов доставки на выбранный
+                        участок. Второй – приобретать продукцию в сертифицированных строительных магазинах, работающих с
+                        производителем напрямую.
+                    </p>
+                    <div class="hard-buy__link">
+                        <a href="javascript:openPopUp();" class="my-btn my-btn--orange">Узнать подробности</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="features__left">
+                    <h2 class="features__title">
+                        Особенности и преимущества
+                        наших винтовых свай
+                    </h2>
+                    <p class="features__text">
+                        Внешне конструкция свай напоминает привычный земляной бур, которым в частном секторе создаются
+                        скважины для столбов под забор. Конструкция сваи включает винтообразную лопасть, съёмный
+                        оголовок, на который опирается здание, и несущую трубу. Важной деталью каждой опоры является тип
+                        наконечника. Он может быть двух видов:
+                    </p>
+                    <div class="features-item">
+                        <div class="features-item__img one">
+                            <img src="img/svai-ob/svaiob-item4.png" alt="">
+                        </div>
+                        <p class="features-item__text">
+                            <strong>Сварной наконечник</strong> – доступный, но достаточно слабый вариант свай
+                            предназначенных для
+                            использования в слабых грунтах. Основное его преимущество это крайне выгодная стоимость.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="features-item__img two">
+                            <img src="img/svai-ob/svaiob-item5.png" alt="">
+                        </div>
+                        <p class="features-item__text">
+                            <strong>Литой наконечник</strong> – предпочтительный, но и более дорогой вариант. Он
+                            обеспечит надёжную опору зданию на плотной, многолетнемерзлой или включающей вкрапления
+                            плотной породы почве..
+                        </p>
+                    </div>
+                </div>
+                <div class="features__right">
+                    <p class="features__content-text">
+                        Основным удерживающим элементом конструкции является винт. В зависимости от его конструкции
+                        меняется несущая способность сваи и сложность её вкручивания. Например, доступный у нас вариант
+                        с двумя лопастями обеспечит несравнимо более высокий уровень поддержки здания в сравнении с
+                        самыми доступными по стоимости однолопастными сваями. Но без специальной техники можно вкрутить
+                        далеко не каждую двухлопастную опору.
+                    </p>
+                    <p class="features__content-text">
+                        Ещё одной важнейшей характеристикой металлической опоры является допустимая нагрузка. Она
+                        зависит от толщины стен, количества лопастей и диаметра трубы. Современная свая может
+                        поддерживать вес в несколько тонн. Выбрать необходимые несущие возможности конструкции поможет
+                        прайс, перечисляющий подробные характеристики каждого изделия.
+                    </p>
+                    <div class="features__link">
+                        <a href="javascript:openPopUp();" class="my-btn my-btn--green">Заказать сваи</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="life-time-section">
+                <div class="life-time">
+                    <div class="life-time__left">
+                        <h2 class="life-time__title">
+                            Срок службы и надежность
+                            винтовых свай
+                        </h2>
+                        <p class="life-time__text">
+                            Основным материалом изготовления свайных опор является сталь. Этот материал отличается
+                            прочностью, долговечностью, но на него разрушительно воздействует такая штука как коррозия.
+                            Поэтому перед использованием изделия во влажных или сыпучих грунтах, хорошо впитывающих
+                            воду, на
+                            него наносят специальный защитный слой. Достаточно лишь раз оцинковывать опору, чтобы
+                            заметно
+                            увеличить срок её службы. Такая защита помогает надежно уберечь металл от химической
+                            коррозии и
+                            одновременно не повышает цену сваи в несколько раз, сохраняя одно из важнейших её
+                            преимуществ –
+                            бюджетную стоимость.
+                        </p>
+                        <p class="life-time__text">
+                            Конечно, каждый производитель, и мы в том числе, наносим на все изготовленные винтовые сваи
+                            специальный подобный нержавеющий слой. Но при хранении, транспортировке или вкручивании
+                            элементы
+                            иногда царапаются. Потратившись немного на нанесение антикоррозийного дополнительного слоя
+                            можно
+                            заметно увеличить срок эксплуатации сваи.
+                        </p>
+                        <p class="life-time__text">
+                            Отзывы профессиональных строителей активно использующих свайные несущие конструкции
+                            рекомендуют
+                            применять для их защиты метод холодного цинкования, эмалирование, полиуретан или эпоксидные
+                            намазки. С их помощью можно надёжно защитить металлический стержень, значительно увеличив и
+                            без
+                            того достаточно продолжительный срок службы каждой винтовой сваи.
+                        </p>
+                    </div>
+                    <div class="life-time__right">
+                        <div class="life-time__img">
+                            <img src="img/svai-ob/svaiob-item6.png" alt="">
+                        </div>
+                        <div class="life-time__link">
+                            <a href="javascript:openPopUp();" class="my-btn my-btn--orange">Узнать подробности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/footer-logo.png" alt="Фундамикс"></a>
+                    <p class="footer-copyright">© Компания Fundamix
+                        <span>Монтаж и установка свайно винтового фундаманта</span></p>
+                </div>
+                <ul class="footer-menu left-menu">
+                    <li class="footer-menu__item">О нас</li>
+                    <li class="footer-menu__item">&nbsp;</li>
+                    <li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О компании</a></li>
+                    <li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+                    <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты</a></li>
+                </ul>
+                <ul class="footer-menu right-menu">
+                    <li class="footer-menu__item">Основные разделы</li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Винтовые сваи</a></li>
+                    <li class="footer-menu__item"><a href="dlyachego.html" class="footer-menu__link">Для чего</a></li>
+                    <li class="footer-menu__item"><a href="praic.html" class="footer-menu__link">Прайс</a></li>
+                    <li class="footer-menu__item"><a href="calc.html" class="footer-menu__link">Калькулятор</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <h3 class="footer-socials__title">Поделиться в соц. сетях</h3>
+                    <div class="footer-socials__links">
+                        <div id="share">
+                            <div class="social" data-url="https://webliberty.ru/share/"
+                                data-title="Кнопки поделиться в социальных сетях">
+                                <a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+                                        alt="Facebook"></a>
+                                <a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+                                        alt="Instagramm"></a>
+                                <a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

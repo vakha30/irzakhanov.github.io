@@ -11,7 +11,7 @@ btn.addEventListener('click', function () {
         menu.classList.remove('menu-active');
     }
 })
-$('.works-slider').slick({
+$('.slider').slick({
     infinite: true,
     slidesToShow: 3,
     arrows: true,
@@ -27,35 +27,41 @@ $('.works-slider').slick({
         }]
 });
 
-$('.brands-slider').slick({
+
+$('.views-slider').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     arrows: true,
     dots: false,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 868,
             settings: {
                 slidesToShow: 1,
-            }
-        }]
-});
-
-// Слайдер отзывов
-$('.reviews-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    responsive: [
-        {
-            breakpoint: 800,
-            settings: {
                 arrows: false,
                 dots: true
             }
         }]
 });
+
+/////////////////////
+
+let dropDown = document.querySelectorAll('.dropdown-link');
+dropDown.forEach(element => {
+    element.addEventListener('click', function() {
+        if(!element.classList.contains('active-drop')) {
+            document.querySelectorAll('.dropdown-link').forEach(el => {
+                el.classList.remove('active-drop')
+            })
+            element.classList.add('active-drop');
+        }
+        else {
+            element.classList.remove('active-drop');
+        }
+    })
+});
+
+
 
 let popup1 = document.getElementById('popup1');
 let closePopup1 = document.getElementById('close-popup1');
@@ -76,146 +82,15 @@ $("#popup1 div").click(function (e) {
 });
 
 
-// Показать еще 
+// Открытие формы
 
-const portfolios_cnt = $(".js-service-container");
-const portfolio_item_tpl = getCommentTemplate(document.querySelector(".js-service-item"));
-const per_carts = 8;
-const all_portfolios = [
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-    {
-        "main": "img/service-item.png",
-        "mini": "img/service-item.png",
-    },
-];
-
-
-function showMoreCarts() {
-    if (!all_portfolios.length) {
-        $(".js-show-more-btn").addClass('inactive');
-        return;
-    }
-    let cnt = 0;
-    let all_html = '';
-    while ((cnt++) < 8) {
-        if (all_portfolios.length) {
-            let _this = all_portfolios.shift();
-            all_html += replaceTemplate(portfolio_item_tpl, {
-                "main": _this["main"],
-                "mini": _this["mini"],
-            });
-        } else {
-            $(".js-show-more-btn").addClass('inactive');
-        }
-    }
-    if (all_html) {
-        portfolios_cnt.html(portfolios_cnt.html() + all_html)
+function openForm() {
+    let sendForm = document.querySelector('#form-send');
+    let btnZakaz = document.querySelector('#btn-zakaz');
+    let priceVid = document.querySelector('#price-vid');
+    if (!sendForm.classList.contains('active-form')) {
+        btnZakaz.classList.add('btn-hide');
+        setTimeout(function(){priceVid.classList.add('price-active'); },200);
+        setTimeout(function(){sendForm.classList.add('active-form'); },500);
     }
 }
-
-/**
-* функция - шаблонизатор. 
-*/
-function replaceTemplate(replaceText, replaceObj, before = '%', after = '%') {
-    for (let text in replaceObj) {
-        replaceText = replaceText.split(before + text + after).join(replaceObj[text]);;
-    }
-    return replaceText;
-}
-
-function getCommentTemplate(el) {
-    el = el.firstChild;
-    while (el) {
-        if (el.nodeName == '#comment')
-            return el.nodeValue;
-        el = el.nextSibling;
-    }
-    return null;
-}
-
-$(function () {
-    showMoreCarts();
-});

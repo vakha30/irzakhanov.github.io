@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Доставка</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dostavka">
+    <div class="body-bg"></div>
+
+    <div class="popup-wrap" id="popup1">
+        <div class="popup">
+            <div class="popup__logo">
+                <a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+            </div>
+            <h2 class="popup__title">
+                Оставьте ваши контактные данные и наш<br>
+                специалист свяжется с вами
+            </h2>
+            <div class="popup-form">
+                <form action="send.php" method="POST">
+                    <table>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="">Ваше имя</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text" name="name">
+                            </td>
+                        </tr>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="popup-form__btn" name="otprav">
+                </form>
+            </div>
+            <div class="popup__soglashenie">
+                Отправляя форму, вы даете <a href="#">согласие</a><br>
+                на обработку персональных данных
+            </div>
+            <span id="close-popup1" class="close-popup">&#215;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="dostavka.html" class="menu__link active-link">Доставка</a></li>
+                    <li class="menu__item"><a href="garantiya.html" class="menu__link">Гарантия</a></li>
+                    <li class="menu__item"><a href="proekty.html" class="menu__link">Наши проекты</a></li>
+                    <li class="menu__item"><a href="akcii.html" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="dostavka.html"
+                            class="mobile-menu__link active-link">Доставка</a></li>
+                    <li class="mobile-menu__item"><a href="garantiya.html" class="mobile-menu__link">Гарантия</a></li>
+                    <li class="mobile-menu__item"><a href="proekty.html" class="mobile-menu__link">Наши проекты</a></li>
+                    <li class="mobile-menu__item"><a href="akcii.html" class="mobile-menu__link">Акции</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+                <button class="btn">
+                    <i class="btn__line"></i>
+                </button>
+            </nav>
+            <div class="head">
+                <div class="head__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+                </div>
+                <div class="head__adress">
+                    <strong>143443, г.Красногорск</strong>
+                    ул. Ново-Никольская д. 122 стр. 1 ТЦ КЛЁН 2 этаж
+                </div>
+                <div class="head__phone">
+                    <a href="tel:89264748899">8 (926) 474-88-99</a><br>
+                    По всем вопросам 24/7
+                </div>
+                <a href="javascript:openPopUp()" class="head__link my-btn my-btn--orange">обратный звонок</a>
+            </div>
+            <div class="navigation-down">
+                <ul class="menu-down">
+                    <li class="menu-down__item"><a href="index.html" class="menu-down__link">Монтаж и установка
+                            свай</a></li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Винтовые сваи</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома1</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Свайный
+                            фундамент</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома2</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="praic.html" class="menu-down__link">Прайс</a></li>
+                    <li class="menu-down__item"><a href="calc.html" class="menu-down__link">Калькулятор</a></li>
+                    <li class="menu-down__item">
+                        <a href="vk.com" class="menu-down__link"><img src="img/icons/vk-icon.png" alt=""></a>
+                        <a href="facebook.com" class="menu-down__link"><img src="img/icons/facebook-icon.png"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <ul class="links-block">
+                <li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+                <li class="links-block__item"><a href="#" class="links-block__link">Доставка</a></li>
+            </ul>
+            <div class="about-section">
+                <div class="about-section__info">
+                    <h1 class="about-section__title">Доставка</h1>
+                    <p class="about-section__text">
+                        Винтовые сваи представляют собой достаточно габаритные изделия. Для закладки фундамента любого
+                        здания необходимо приобрести не одну, а несколько свай. В случаях, когда планируется
+                        строительство крупного по размерам дома, понадобится купить десятки или даже сотни свай. В связи
+                        с этим возникает вопрос относительно того, как же транспортировать до нужного пункта заказанные
+                        детали. У большинства клиентов нет необходимого транспорта для перевозки таких крупных
+                        предметов. И тогда на помощь приходим мы – компания «Fundamix»!
+                    </p>
+                </div>
+                <div class="about-section__img">
+                    <img src="img/dostavka/dostavka-item.png" alt="">
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item1.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Бесплатная доставка
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item2.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка за 1 день
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item3.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка в любое время года
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item4.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Оплата по договору на месте
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item5.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Возможность использования в самых сложных грунтах
+                    </div>
+                </div>
+            </div>
+
+            <div class="one-service-section">
+                <div class="one-service">
+                    <div class="one-service__img">
+                        <img src="img/about/one-item.png" alt="">
+                    </div>
+                    <div class="one-service__info">
+                        <h2 class="one-service__title">Цена на доставку</h2>
+                        <p class="one-service__text">
+                            Обратите внимание, цена на доставку не фиксирована, а считается на каждый монтаж, в
+                            зависимости от объема, удаленности и от того какой машиной везти. Окончательную цену за
+                            перевозку, а также сроки доставки вам озвучит менеджер при оформлении заявки.
+                        </p>
+                        <div class="one-service__link">
+                            <a href="javascript:openPopUp()" class=" my-btn my-btn--green">Узнать подробнее</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="assessment-section">
+                <div class="assessment-top">
+                    <div class="container">
+                        <div class="assessment-wrap">
+                            <div class="assessment-info">
+                                <h2 class="assessment-info__title">
+                                    Быстрая оценка Вашего монтажа
+                                </h2>
+                                <div class="assessment-info__text">
+                                    Получите расчет сметы бесплатно уже сегодня!<br>
+                                    Вы получите расчет сметы с учетом:
+                                </div>
+                                <div class="assessment-info__item-wrap">
+                                    <div>
+                                        <p class="assessment-info__item">На каменистой почве для адгезии фундамента и
+                                            грунта.</p>
+                                        <p class="assessment-info__item">В малоэтажном жилом индивидуальном
+                                            строительстве.</p>
+                                        <p class="assessment-info__item">При постройке частной подсобной недвижимости
+                                            и аналогичных элементов комфорта.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assessment-form">
+                                <form action="#">
+                                    <div class="assessment-form-wrap">
+                                        <div class="assessment-form__input-wrap">
+                                            <div class="assessment-form__input assessment-form__input-name">
+                                                <input type="text" name="text" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="assessment-form__input assessment-form__input-phone">
+                                                <input type="text" name="phone" placeholder="Ваш телефон">
+                                            </div>
+
+                                            <div class="assessment-form__input assessment-form__input-email">
+                                                <input type="email" name="e-mail" placeholder="Ваш e-mail">
+                                            </div>
+                                        </div>
+                                        <div class="assessment-form__textarea-wrap">
+                                            <div class="assessment-form__input assessment-form__input-text">
+                                                <textarea name="text" placeholder="Ваше сообщение, формата:
+                                                    1. Вид строения: баня, терасса, дом
+                                                    2. Материал: брус, сруб, 
+                                                    каркас, ЛСТК
+                                                    3. Габариты, мм
+                                                    "></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="assessment-form__input-btn">Получить оценку</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="assessment-footer">
+                    <div class="container">
+                        <div class="assessment-footer-wrap">
+                            <div class="assessment-footer__text-wrap">
+                                <h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
+                                <p class="assessment-footer__subtitle">Получите оценку в один клик</p>
+                            </div>
+                            <div class="assessment-footer__form">
+                                <form action="se.php" method="POST">
+                                    <div class="assessment-footer__form-wrap">
+                                        <div class="assessment-footer__input-wrap">
+                                            <input class="assessment-footer__input" type="text" placeholder="Ваше имя">
+                                        </div>
+                                        <button class="assessment-footer__btn">оценка в 1 клик</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/footer-logo.png" alt="Фундамикс"></a>
+                    <p class="footer-copyright">© Компания Fundamix
+                        <span>Монтаж и установка свайно винтового фундаманта</span></p>
+                </div>
+                <ul class="footer-menu left-menu">
+                    <li class="footer-menu__item">О нас</li>
+                    <li class="footer-menu__item">&nbsp;</li>
+                    <li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О компании</a></li>
+                    <li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+                    <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты</a></li>
+                </ul>
+                <ul class="footer-menu right-menu">
+                    <li class="footer-menu__item">Основные разделы</li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Винтовые сваи</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Для чего</a></li>
+                    <li class="footer-menu__item"><a href="praic.html" class="footer-menu__link">Прайс</a></li>
+                    <li class="footer-menu__item"><a href="calc.html" class="footer-menu__link">Калькулятор</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <h3 class="footer-socials__title">Поделиться в соц. сетях</h3>
+                    <div class="footer-socials__links">
+                        <div id="share">
+                            <div class="social" data-url="https://webliberty.ru/share/"
+                                data-title="Кнопки поделиться в социальных сетях">
+                                <a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+                                        alt="Facebook"></a>
+                                <a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+                                        alt="Instagramm"></a>
+                                <a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
