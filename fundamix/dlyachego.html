@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Для чего</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="body-bg"></div>
+
+    <div class="popup-wrap" id="popup1">
+        <div class="popup">
+            <div class="popup__logo">
+                <a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+            </div>
+            <h2 class="popup__title">
+                Оставьте ваши контактные данные и наш<br>
+                специалист свяжется с вами
+            </h2>
+            <div class="popup-form">
+                <form action="send.php" method="POST">
+                    <table>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="">Ваше имя</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text" name="name">
+                            </td>
+                        </tr>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="popup-form__btn" name="otprav">
+                </form>
+            </div>
+            <div class="popup__soglashenie">
+                Отправляя форму, вы даете <a href="#">согласие</a><br>
+                на обработку персональных данных
+            </div>
+            <span id="close-popup1" class="close-popup">&#215;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="dostavka.html" class="menu__link">Доставка</a></li>
+                    <li class="menu__item"><a href="garantiya.html" class="menu__link">Гарантия</a></li>
+                    <li class="menu__item"><a href="proekty.html" class="menu__link">Наши проекты</a></li>
+                    <li class="menu__item"><a href="akcii.html" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
+                    <li class="mobile-menu__item"><a href="garantiya.html" class="mobile-menu__link">Гарантия</a></li>
+                    <li class="mobile-menu__item"><a href="proekty.html" class="mobile-menu__link">Наши проекты</a></li>
+                    <li class="mobile-menu__item"><a href="akcii.html" class="mobile-menu__link">Акции</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+                <button class="btn">
+                    <i class="btn__line"></i>
+                </button>
+            </nav>
+            <div class="head">
+                <div class="head__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+                </div>
+                <div class="head__adress">
+                    <strong>143443, г.Красногорск</strong>
+                    ул. Ново-Никольская д. 122 стр. 1 ТЦ КЛЁН 2 этаж
+                </div>
+                <div class="head__phone">
+                    <a href="tel:89264748899">8 (926) 474-88-99</a><br>
+                    По всем вопросам 24/7
+                </div>
+                <a href="javascript:openPopUp()" class="head__link my-btn my-btn--orange">обратный звонок</a>
+            </div>
+            <div class="navigation-down">
+                <ul class="menu-down">
+                    <li class="menu-down__item"><a href="#" class="menu-down__link">Монтаж и установка
+                            свай</a></li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Винтовые сваи</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома1</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Свайный
+                            фундамент</a>
+                        <ul class="submenu">
+                            <li><a href="">Винтовой фундамент для дома2</a></li>
+                            <li><a href="">Винтовой фундамент для пирса и причала</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                            <li><a href="">Винтовой фундамент для бани</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-down__item"><a href="praic.html" class="menu-down__link">Прайс</a></li>
+                    <li class="menu-down__item"><a href="calc.html" class="menu-down__link">Калькулятор</a></li>
+                    <li class="menu-down__item">
+                        <a href="vk.com" class="menu-down__link"><img src="img/icons/vk-icon.png" alt=""></a>
+                        <a href="facebook.com" class="menu-down__link"><img src="img/icons/facebook-icon.png"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <ul class="links-block">
+                <li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+                <li class="links-block__item"><a href="#" class="links-block__link">Для чего</a></li>
+            </ul>
+            <div class="forwhat-home">
+                <div class="forwhat-home__info">
+                    <h1 class="forwhat-home__title">Свайно винтовой фундамент под дом</h1>
+                    <p class="forwhat-home__text">
+                        Быстро и правильно рассчитать стоимость свайно винтового фундамента под дом из дерева несложно,
+                        обратившись за помощью к специалисту. Со стороны кажется, что особенных сложностей такие расчеты
+                        не вызовут, но в действительности становится важно правильно учесть множество факторов. Несущая
+                        способность сваи – не единственный параметр, очень много зависит от типа грунта, на котором
+                        возводится здание. И хотя дом из бруса
+                    </p>
+                    <div class="forwhat-home__link">
+                        <a href="calc.html" class="my-btn my-btn--orange">Рассчитать стоимость</a>
+                    </div>
+                    <div class="forwhat-home__calc-img">
+                        <img src="img/forwhat/forwhat-calc.png" alt="">
+                    </div>
+                </div>
+                <div class="forwhat-home__img">
+                    <img src="img/forwhat/forwhat-item1.png" alt="">
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item1.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Бесплатная доставка
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item2.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка за 1 день
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item3.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Установка в любое время года
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item4.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Оплата по договору на месте
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__img" style="background-image: url('img/service-item5.png')">
+                    </div>
+                    <div class="service-item__text">
+                        Возможность использования в самых сложных грунтах
+                    </div>
+                </div>
+            </div>
+
+            <div class="forwhat-like-section">
+                <div class="forwhat-like">
+                    <h2 class="forwhat-like__title">Фундамент для дома цена которого оптимальна</h2>
+                    <p class="forwhat-like__text">
+                        Постройка железобетонной основы на сложном грунте – всегда очень дорого. Избежать лишних трат
+                        поможет использование свай, способных обеспечить надежную поддержку здания без перерасхода на
+                        стройматериалы. Это вариант позволяет:
+                    </p>
+                    <p class="forwhat-like__text-item">
+                        Надежно защитить деревянный дом от близко залегающих грунтовых вод.
+                    </p>
+                    <p class="forwhat-like__text-item">
+                        Избежать риска повреждения проходящих под ним инженерных коммуникаций.
+                    </p>
+                    <p class="forwhat-like__text-item">
+                        Провести подключение всех необходимых удобств уже после того как постройка готова.
+                    </p>
+                    <p class="forwhat-like__text-item">
+                        Защитить здание от сил морозного пучения.
+                    </p>
+                    <p class="forwhat-like__text-item">
+                        Строить дом в любом удобном месте, а не там, где почва это позволяет.
+                    </p>
+                    <div class="forwhat-like__img">
+                        <img src="img/forwhat/forwhat-chel.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="forwhat-information">
+                <div class="information-wrap">
+                    <div class="forwhat-information__left">
+                        <h2 class="forwhat-information__title">
+                            Насколько стоимость свайного
+                            фундамента для дома выгоднее
+                        </h2>
+                        <p class="forwhat-information__text">
+                            Традиционный ленточный или плиточный фундамент, изготавливаемый из бетонной смести,
+                            укрепленной металлической арматурой, является одной из наиболее дорогих конструкций. Главным
+                            условием при его возведении является необходимость обязательно прорыть траншею до плотных
+                            слоев грунта, иначе дом просто не устоит.
+                        </p>
+                        <div class="forwhat-information__link">
+                            <a href="javascript:openPopUp();" class="my-btn my-btn--orange">Сделать заказ</a>
+                        </div>
+                    </div>
+                    <div class="forwhat-information__right">
+                        <p class="forwhat-information__text">
+                            Добавьте к этому сложность строительных работ, подверженность мелкозаглубленной
+                            железобетонной конструкции силам морозного пучения, необходимость обязательно ждать усадки.
+                        </p>
+                        <p class="forwhat-information__text">
+                            Фундамент на винтовых сваях избавлен от вышеперечисленных недостатков. А итоговая стоимость
+                            готовой конструкции в среднем на 40 % ниже, чем у железобетонной. Подобная экономия
+                            наблюдается при постройке недвижимости на прочных вариантах грунта, поддерживающих оба
+                            варианта. А при строительстве на торфяниках, песчаных грунтах или склонах экономия в 40 % на
+                            сваях легко превращается в 80, 120 и даже больше. Она зависит от глубины залегания прочного
+                            слоя почвы, до которого необходимо обязательно углубиться при заливке бетонной основы.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="forwhat-information">
+                <h2 class="forwhat-information__title ml mb-min">
+                    Расчет фундамента для дома
+                </h2>
+                <div class="information-wrap">
+                    <div class="forwhat-information__left">
+                        <p class="forwhat-information__text ml-0">
+                            Чтобы подсчитать минимальное количество винтовых свай для постройки загородной недвижимости
+                            из дерева, необходимо указать:
+                        </p>
+                        <p class="forwhat-information__text-item">
+                            <strong>Длину стен</strong><br>
+                            Наиболее популярными являются дома с фундаментом от 6х6 до 10х10 метров и варианты,
+                            собранные в данном промежутке.
+                        </p>
+                        <p class="forwhat-information__text-item">
+                            <strong>Тип постройки</strong><br>
+                            Гараж, жилая постройка, бытовка.
+                        </p>
+                        <p class="forwhat-information__text-item">
+                            <strong>Количество этажей</strong><br>
+                            От этого меняется нагрузка на отдельно взятую сваю.
+                        </p>
+                    </div>
+                    <div class="forwhat-information__right pl-14">
+                        <p class="forwhat-information__text-item mb-24">
+                            <strong>Указать материал несущих стен</strong><br>
+                            Брус, оцилиндрованное бревно, каркасные блоки.
+                        </p>
+                        <p class="forwhat-information__text-item mb-24">
+                            <strong>Изучить особенности грунта на участке строительства</strong>
+                        </p>
+                        <p class="forwhat-information__text-item mb-24">
+                            <strong>Уточнить геометрические особенности недвижимости</strong><br>
+                            Количество углов, высоту цокольного этажа, толщину и высоту стен, и прочие.
+                        </p>
+                        <p class="forwhat-information__text-item mb-24">
+                            <strong>
+                                Учесть возможность постройки камина, печки или другого массивного элемента внутри
+                                дома
+                            </strong>
+                        </p>
+                        <div class="forwhat-information__link link-right">
+                            <a href="calc.html" class="my-btn my-btn--orange">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="assessment-section pt">
+                <div class="assessment-top">
+                    <div class="container">
+                        <div class="assessment-wrap">
+                            <div class="assessment-info">
+                                <h2 class="assessment-info__title">
+                                    Быстрая оценка Вашего монтажа
+                                </h2>
+                                <div class="assessment-info__text">
+                                    Получите расчет сметы бесплатно уже сегодня!<br>
+                                    Вы получите расчет сметы с учетом:
+                                </div>
+                                <div class="assessment-info__item-wrap">
+                                    <div>
+                                        <p class="assessment-info__item">На каменистой почве для адгезии фундамента и
+                                            грунта.</p>
+                                        <p class="assessment-info__item">В малоэтажном жилом индивидуальном
+                                            строительстве.</p>
+                                        <p class="assessment-info__item">При постройке частной подсобной недвижимости
+                                            и аналогичных элементов комфорта.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assessment-form">
+                                <form action="#">
+                                    <div class="assessment-form-wrap">
+                                        <div class="assessment-form__input-wrap">
+                                            <div class="assessment-form__input assessment-form__input-name">
+                                                <input type="text" name="text" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="assessment-form__input assessment-form__input-phone">
+                                                <input type="text" name="phone" placeholder="Ваш телефон">
+                                            </div>
+
+                                            <div class="assessment-form__input assessment-form__input-email">
+                                                <input type="email" name="e-mail" placeholder="Ваш e-mail">
+                                            </div>
+                                        </div>
+                                        <div class="assessment-form__textarea-wrap">
+                                            <div class="assessment-form__input assessment-form__input-text">
+                                                <textarea name="text" placeholder="Ваше сообщение, формата:
+                                                    1. Вид строения: баня, терасса, дом
+                                                    2. Материал: брус, сруб, 
+                                                    каркас, ЛСТК
+                                                    3. Габариты, мм
+                                                    "></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="assessment-form__input-btn">Получить оценку</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="assessment-footer">
+                    <div class="container">
+                        <div class="assessment-footer-wrap">
+                            <div class="assessment-footer__text-wrap">
+                                <h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
+                                <p class="assessment-footer__subtitle">Получите оценку в один клик</p>
+                            </div>
+                            <div class="assessment-footer__form">
+                                <form action="se.php" method="POST">
+                                    <div class="assessment-footer__form-wrap">
+                                        <div class="assessment-footer__input-wrap">
+                                            <input class="assessment-footer__input" type="text" placeholder="Ваше имя">
+                                        </div>
+                                        <button class="assessment-footer__btn">оценка в 1 клик</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="important-information">
+                <div class="information-wrap">
+                    <div class="important-information__left">
+                        <h2 class="important-information__title">
+                            Как заказать фундамент под
+                            дом по выгодной цене
+                        </h2>
+                        <p class="important-information__text">
+                            С нашей помощью можно легко получить прочную надежную основу для загородной постройки из
+                            каркаса, бруса, оцилиндрованного бревна. Использование свай позволяет построить любой тип
+                            недвижимости на любом месте, указанном клиентом. Но самое важное – итоговая стоимость работ
+                            окажется заметно ниже, чем при использовании железобетонного варианта.
+                            Для этого достаточно лишь обратиться к нашим специалистам, используя предложенную на сайте
+                            контактную информацию.
+                        </p>
+                    </div>
+                    <div class="important-information__right">
+                        <div class="important-information__important">
+                            <h2 class="important-title">Важно!</h2>
+                            <p class="important-text">
+                                Некоторые люди считают, что винтовые ваи - это менее надежный вариант опоры для частной
+                                застройки, нежели традиционные железобетонные конструкции. В действительности срок
+                                службы правильно смотнтированной винтовой сваи выше, чем у других видов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="make-foundation-section">
+                <div class="make-foundation">
+                    <div class="make-foundation__img">
+                        <img src="img/forwhat/forwhat-item2.png" alt="">
+                    </div>
+                    <div class="make-foundation__info">
+                        <h2 class="make-foundation__title">Сделать фундамент для дома: цена вопроса</h2>
+                        <p class="make-foundation__text">
+                            Свайно-винтовой фундамент представляет собой внешне довольно простую конструкцию,
+                            выполненную в виде вкрученных по периметру будущего здания металлических опор. Сваи
+                            вкручиваются на необходимую глубину, после чего соединяются общим ростверком, поддерживающим
+                            здание. Считается, что конструкция позволяет намного дешевле построить надежную основу для
+                            не очень тяжелого здания, например, деревянного. Но это не единственное ее достоинство.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="what-influences">
+                <div class="what-influences-wrap">
+                    <div class="what-influences__left">
+                        <h2 class="what-influences__title">
+                            Что влияет на стоимость
+                            фундамента под дом
+                        </h2>
+                        <p class="what-influences__text">
+                            Итоговая стоимость прочного фундамента зависит от целого ряда параметров местности и
+                            возводимой постройки. Такие незначительные на первый взгляд мелочи, как расположение
+                            неподалеку обрыва, водоемов или даже разветвленной подземной коммуникационной сети могут
+                            существенно усложнить строительство, повысить его итоговую смету или даже сделать его
+                            нерентабельным. Негативное влияние каждого природного фактора, начиная от несущей
+                            способности почвы до температуры воздуха и влажности региона должны учитываться. И именно
+                            способы защиты здания от них становятся теми самыми условиями, повышающими итоговую
+                            стоимость работ.
+                        </p>
+                    </div>
+                    <div class="what-influences__right">
+                        <div class="what-influences__img">
+                            <img src="img/forwhat/forwhat-item3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="important-section">
+                <div class="important">
+                    <div class="important__info">
+                        <p class="important__text">
+                            Важно помнить, что мансарда превращает одноэтажную постройку в полутораэтажную. Например,
+                            планируя возведение прямоугольного дома с мансардой 6х8 на песчаном грунте из
+                            оцилиндрованного бревна без печки нужно 12 свай длиной 3 метра 108 диаметра. Планируя
+                            постройку печки, необходимо дополнительно вкрутить две сваи на месте ее будущего размещения,
+                            что повышает минимальное число необходимых опор до 14.
+                        </p>
+                        <div class="important__link">
+                            <a href="javascript:openPopUp();" class="my-btn my-btn--green">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="important__img">
+                        <img src="img/forwhat/forwhat-item4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-foundation">
+                <h2 class="price-foundation__title">
+                    Стоимость фундамента для дома
+                </h2>
+                <div class="price-foundation-wrap">
+                    <div class="price-foundation__left">
+                        <p class="price-foundation__text">
+                            Итоговая стоимость свайного фундамента для дома складывается из цены на используемые сваи и
+                            затраты на их вкручивание. Для монтажа требуется специальное оборудование, поиск и аренда
+                            которого самостоятельно – достаточно хлопотное занятие. Но взамен всего за день или два,
+                            время напрямую зависит от размеров будущего дома – на участке появляется готовый к
+                            использованию фундамент.
+                        </p>
+                        <div class="price-foundation__important">
+                            <h2 class="important-title">Важно!</h2>
+                            <p class="important-text">
+                                В отличии от традиционных железобетонных конструкций свайный фундамент можно строить в
+                                любое время года. А благодаря проникновению несущих лопастей опоры ниже уровня
+                                промерзания земли, здание будет стоять неподвижно даже на сильно пучинистых грунтах.
+                            </p>
+                        </div>
+                        <div class="price-foundation__link">
+                            <a href="praic.html" class="my-btn my-btn--orange">Прайс лист</a>
+                        </div>
+                    </div>
+                    <div class="price-foundation__right">
+                        <p class="price-foundation__text">
+                            Основные параметры, влияющие на стоимость свайного фундамента, следующие:
+                        </p>
+                        <p class="price-foundation__text-item">
+                            <strong>Количество опор</strong><br>
+                            Минимальный промежуток между сваями – 3 метра. Но чем слабее несущая характеристика грунта,
+                            тем
+                            он ниже и больше свай требуется.
+                        </p>
+                        <p class="price-foundation__text-item">
+                            <strong>Длина опоры</strong><br>
+                            Чем длиннее свая, тем она дороже. Кроме того большинство опор с большим диаметром иначе чем
+                            с
+                            привлечением спецтехники не вкрутить на достаточную глубину.
+                        </p>
+                        <p class="price-foundation__text-item">
+                            <strong>Материал и тип обвязки</strong><br>
+                            В зависимости от назначения и размеров постройки это может быть как простое приваривание
+                            оголовков, так и создание плотной сети из армирующей обвязки для поддержания элементов
+                            здания.
+                        </p>
+                        <p class="price-foundation__text-item">
+                            <strong>Тип грунта</strong><br>
+                            Чем сложнее вкрутить опору, тем выше стоимость работы.
+                        </p>
+                        <p class="price-foundation__text-item">
+                            <strong>Дополнительные факторы</strong><br>
+                            Время года, удаленность местности, отсутствие электроснабжения на участке и другие.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-have-section">
+                <div class="why-have">
+                    <div class="why-have__left">
+                        <h2 class="why-have__title">Почему стоит заказать фундамент под дом у нас</h2>
+                        <p class="why-have__text">
+                            Наши специалисты проведут максимально точный расчет для постройки надежной свайной опоры под
+                            любой вид недвижимости из дерева на любом участке. Стоимость расчетных и монтажных работ
+                            позволит получить надежную и одновременно недорогую конструкцию. Тем, кому малознакомы
+                            термины «ростверк», «свайное поле» или «пучинистый грунт», наша команда поможет избежать
+                        </p>
+                    </div>
+                    <div class="why-have__right">
+                        <p class="why-have__text">
+                            Невысокая стоимость свай сделала этот вариант весьма популярным в индивидуальном
+                            строительстве. Но, как было упомянуто выше, несущая способность такого фундамента зависит от
+                            достаточно большого числа сторонних факторов. Да, особых сложностей на первый взгляд
+                            вкручивание свай не вызывает. Но, как известно, когда со стороны наблюдешь за работой
+                            профессионала, кажется, что в ней нет ничего сложного.
+                        </p>
+                        <div class="why-have__link">
+                            <a href="javascript:openPopUp();" class="my-btn">Узнать подробности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-construction-section">
+                <div class="full-construction">
+                    <div class="full-construction__left">
+                        <h2 class="full-construction__title">Свайный фундамент для дома под ключ цена</h2>
+                        <p class="full-construction__text">
+                            Наша компания предлагает оптимальные цены расчетов свайного фундамента под ключ для
+                            деревянных домов со стенами любой длины. Здесь можно заказать проект свайного фундамента:
+                        </p>
+                        <div class="full-construction__items-wrap">
+                            <p class="full-construction__item">
+                                Под каркасные деревянные дома 6х6, 8х8, 10х10 и другие варианты.
+                            </p>
+                            <p class="full-construction__item">
+                                Под современные этажные коттеджи из оцилиндрованного бревна
+                                для их постройки на слабом грунте.
+                            </p>
+                            <p class="full-construction__item">
+                                Под небольшие хозяйственные постройки, для которых
+                                нерентабельно или невозможно построить ленточный фундамент.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="full-construction__right">
+                        <p class="full-construction__text">
+                            Это лишь малая часть наиболее востребованных вариантов для индивидуального загородного
+                            строительства. Помимо них наши специалисты помогут провести расчет максимального недорогого
+                            свайного поля под любой тип недвижимости с сохранением оптимальных показателей прочности.
+                            Если вам нужен свайный фундамент под дом, цена которого позволит сэкономить на строительстве
+                            без потери несущих качеств, достаточно обратиться к нашим профессионалам.
+                        </p>
+                        <div class="full-construction__link">
+                            <a href="javascript:openPopUp();" class="my-btn my-btn--orange">Сделать заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/footer-logo.png" alt="Фундамикс"></a>
+                    <p class="footer-copyright">© Компания Fundamix
+                        <span>Монтаж и установка свайно винтового фундаманта</span></p>
+                </div>
+                <ul class="footer-menu left-menu">
+                    <li class="footer-menu__item">О нас</li>
+                    <li class="footer-menu__item">&nbsp;</li>
+                    <li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О компании</a></li>
+                    <li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+                    <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты</a></li>
+                </ul>
+                <ul class="footer-menu right-menu">
+                    <li class="footer-menu__item">Основные разделы</li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Винтовые сваи</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Для чего</a></li>
+                    <li class="footer-menu__item"><a href="praic.html" class="footer-menu__link">Прайс</a></li>
+                    <li class="footer-menu__item"><a href="calc.html" class="footer-menu__link">Калькулятор</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <h3 class="footer-socials__title">Поделиться в соц. сетях</h3>
+                    <div class="footer-socials__links">
+                        <div id="share">
+                            <div class="social" data-url="https://webliberty.ru/share/"
+                                data-title="Кнопки поделиться в социальных сетях">
+                                <a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+                                        alt="Facebook"></a>
+                                <a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+                                        alt="Instagramm"></a>
+                                <a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

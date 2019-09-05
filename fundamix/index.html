@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Главная</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="body-bg"></div>
+
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+			</div>
+			<h2 class="popup__title">
+				Оставьте ваши контактные данные и наш<br>
+				специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="send.php" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="name">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text">
+							</td>
+						</tr>
+					</table>
+					<input type="submit" class="popup-form__btn" name="otprav">
+				</form>
+			</div>
+			<div class="popup__soglashenie">
+				Отправляя форму, вы даете <a href="#">согласие</a><br>
+				на обработку персональных данных
+			</div>
+			<span id="close-popup1" class="close-popup">&#215;</span>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+			<nav class="navigation">
+				<ul class="menu">
+					<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="dostavka.html" class="menu__link">Доставка</a></li>
+					<li class="menu__item"><a href="garantiya.html" class="menu__link">Гарантия</a></li>
+					<li class="menu__item"><a href="proekty.html" class="menu__link">Наши проекты</a></li>
+					<li class="menu__item"><a href="akcii.html" class="menu__link">Акции</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+					<li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__link">Доставка</a></li>
+					<li class="mobile-menu__item"><a href="garantiya.html" class="mobile-menu__link">Гарантия</a></li>
+					<li class="mobile-menu__item"><a href="proekty.html" class="mobile-menu__link">Наши проекты</a></li>
+					<li class="mobile-menu__item"><a href="akcii.html" class="mobile-menu__link">Акции</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+				</ul>
+				<button class="btn">
+					<i class="btn__line"></i>
+				</button>
+			</nav>
+			<div class="head">
+				<div class="head__logo">
+					<a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+				</div>
+				<div class="head__adress">
+					<strong>143443, г.Красногорск</strong>
+					ул. Ново-Никольская д. 122 стр. 1 ТЦ КЛЁН 2 этаж
+				</div>
+				<div class="head__phone">
+					<a href="tel:89264748899">8 (926) 474-88-99</a><br>
+					По всем вопросам 24/7
+				</div>
+				<a href="javascript:openPopUp()" class="head__link my-btn my-btn--orange">обратный звонок</a>
+			</div>
+			<div class="navigation-down">
+				<ul class="menu-down">
+					<li class="menu-down__item"><a href="index.html" class="menu-down__link page-active">Монтаж и установка
+							свай</a></li>
+					<li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Винтовые сваи</a>
+						<ul class="submenu">
+							<li><a href="">Винтовой фундамент для дома1</a></li>
+							<li><a href="">Винтовой фундамент для пирса и причала</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+						</ul>
+					</li>
+					<li class="menu-down__item"><a href="javascript:void(0);" class="dropdown-link">Свайный
+							фундамент</a>
+						<ul class="submenu">
+							<li><a href="">Винтовой фундамент для дома2</a></li>
+							<li><a href="">Винтовой фундамент для пирса и причала</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+							<li><a href="">Винтовой фундамент для бани</a></li>
+						</ul>
+					</li>
+					<li class="menu-down__item"><a href="praic.html" class="menu-down__link">Прайс</a></li>
+					<li class="menu-down__item"><a href="calc.html" class="menu-down__link">Калькулятор</a></li>
+					<li class="menu-down__item">
+						<a href="vk.com" class="menu-down__link"><img src="img/icons/vk-icon.png" alt=""></a>
+						<a href="facebook.com" class="menu-down__link"><img src="img/icons/facebook-icon.png"
+								alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<div class="home-section">
+				<div class="home-section__info">
+					<h1 class="home-section__title">Установка свайного фундамента</h1>
+					<p class="home-section__text">
+						Сэкономим Вам 20% стоимости <br>
+						на установке свайного фундамента <br>
+						благодаря закупке материалов у производителей
+					</p>
+					<div class="home-section__link">
+						<a href="javascript:openPopUp()" class="my-btn my-btn--orange">Заказать установку</a>
+					</div>
+				</div>
+				<div class="home-section__img">
+					<img src="img/home-dom.png" alt="home-dom">
+					<div class="home-section__additionally">
+						Срок эксплуатации превышает срок эксплуатации деревянных строений
+					</div>
+				</div>
+			</div>
+			<div class="services-section">
+				<div class="service-item">
+					<div class="service-item__img" style="background-image: url('img/service-item1.png')">
+					</div>
+					<div class="service-item__text">
+						Бесплатная доставка
+					</div>
+				</div>
+				<div class="service-item">
+					<div class="service-item__img" style="background-image: url('img/service-item2.png')">
+					</div>
+					<div class="service-item__text">
+						Установка за 1 день
+					</div>
+				</div>
+				<div class="service-item">
+					<div class="service-item__img" style="background-image: url('img/service-item3.png')">
+					</div>
+					<div class="service-item__text">
+						Установка в любое время года
+					</div>
+				</div>
+				<div class="service-item">
+					<div class="service-item__img" style="background-image: url('img/service-item4.png')">
+					</div>
+					<div class="service-item__text">
+						Оплата по договору на месте
+					</div>
+				</div>
+				<div class="service-item">
+					<div class="service-item__img" style="background-image: url('img/service-item5.png')">
+					</div>
+					<div class="service-item__text">
+						Возможность использования в самых сложных грунтах
+					</div>
+				</div>
+			</div>
+			<div class="one-service-section">
+				<div class="one-service">
+					<div class="one-service__img">
+						<img src="img/svai-fundament.png" alt="">
+					</div>
+					<div class="one-service__info">
+						<h2 class="one-service__title">Установка свайного фундамента цена</h2>
+						<p class="one-service__text">
+							Установка свайного фундамента – это важнейший элемент любого здания, он воспринимает
+							нагрузку от конструктивных частей объекта и передает ее на устойчивые слои грунта.
+							Существуют разные варианты обустройства основания для дома, но сегодня наибольшей
+							популярностью пользуются свайные фундаменты и основной причиной востребованности установки
+							свайного фундамента является его цена с установкой.
+						</p>
+						<div class="one-service__link">
+							<a href="javascript:openPopUp()" class=" my-btn my-btn--green">Узнать подробнее</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="price-section">
+				<h2 class="price-title">Монтаж винтовых свай цена за работу</h2>
+				<div class="price-table">
+					<table>
+						<thead>
+							<tr>
+								<th class="price-name">Условное обозначение</th>
+								<th>Диаметр ствола мм</th>
+								<th>Толщина стенки ствола мм</th>
+								<th>Диаметр лопасти мм</th>
+								<th>Толщина лопасти мм</th>
+								<th>Длина ствола мм</th>
+								<th>Стоимость СВС</th>
+								<th>Стоимость оголовка 200x200</th>
+								<th>Стоимость монтажа</th>
+								<th>Стоимость комплекта</th>
+								<th>Технические характеристики</th>
+							</tr>
+						</thead>
+						<tr>
+							<td rowspan="7" class="price-name"><span>свс 57</span></td>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td class="last-td">1950</td>
+							<td rowspan="7" class="price-img">
+								<img src="img/svai-size.png" alt="">
+							</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+
+					</table>
+
+					<div class="line-praic"></div>
+
+					<table>
+						<thead>
+							<tr>
+								<th class="price-name">Условное обозначение</th>
+								<th>Диаметр ствола мм</th>
+								<th>Толщина стенки ствола мм</th>
+								<th>Диаметр лопасти мм</th>
+								<th>Толщина лопасти мм</th>
+								<th>Длина ствола мм</th>
+								<th>Стоимость СВС</th>
+								<th>Стоимость оголовка 200x200</th>
+								<th>Стоимость монтажа</th>
+								<th>Стоимость комплекта</th>
+								<th>Технические характеристики</th>
+							</tr>
+						</thead>
+						<tr>
+							<td rowspan="7" class="price-name"><span>свс 76</span></td>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td class="last-td">1950</td>
+							<td rowspan="7" class="price-img">
+								<img src="img/svai-size.png" alt="">
+							</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>3</td>
+							<td>200</td>
+							<td>4</td>
+							<td>1500</td>
+							<td>850</td>
+							<td>200</td>
+							<td>900</td>
+							<td>1950</td>
+						</tr>
+					</table>
+
+					<div class="line-praic"></div>
+				</div>
+			</div>
+
+			<div class="slider-section">
+				<div class="slider-section-wrap">
+					<h2 class="slider-section__title">
+						Винтовые сваи для фундамента сегодня широко используются в
+						строительстве.
+					</h2>
+					<p class="slider-section__text">
+						Благодаря своей низкой цене с установкой, получили использование под монтаж винтовой сваи
+						следующих типов объектов:
+					</p>
+					<div class="slider">
+						<a href="#" class="slider-item">
+							<div class="slider-item__img">
+								<img src="img/slider-item1.png" alt="">
+							</div>
+							<div class="slider-item__text">
+								Удобное крыльцо
+							</div>
+						</a>
+						<a href="#" class="slider-item">
+							<div class="slider-item__img">
+								<img src="img/slider-item2.png" alt="">
+							</div>
+							<div class="slider-item__text">
+								Мост-пирс-переправа
+							</div>
+						</a>
+						<a href="#" class="slider-item">
+							<div class="slider-item__img">
+								<img src="img/slider-item3.png" alt="">
+							</div>
+							<div class="slider-item__text">
+								Терраса на сваях
+							</div>
+						</a>
+						<a href="#" class="slider-item">
+							<div class="slider-item__img">
+								<img src="img/slider-item3.png" alt="">
+							</div>
+							<div class="slider-item__text">
+								Удобное крыльцо
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="assessment-section">
+				<div class="assessment-top">
+					<div class="container">
+						<div class="assessment-wrap">
+							<div class="assessment-info">
+								<h2 class="assessment-info__title">
+									Быстрая оценка Вашего монтажа
+								</h2>
+								<div class="assessment-info__text">
+									Получите расчет сметы бесплатно уже сегодня!<br>
+									Вы получите расчет сметы с учетом:
+								</div>
+								<div class="assessment-info__item-wrap">
+									<div>
+										<p class="assessment-info__item">На каменистой почве для адгезии фундамента и
+											грунта.</p>
+										<p class="assessment-info__item">В малоэтажном жилом индивидуальном
+											строительстве.</p>
+										<p class="assessment-info__item">При постройке частной подсобной недвижимости
+											и аналогичных элементов комфорта.</p>
+									</div>
+								</div>
+							</div>
+							<div class="assessment-form">
+								<form action="#">
+									<div class="assessment-form-wrap">
+										<div class="assessment-form__input-wrap">
+											<div class="assessment-form__input assessment-form__input-name">
+												<input type="text" name="text" placeholder="Ваше имя">
+											</div>
+											<div class="assessment-form__input assessment-form__input-phone">
+												<input type="text" name="phone" placeholder="Ваш телефон">
+											</div>
+
+											<div class="assessment-form__input assessment-form__input-email">
+												<input type="email" name="e-mail" placeholder="Ваш e-mail">
+											</div>
+										</div>
+										<div class="assessment-form__textarea-wrap">
+											<div class="assessment-form__input assessment-form__input-text">
+												<textarea name="text" placeholder="Ваше сообщение, формата:
+												1. Вид строения: баня, терасса, дом
+												2. Материал: брус, сруб, 
+												каркас, ЛСТК
+												3. Габариты, мм
+												"></textarea>
+											</div>
+										</div>
+									</div>
+									<button class="assessment-form__input-btn">Получить оценку</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="assessment-footer">
+					<div class="container">
+						<div class="assessment-footer-wrap">
+							<div class="assessment-footer__text-wrap">
+								<h4 class="assessment-footer__title">Нет времени на заполнение?</h4>
+								<p class="assessment-footer__subtitle">Получите оценку в один клик</p>
+							</div>
+							<div class="assessment-footer__form">
+								<form action="se.php" method="POST">
+									<div class="assessment-footer__form-wrap">
+										<div class="assessment-footer__input-wrap">
+											<input class="assessment-footer__input" type="text" placeholder="Ваше имя">
+										</div>
+										<button class="assessment-footer__btn">оценка в 1 клик</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<div class="advantage-section">
+				<h2 class="advantage-section__title">Преимущества монтажа фундамента на винтовых сваях</h2>
+				<p class="advantage-section__text">
+					Преимущества использования винтовой сваи для создания опорной конструкции сделали металлические
+					стержни с лопастью универсальным строительным материалом. Убедиться в этом позволит сочетание
+					плюсов, позволяющих недорого построить надежную фундаментную конструкцию:
+				</p>
+				<div class="advantage-wrap">
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo1.png')"></div>
+						<div class="advantage-item__text">
+							Экономично обоснованная выгода – в сравнении с традиционными ленточными фундаментами
+							использование свай дешевле в среднем на 40%.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo2.png')"></div>
+						<div class="advantage-item__text">
+							Под готовой недвижимостью можно прокладывать коммуникации любой сложности, не опасаясь
+							повредить несущую конструкцию.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo3.png')"></div>
+						<div class="advantage-item__text">
+							Установка опор может осуществляться круглый год независимо от типа местности.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo4.png')"></div>
+						<div class="advantage-item__text">
+							Металлические опоры надежно защищают постройку от разрушительных сил морозного пучения.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo5.png')"></div>
+						<div class="advantage-item__text">
+							Торфяные болота, обводненные грунты, прибрежная зона, песок или другие сложные участки – не
+							повод для переноса здания.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo6.png')"></div>
+						<div class="advantage-item__text">
+							Серьезный минус постройки цоколя классического образца – появление больших объемов
+							строительного мусора – отсутствует полностью.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo7.png')"></div>
+						<div class="advantage-item__text">
+							Используя специальный буронабивной экскаватор или другую спецтехнику процесс монтажа можно
+							закончить всего за один-два дня.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo8.png')"></div>
+						<div class="advantage-item__text">
+							Сохраняется экологическая чистота ландшафта.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo9.png')"></div>
+						<div class="advantage-item__text">
+							Строительные работы разрешается начинать сразу, без обязательного "бетонного" перерыва на
+							усадку.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__img" style="background-image: url('img/preimushestvo10.png')"></div>
+						<div class="advantage-item__text">
+							Минимальный срок эксплуатации опорных стержней – 45 лет с возможностью ремонта или замены.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="house-section">
+				<div class="house-section__img">
+					<img src="img/dom.png" alt="Svai">
+				</div>
+				<p class="house-section__text">
+					Установка свайного фундамента цена — невысока и вовсе не требует выполнение сложных и затратных
+					земляных работ. Оттого при установке свайного фундамента, цена всегда радует собственника. У свай
+					есть не только преимущества, но и недостатки. Главный из них – возможность появления ржавчины на
+					металлических трубах. Но этот минус легко нивелировать. В компании Fundamix используются опоры,
+					обработанные антикоррозийными веществами, которые препятствуют возникновению ржавчины на
+					конструкциях в процессе их эксплуатации.
+				</p>
+			</div>
+
+			<div class="installation-section">
+				<div class="installation">
+					<div class="installation__title">
+						Профессиональный монтаж свай
+					</div>
+					<div class="installation__price">
+						от<span>900</span>руб.
+					</div>
+					<div class="installation__links">
+						<a href="praic.html" class="installation__btn my-btn my-btn--green">Прайслист</a>
+						<a href="calc.html" class="installation__btn my-btn my-btn--green">Калькулятор</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="article-section">
+				<div class="article-wrap">
+					<div class="article mr">
+						<h2 class="article__title">Монтаж винтовых свай</h2>
+						<p class="article__text">
+							Загородная индивидуальная застройка классическим способом часто сопряжена с множеством
+							проблем.
+							Главными среди них являются сложный грунт, ограниченный бюджет и мало свободного времени.
+							Кроме
+							этого, бетонный цоколь всегда должен получать время на усадку. А близость к воде, наличие на
+							участке песка, склонов или суглинка всегда приводит к его проседанию.
+						</p>
+
+						<h2 class="article__title">Тонкости выбора свай и их установки</h2>
+						<p class="article__text">
+							Каждая свая внешне представляет несложную конструкцию в виде толстостенной трубы и
+							наконечника,
+							при помощи которого она закручивается на необходимую глубину. Отдельным элементом является
+							съемный оголовок, который приваривается к окончательно установленной опоре. На нем
+							фиксируется
+							будущая постройка. Длина трубы, диаметр и тип наконечника – вот основные параметры, от
+							которых
+							зависят дороговизна самой опоры и цена за работу по установке винтовых свай.
+						</p>
+						<div class="article__btn">
+							<a href="javascript:openPopUp()" class="my-btn my-btn--orange">Узнать подробнее</a>
+						</div>
+					</div>
+
+					<div class="article pt">
+						<p class="article__text">
+							Технология постройки фундамента с использованием свай заметно отличается от создания
+							привычных ленточно-заливных конструкций из бетона. Винтовые сваи вкручиваются глубоко в
+							землю, предлагая прочную неподвижную основу для будущей постройки любого типа – от жилого
+							дома или беседки до речного пирса. При этом калькуляция расходов на материалы и работу
+							позволяет убедиться, что стоимость установки винтовых опор экономически заметно
+							предпочтительнее традиционных способов постройки.
+						</p>
+						<br>
+						<p class="article__text">
+							Все конструкции можно условно разделить на две категории – сварные и литые. Сварная опора
+							заметно дешевле литой благодаря простоте производства. Это стальная труба с приваренными к
+							ней винтообразными лопастями и конусообразным наконечником. Диаметр трубы выбирается исходя
+							из запланированных нагрузок. Конструкция используется:
+						</p>
+
+						<ul class="article__items">
+							<li class="article__item">На каменистой почве для адгезии фундамента и грунта.</li>
+							<li class="article__item">В малоэтажном жилом индивидуальном строительстве.</li>
+							<li class="article__item">При постройке частной подсобной недвижимости
+								и аналогичных элементов комфорта.</li>
+						</ul>
+
+						<p class="article__text">
+							Главное достоинство сварных опор – доступная цена. А вот опоры с литым наконечником
+							обойдутся при покупке на порядок дороже.
+							<br><br>
+							Литой винт можно изготовить только при определенных условиях, что заметно повышает
+							себестоимость стержней. Взамен они предлагают более длительный срок эксплуатации, и
+							возможность выдержать огромную нагрузку. Поэтому на талых грунтах, зонах вечной мерзлоты, в
+							воде и при возведении небольших зданий жилого назначения рекомендуется использовать только
+							литые сваи.
+						</p>
+
+
+					</div>
+				</div>
+
+
+			</div>
+			<div class="top-bg"></div>
+			<div class="stages-section">
+
+				<h2 class="stages-title">Этапы работ по монтажу свайно-винтового фундамента</h2>
+				<p class="stages-info">
+					Монтаж свайного фундамента проводится намного быстрее заливки железобетонной конструкции. Но чтобы
+					будущий дом получил надежную опорную конструкцию, необходимо организовать ее правильное поэтапное
+					возведение. Для этого нужно:
+				</p>
+				<div class="stages-wrap">
+					<div class="stages-item">
+						<div class="stages-item__number">1<span>.</span></div>
+						<p class="stages-item__text">
+							Выполнить разметку периметра. Будущие опоры следует разместить равномерно, но не дальше чем
+							на расстоянии 3 метра друг от друга.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">2<span>.</span></div>
+						<p class="stages-item__text">
+							Выставить периметр и проверить длину диагоналей. Когда она будет одинаковой, можно
+							устанавливать угловые сваи.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">3<span>.</span></div>
+						<p class="stages-item__text">
+							Завинтить угловые опоры на максимальную глубину. Винты должны обязательно проникнуть глубже
+							уровня промерзания почвы, чтобы под действием морозного пучения их не выдавливало обратно.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">4<span>.</span></div>
+						<p class="stages-item__text">
+							Во время ввинчивания свай необходим обязательный, практически пошаговый контроль
+							вертикальности трубы. Угол наклона не должен превышать 20, в противном случае опора
+							деформируется из-за неравномерной нагрузки. Чтобы контролировать сдвиг можно использовать
+							магнитный уровень.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">5<span>.</span></div>
+						<p class="stages-item__text">
+							На выбранных местах вкручиваются все оставшиеся сваи.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">6<span>.</span></div>
+						<p class="stages-item__text">
+							Используя водный уровень, выполняется разметка опор и их последующая обрезка. Заранее
+							учтите, что срезать придется не менее 10 сантиметров трубы – это запас для технического
+							отверстия.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">7<span>.</span></div>
+						<p class="stages-item__text">
+							Во вкрученные и обрезанные опоры заливается цементный раствор, но без щебня или аналогичного
+							бута. Цель заливки – защита внутренней полости трубы от коррозии, а не улучшение несущих
+							свойств.
+						</p>
+					</div>
+					<div class="stages-item">
+						<div class="stages-item__number">8<span>.</span></div>
+						<p class="stages-item__text">
+							Заключительный этап – приваривание оголовков. Получившийся сварной шов зачищается, после
+							чего наносится антикоррозийное покрытие.
+						</p>
+					</div>
+					<div class="stages-finish">
+						<p class="stages-finish__text">
+							Готово – можно приступать к фиксации связующих элементов для обвязки будущей постройки.<br>
+							Приступать к ее возведению можно практически сразу, как закончена вышеописанная
+							<strong>работа.</strong>
+						</p>
+					</div>
+				</div>
+				<div class="stages-btn">
+					<a href="javascript:openPopUp()" class="my-btn my-btn--green">Узнать подробнее</a>
+				</div>
+			</div>
+
+			<div class="house-section pb align-top">
+				<div class="house-section__img mr">
+					<img src="img/dom-iz-dereva.png" alt="Svai">
+				</div>
+				<div class="house-section__info">
+					<h2 class="house-section__title">Заключение</h2>
+					<p class="house-section__text">
+						Использование винтовых свай помогает экономить, не отступая при этом от требований
+						эксплуатационной безопасности будущей постройки. Больше того, для целого ряда случаев
+						использование винтовых стержней, отдельно или совместно с железобетонным ростверком, считается
+						приоритетным. Остается лишь упомянуть простоту, с которой сегодня можно поставить сваи даже без
+						использования спецтехники. А также удобную возможность создания круглый год недорогого надежного
+						и прочного основания на любом сложном участке под любую постройку. Все это подтверждает, что
+						винтовые сваи – лучший выбор для индивидуальной застройки.
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-logo">
+					<a href="index.html"><img src="img/footer-logo.png" alt="Фундамикс"></a>
+					<p class="footer-copyright">© Компания Fundamix
+						<span>Монтаж и установка свайно винтового фундаманта</span></p>
+				</div>
+				<ul class="footer-menu left-menu">
+					<li class="footer-menu__item">О нас</li>
+					<li class="footer-menu__item">&nbsp;</li>
+					<li class="footer-menu__item"><a href="about.html" class="footer-menu__link">О компании</a></li>
+					<li class="footer-menu__item"><a href="dostavka.html" class="footer-menu__link">Доставка</a></li>
+					<li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты</a></li>
+				</ul>
+				<ul class="footer-menu right-menu">
+					<li class="footer-menu__item">Основные разделы</li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Винтовые сваи</a></li>
+					<li class="footer-menu__item"><a href="dlyachego.html" class="footer-menu__link">Для чего</a></li>
+					<li class="footer-menu__item"><a href="praic.html" class="footer-menu__link">Прайс</a></li>
+					<li class="footer-menu__item"><a href="calc.html" class="footer-menu__link">Калькулятор</a></li>
+				</ul>
+				<div class="footer-socials">
+					<h3 class="footer-socials__title">Поделиться в соц. сетях</h3>
+					<div class="footer-socials__links">
+						<div id="share">
+							<div class="social" data-url="https://webliberty.ru/share/"
+								data-title="Кнопки поделиться в социальных сетях">
+								<a class="footer-socials__link" data-id="fb"><img src="img/facebook-footer.png"
+										alt="Facebook"></a>
+								<a class="footer-socials__link" data-id="tw"><img src="img/instagramm-footer.png"
+										alt="Instagramm"></a>
+								<a class="footer-socials__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="footer-link">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
