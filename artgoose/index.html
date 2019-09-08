@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Главная</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="popup-wrap" id="popup1">
+		<div class="popup">
+			<div class="popup__logo">
+				<a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+			</div>
+			<h2 class="popup__title">
+				Оставьте ваши контактные данные и наш<br>
+				специалист свяжется с вами
+			</h2>
+			<div class="popup-form">
+				<form action="send.php" method="POST">
+					<table>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="">Ваше имя</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="name" placeholder="Александ">
+							</td>
+						</tr>
+						<tr class="input-wrap">
+							<td class="popup-form__label-td">
+								<label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+							</td>
+							<td>
+								<input class="popup-form__input" type="text" name="phone" placeholder="89992229999">
+							</td>
+						</tr>
+					</table>
+					<input type="submit" class="popup-form__btn" name="otprav">
+				</form>
+			</div>
+			<div class="popup__soglashenie">
+				Отправляя форму, вы даете <a href="#">согласие</a><br>
+				на обработку персональных данных
+			</div>
+			<span id="close-popup1" class="close-popup">&#215;</span>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="navigation">
+				<ul class="menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Сайт</a></li>
+					<li class="menu__item"><a href="landing.html" class="menu__link">Лендинг</a></li>
+					<li class="menu__item dropdown-item"><a href="javascript:void(0);"
+							class="menu__link dropdown-link">Еще услуги</a>
+						<ul class="submenu">
+							<li><a href="">Услуга 1</a></li>
+							<li><a href="">Услуга 2</a></li>
+							<li><a href="">Услуга 3</a></li>
+							<li><a href="">Услуга 4</a></li>
+							<li><a href="">Услуга 5</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+					<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<ul class="menu-socials">
+						<li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc1.png"
+									alt=""></a></li>
+						<li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc2.png"
+									alt=""></a></li>
+						<li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc3.png"
+									alt=""></a></li>
+						<li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc4.png"
+									alt=""></a></li>
+					</ul>
+				</ul>
+
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Сайт</a>
+					</li>
+					<li class="mobile-menu__item"><a href="landing.html" class="mobile-menu__link">Лендинг</a></li>
+					<li class="mobile-menu__item dropdown-item"><a href="javascript:void(0);"
+							class="mobile-menu__link dropdown-link">Еще услуги</a>
+						<ul class="submenu">
+							<li><a href="">Услуга 1</a></li>
+							<li><a href="">Услуга 2</a></li>
+							<li><a href="">Услуга 3</a></li>
+							<li><a href="">Услуга 4</a></li>
+							<li><a href="">Услуга 5</a></li>
+						</ul>
+					</li>
+					<li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+				</ul>
+				<button class="btn">
+					<i class="btn__line"></i>
+				</button>
+			</nav>
+			<div class="head">
+				<div class="head__logo">
+					<a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+				</div>
+				<div class="head__adress">
+					<strong>Работаем онлайн</strong>
+					По всей России
+				</div>
+				<div class="head__phone">
+					<a href="tel:89264748899">8 (926) 474-88-99</a><br>
+					По всем вопросам
+				</div>
+				<a href="javascript:openPopUp()" class="head__link my-btn my-btn--fiolet">обратный звонок</a>
+			</div>
+		</header>
+
+		<main>
+			<div class="home-section">
+				<div class="home">
+					<div class="home__img">
+						<img src="img/home-img.png" alt="">
+					</div>
+					<div class="home__content">
+						<h1 class="home__title">
+							Быстрые продающие сайты
+							для малого и среднего бизнеса
+							по доступной цене.
+						</h1>
+						<p class="home__text">
+							С нами вы позабудете о поиске
+							других исполнителей и начнете
+							уже считать вашу прибыль.
+						</p>
+						<div class="home__links">
+							<a href="javascript:openPopUp()" class="my-btn my-btn--fiolet my-btn--line">Заказать</a>
+							<a href="portfolio.html" class="my-btn my-btn--orange">Портфолио</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="service-section">
+				<div class="service">
+					<div class="service-item">
+						<div class="service-item__img" style="background-image: url('img/service-item1.png')"></div>
+						<p class="service-item__text">Правильная структура</p>
+					</div>
+					<div class="service-item">
+						<div class="service-item__img" style="background-image: url('img/service-item2.png')"></div>
+						<p class="service-item__text">Оптимизация под СЕО</p>
+					</div>
+					<div class="service-item">
+						<div class="service-item__img" style="background-image: url('img/service-item3.png')"></div>
+						<p class="service-item__text">Написание текста</p>
+					</div>
+					<div class="service-item">
+						<div class="service-item__img" style="background-image: url('img/service-item4.png')"></div>
+						<p class="service-item__text">Уникальный дизайн</p>
+					</div>
+					<div class="service-item">
+						<div class="service-item__img" style="background-image: url('img/service-item5.png')"></div>
+						<p class="service-item__text">Высокая скорость</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="turnkey-section">
+				<div class="turnkey">
+					<h2 class="turnkey__title">
+						Разработка сайтов под ключ
+					</h2>
+					<div class="turnkey-content">
+						<div class="turnkey-content__img">
+							<img src="img/item1.png" alt="">
+						</div>
+						<div class="turnkey-content__info">
+							<p class="turnkey-content__text">
+								Наша команда специализируется на разработке сайтов под ключ
+								различной сложности. Иметь собственную площадку в Интернете
+								на сегодняшний день – это необходимость, а не роскошь для вашего бизнеса.<br>
+								Это эффективный инструмент для продвижения своего товара или услуг.
+								С помощью грамотно разработанного проекта под ключ вы привлечете
+								больше клиентов и сможете существенно развить бизнес, укрепив свои позиции в выбранной
+								нише.
+							</p>
+							<br>
+							<p class="turnkey-content__text">
+								Разработать сайт под ключ вам предлагают многие компании и даже фрилансеры. Человеку,
+								который не часто сталкивается с этой задачей, достаточно сложно определить подходящего
+								исполнителя. Существует риск срыва сроков, некачественного выполнения поставленной
+								задачи и прочего.<br>
+								Зачем тратить свое время и силы, если сразу можно обратиться к профессионалам, которые
+								знают все нюансы данного направления.
+								Если вас интересует разработка сайта недорого под ключ, ArtGoosekr точно поможет вам!
+								Цена на разработку сайта у нас 80 000 руб. с уникальным дизайном
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="as-section">
+				<h2 class="as-title">Как будет происходить разработка сайта?</h2>
+				<div class="as">
+					<div class="as-item">
+						<div class="as-item__number">1</div>
+						<div class="as-item__text">
+							Анализ конкурентов и сбор ключевых запросов
+							с оценкой конкуренции.
+						</div>
+					</div>
+					<div class="as-item">
+						<div class="as-item__number">2</div>
+						<div class="as-item__text">
+							Написание текста на разделы сайта
+						</div>
+					</div>
+					<div class="as-item">
+						<div class="as-item__number">3</div>
+						<div class="as-item__text">
+							Разработка дизайна
+						</div>
+					</div>
+					<div class="as-item">
+						<div class="as-item__number">4</div>
+						<div class="as-item__text">
+							Верстка дизайна
+						</div>
+					</div>
+					<div class="as-item">
+						<div class="as-item__number">5</div>
+						<div class="as-item__text">
+							Натяжка на CMS и программирование
+						</div>
+					</div>
+					<div class="as-item">
+						<div class="as-item__number">6</div>
+						<div class="as-item__text">
+							Все этапы согласовываются с вами.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="attention-section">
+				<div class="attention">
+					<div class="attention-wrap">
+						<div class="attention__info">
+							<h2 class="attention__title">Обратите внимание!</h2>
+							<p class="attention__text">
+								Если сайт в начале сделать неправильно
+								то все дальнейшие усилия пойдут насмарку
+								и вы потеряете время и все свои
+								вложенные средства.
+							</p>
+							<p class="attention__subtext">
+								НЕ тратьте попрасту деньги и свое драгоценное время
+								обратитесь к специалистам.
+							</p>
+						</div>
+						<div class="attention__img">
+							<img src="img/item2.png" alt="">
+						</div>
+					</div>
+					<div class="attention__link">
+						<a href="javascript:openPopUp()" class="my-btn my-btn--orange my-btn--line">Получить
+							консультацию</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="why-section">
+				<h2 class="why-title">Почему Вам стоит заказать сайт под ключ у нас</h2>
+				<div class="why">
+					<div class="why__img">
+						<img src="img/item3.png" alt="">
+					</div>
+					<div class="why__content">
+						<p class="why__text">
+							В нашей команде работают квалифицированные специалисты с многолетним опытом работы. Они
+							прекрасно разбираются в тонкостях своего направления. Это обеспечивает качественный
+							результат, который удовлетворит вас и ваших потенциальных клиентов.<br>
+							В разработке проекта мы учитываем не только пожелания заказчика, но и интересы потенциальных
+							покупателей его товара или услуги. Это комплексный процесс, требующий определенных навыков и
+							знаний. Также учитываем потребности современных пользователей, которые все больше
+							предпочитают использовать для поиска в Интернете мобильные телефоны. Наши специалисты
+							создают адаптивную версию, облегчая и ускоряя поиск.
+						</p>
+						<p class="why__text">
+							Независимо от того, какой сайт заказать у нас, вы можете рассчитывать на подробный разбор
+							всех задач. На каждом этапе мы обсуждаем и согласовываем структуру объекта, дизайн, цветовое
+							решение и другие детали для точного понимания задачи. Это дает 100% гарантию получения
+							качественного и действительно работающего сайта.<br>
+							У нас вы сможете купить сайт под ключ недорого, и быть уверенными в результате. Мы всегда
+							строго соблюдаем оговоренные сроки и не срываем дедлайн.
+						</p>
+						<div class="why__link">
+							<a href="javascript:openPopUp()" class="my-btn my-btn--orange my-btn--line">Заказать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="works-section">
+				<h2 class="works-title">Просто посмотрите наши работы</h2>
+				<div class="works js-page">
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+					<div class="works-item">
+						<a href="img/work-item1.jpg" data-fancybox="gallery">
+							<img src="img/work-item1.jpg" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="works-btn">
+					<a href="portfolio.html" class="my-btn my-btn--orange my-btn--line service__btn">Посмотреть еще</a>
+				</div>
+			</div>
+
+			<div class="help-section">
+				<div class="help-top">
+					<div class="help-top__info">
+						<h2 class="help-top__title">
+							А вы знали что правильный сайт,
+							помогает сэкономить ваши деньги?
+						</h2>
+						<p class="help-top__text">
+							Т.к четкий план действий, как и что должен сделать посетитель,
+							какой цвет выбрать. Грамотная структура и расположение блоков
+							позволяет увеличить количество заявок с сайта.
+							Экономия очень существенная, т.к вам не надо будет все время
+							чтото переделывать и платить за это
+							(вы же не сможете проверить правильно сделано или нет)
+							мы работаем на качество.
+						</p>
+					</div>
+					<div class="help-top__img">
+						<img src="img/lamp.png" alt="">
+					</div>
+				</div>
+				<div class="help-bottom">
+					<div class="help-bottom__img">
+						<img src="img/item4.png" alt="">
+					</div>
+					<div class="help-bottom__info">
+						<h2 class="help-bottom__title">
+							- Теперь понятно, правильный сайт
+							подразумевает под собой не просто
+							красивую картинку, а целый план действий
+							для разработчика.
+						</h2>
+						<p class="help-bottom__text">Совершенно верно.</p>
+						<p class="help-bottom__text-strong">
+							<strong>
+								Отлично теперь вы знаете как делается продающий сайт,
+								теперь остается только найти разработчиков.
+							</strong>
+						</p>
+						<p class="help-bottom__text">Да и у вас есть несколько вариантов.</p>
+						<p class="help-bottom__text">Это какие?</p>
+					</div>
+				</div>
+				<div class="help-one">
+					<div class="help-one__info">
+						<h2 class="help-one__title">1. Авито или сайты фрилансеров.</h2>
+						<p class="help-one__text width-mini">
+							Вы можете пойти на всем известные сайты
+							по поиску работников
+						</p>
+						<p class="help-one__text">
+							Там огромное количество выходцев из республик бывшего СССР,
+							которые с большим интузиазмом клепают сайты.
+						</p>
+						<p class="help-one__text-sub">
+							Дешево. Сердито. И никакой гарантии
+						</p>
+						<p class="help-one__text">
+							Большинство из них не знают о современных технологиях,
+							трендов в сфере дизайна, не следят за поисковыми алгоритмами
+							и соответственно не смогут сделать качественный продукт.
+						</p>
+						<p class="help-one__text">
+							Плюс ко всему их постоянно нужно пинать, чтобы в перерыве
+							между поеданиями доширака и общением в срцсетях,
+							он вообще не забыл, что ему надо выполнить работу.
+						</p>
+					</div>
+					<div class="help-one__img">
+						<img src="img/item5.png" alt="">
+					</div>
+				</div>
+				<div class="help-two">
+					<div class="help-two__img">
+						<img src="img/item6.png" alt="">
+					</div>
+					<div class="help-two__info">
+						<h2 class="help-two__title">2. Дешевые фирмы.</h2>
+						<p class="help-two__text">
+							Вы зайдете на невзрачный сайт и позвоните по телефону,
+							вам скажут самую низкую цену, а вы согласитесь
+							и подпишете договор.
+						</p>
+						<p class="help-two__text">
+							Тут несколько вариантов развития событий. Либо сайт будут
+							делать ну очень долго или же очень быстро. На практике могут
+							вообще не сделать (
+						</p>
+						<p class="help-two__text">
+							Во всех случаях сайт не будет работать как надо.<br>
+							Будет просто висеть, а заказов не будет.
+						</p>
+						<p class="help-two__text width-mini">
+							Постоянно будет мелькать перед глазами не красивый
+							дизайн и не понятная структура.
+						</p>
+						<p class="help-two__text-sub">
+							Вы будете ждать 1 месяц, 3 месяца и дальше,
+							а ничего с места не сдвинется.
+						</p>
+					</div>
+				</div>
+				<div class="help-btn">
+					Или обратиться к специалистам ArtGoosekr
+					<a href="javascript:openPopUp();" class="my-btn my-btn--orange my-btn--line">Заказать</a>
+				</div>
+			</div>
+
+			<div class="socials-section">
+				<div class="socials">
+					<div class="socials__info">
+						<h2 class="socials__title">Будь всегда в курсе!</h2>
+						<p class="socials__text">
+							Не пропускайте наши новости и события
+							следите за нами в социальных сетях
+						</p>
+					</div>
+					<div class="socials__links">
+						<a href="" class="socials__link"><img src="img/soc-be.png" alt=""></a>
+						<a href="" class="socials__link"><img src="img/soc-instagram.png" alt=""></a>
+						<a href="" class="socials__link"><img src="img/soc-vk.png" alt=""></a>
+						<a href="" class="socials__link"><img src="img/soc-facebook.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="call-section">
+				<div class="call">
+					<h2 class="call__title">
+						А что вас останавливает позвонить нам
+						прямо сейчас и получить профессиональную
+						консультацию по разработке сайта?<br>
+						Это бесплатно и ни к чему вас не обязывает.
+					</h2>
+					<div class="call__info">
+						<p class="call__text">
+							Я боюсь, сложно принять такое решение, от которого многое
+							зависит, тем более деньги не малые.
+						</p>
+						<div class="call__items">
+							<p class="call__item">А вдруг мне чтото не понравится?</p>
+							<p class="call__item">Вдруг будет какойто обман?</p>
+							<p class="call__item">Сроки?</p>
+							<p class="call__item">Качество?</p>
+						</div>
+						<div class="call__text-wrap">
+							<p class="call__text">
+								Это исключено все этапы разработки и сроки прописаны
+								в договоре.
+							</p>
+							<p class="call__text">
+								Гарантируем что сайт будет одинаково хорошо отображаться,
+								как на компьютерах, так и на мобильных телефонах.
+							</p>
+							<p class="call__text text-sub">
+								И самое важное – мы живая команда.
+							</p>
+							<p class="call__text">
+								Не студенты которые насмотрелись тренингов и решили
+								открыть студию по разработке сайтов.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="wait-section">
+				<div class="wait">
+					<h2 class="wait__title">
+						Знаете давайте договоримся об одной вещи.<br>
+						Вы просто позвоните нам прямо сейчас<br>
+						и расскажите чем вы занимаетесь и что хотите получить.
+					</h2>
+					<p class="wait__text">
+						А мы вам расскажем, как сделать действительно хороший сайт
+						и назовем цену и сроки на выполнение вашего проекта.
+					</p>
+					<p class="wait__thanks">Спасибо. Мы вас ждем.</p>
+					<div class="wait__link">
+						<a href="javascript:openPopUp();" class="my-btn my-btn--fiolet">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer__logo">
+					<a href="index.html"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="footer__copyright">
+					<span>©</span> Компания ArtGoosekr<br>
+					Разработка сайтов и landing page
+				</div>
+				<div class="footer__brif">
+					<a href="">Скачать бриф</a>
+				</div>
+				<div class="footer__socials-wrap">
+					<span>Поделиться в соц. сетях</span>
+					<div id="share">
+						<div class="social" data-url="https://webliberty.ru/share/"
+							data-title="Кнопки поделиться в социальных сетях">
+							<a class="social__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+							<a class="social__link" data-id="fb"><img src="img/facebook-footer.png" alt="Facebook"></a>
+							<a class="social__link" data-id="tw"><img src="img/instagramm-footer.png"
+									alt="Instagramm"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__politika">
+				<a href="">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "TRY_Clother", sans-serif;
+  color: $black;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.wrapper {
+  max-width: 1170px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+  position: relative;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="button"] {
+  background: none;
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.my-btn {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 10px;
+  min-width: 200px;
+  padding: 19px 40px 21px;
+  text-align: center;
+  color: $black;
+  transition: 0.2s;
+  text-transform: uppercase;
+  position: relative;
+  &--orange {
+    background-color: $orange;
+    &:hover {
+      background-color: $green;
+    }
+  }
+  &--fiolet {
+    background-color: $fiolet;
+    color: #fff;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+
+  &--line::before,
+  &--line::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 2px);
+  }
+  &--line::before {
+    left: 25px;
+  }
+  &--line::after {
+    right: 25px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+.links-block {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  border-bottom: 4px solid #e8e8e8;
+  background-color: $orange;
+  &__item {
+    margin: 0 25px;
+    position: relative;
+    @media screen and (max-width: 868px) {
+      margin: 0 15px;
+    }
+    &::after {
+      content: "";
+      width: 20px;
+      height: 4px;
+      background-color: $black;
+      position: absolute;
+      top: calc(50% + 1px);
+      right: -33px;
+      @media screen and (max-width: 868px) {
+        width: 20px;
+        right: -25px;
+      }
+    }
+    &:last-of-type::after {
+      display: none;
+    }
+    &:last-of-type {
+      a {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.7;
+      }
+    }
+  }
+  &__link {
+    font-size: 30px;
+    color: $black;
+    font-weight: 700;
+    @media screen and (max-width: 868px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.inactive {
+  pointer-events: none;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0.8;
+}
+
+h2 {
+  font-weight: 700;
+}

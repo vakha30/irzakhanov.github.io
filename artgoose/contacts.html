@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="popup-wrap" id="popup1">
+        <div class="popup">
+            <div class="popup__logo">
+                <a href="index.html"><img src="img/popup-logo.png" alt=""></a>
+            </div>
+            <h2 class="popup__title">
+                Оставьте ваши контактные данные и наш<br>
+                специалист свяжется с вами
+            </h2>
+            <div class="popup-form">
+                <form action="send.php" method="POST">
+                    <table>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="">Ваше имя</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text" name="name" placeholder="Александ">
+                            </td>
+                        </tr>
+                        <tr class="input-wrap">
+                            <td class="popup-form__label-td">
+                                <label class="popup-form__label shadow--black" for="" name="phone">Ваш телефон</label>
+                            </td>
+                            <td>
+                                <input class="popup-form__input" type="text" name="phone" placeholder="89992229999">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="popup-form__btn" name="otprav">
+                </form>
+            </div>
+            <div class="popup__soglashenie">
+                Отправляя форму, вы даете <a href="#">согласие</a><br>
+                на обработку персональных данных
+            </div>
+            <span id="close-popup1" class="close-popup">&#215;</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Сайт</a></li>
+                    <li class="menu__item"><a href="landing.html" class="menu__link">Лендинг</a></li>
+                    <li class="menu__item dropdown-item"><a href="javascript:void(0);"
+                            class="menu__link dropdown-link">Еще услуги</a>
+                        <ul class="submenu">
+                            <li><a href="">Услуга 1</a></li>
+                            <li><a href="">Услуга 2</a></li>
+                            <li><a href="">Услуга 3</a></li>
+                            <li><a href="">Услуга 4</a></li>
+                            <li><a href="">Услуга 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    <ul class="menu-socials">
+                        <li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc1.png"
+                                    alt=""></a></li>
+                        <li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc2.png"
+                                    alt=""></a></li>
+                        <li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc3.png"
+                                    alt=""></a></li>
+                        <li class="menu-socials__item"><a href="" class="menu-socials__link"><img src="img/soc4.png"
+                                    alt=""></a></li>
+                    </ul>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Сайт</a>
+                    </li>
+                    <li class="mobile-menu__item"><a href="landing.html" class="mobile-menu__link">Лендинг</a></li>
+                    <li class="mobile-menu__item dropdown-item"><a href="javascript:void(0);"
+                            class="mobile-menu__link dropdown-link">Еще услуги</a>
+                        <ul class="submenu">
+                            <li><a href="">Услуга 1</a></li>
+                            <li><a href="">Услуга 2</a></li>
+                            <li><a href="">Услуга 3</a></li>
+                            <li><a href="">Услуга 4</a></li>
+                            <li><a href="">Услуга 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+                <button class="btn">
+                    <i class="btn__line"></i>
+                </button>
+            </nav>
+            <div class="head">
+                <div class="head__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Fundamix"></a>
+                </div>
+                <div class="head__adress">
+                    <strong>Работаем онлайн</strong>
+                    По всей России
+                </div>
+                <div class="head__phone">
+                    <a href="tel:89264748899">8 (926) 474-88-99</a><br>
+                    По всем вопросам
+                </div>
+                <a href="javascript:openPopUp()" class="head__link my-btn my-btn--fiolet">обратный звонок</a>
+            </div>
+        </header>
+
+        <main>
+            <ul class="links-block">
+                <li class="links-block__item"><a href="index.html" class="links-block__link">Главная</a></li>
+                <li class="links-block__item"><a href="#" class="links-block__link">Контакты</a></li>
+            </ul>
+
+            <div class="contacts-section">
+                <h2 class="contacts-title">Наши контакты</h2>
+                <div class="contacts">
+                    <h2 class="contacts__title">Работаем по всей России</h2>
+                    <p class="contacts__item"><strong>Телефон:</strong><a href="tel:89636365169"> +7(963)636-51-69</a>
+                    </p>
+                    <p class="contacts__item"><strong>Электронная почта:</strong><a href="mailto:info@artgoosekr.ru">
+                            info@artgoosekr.ru</a></p>
+                    <p class="contacts__item"><strong>Адрес:</strong> г.Красногорск ул. Октябрьская 13</p>
+                    <p class="contacts__item"><strong>Группа Вконтакте</strong><a href=""> - перейти</a></p>
+                    <p class="contacts__item"><strong>Группа Фейсбук</strong><a href=""> - перейти</a></p>
+                    <p class="contacts__item"><strong>Группа Инстаграм</strong><a href=""> - перейти</a></p>
+                    <p class="contacts__item"><strong>Группа Беханс</strong><a href=""> - перейти</a></p>
+                </div>
+            </div>
+
+            <div class="socials-section socials-about">
+                <div class="socials">
+                    <div class="socials__info">
+                        <h2 class="socials__title">Будь всегда в курсе!</h2>
+                        <p class="socials__text">
+                            Не пропускайте наши новости и события
+                            следите за нами в социальных сетях
+                        </p>
+                    </div>
+                    <div class="socials__links">
+                        <a href="" class="socials__link"><img src="img/soc-be.png" alt=""></a>
+                        <a href="" class="socials__link"><img src="img/soc-instagram.png" alt=""></a>
+                        <a href="" class="socials__link"><img src="img/soc-vk.png" alt=""></a>
+                        <a href="" class="socials__link"><img src="img/soc-facebook.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.0901749116!2d37.330738783577864!3d55.826834989683086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b546f6fbf8e60d%3A0x78931a54f4d914dc!2z0J7QutGC0Y_QsdGA0YzRgdC60LDRjyDRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMg!5e0!3m2!1sru!2sru!4v1567927780526!5m2!1sru!2sru"
+                        height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer__logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="footer__copyright">
+                    <span>©</span> Компания ArtGoosekr<br>
+                    Разработка сайтов и landing page
+                </div>
+                <div class="footer__brif">
+                    <a href="">Скачать бриф</a>
+                </div>
+                <div class="footer__socials-wrap">
+                    <span>Поделиться в соц. сетях</span>
+                    <div id="share">
+                        <div class="social" data-url="https://webliberty.ru/share/"
+                            data-title="Кнопки поделиться в социальных сетях">
+                            <a class="social__link" data-id="vk"><img src="img/vk-footer.png" alt="Vk"></a>
+                            <a class="social__link" data-id="fb"><img src="img/facebook-footer.png" alt="Facebook"></a>
+                            <a class="social__link" data-id="tw"><img src="img/instagramm-footer.png"
+                                    alt="Instagramm"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__politika">
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
