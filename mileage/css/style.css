@@ -247,7 +247,6 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 25px;
   padding-top: 0px;
   padding-bottom: 12px; }
   .header-top .header-logo {
@@ -311,7 +310,7 @@ button {
   cursor: pointer;
   background-color: #000;
   position: absolute;
-  right: 38px;
+  right: 15px;
   top: 20px;
   z-index: 600;
   -webkit-transition: 0.2s;
