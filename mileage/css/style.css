@@ -248,7 +248,8 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 25px;
-  padding-top: 5px; }
+  padding-top: 0px;
+  padding-bottom: 12px; }
   .header-top .header-logo {
     padding-top: 20px; }
   .header-top .menu {
@@ -311,7 +312,7 @@ button {
   background-color: #000;
   position: absolute;
   right: 10px;
-  top: 25px;
+  top: 20px;
   z-index: 600;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
