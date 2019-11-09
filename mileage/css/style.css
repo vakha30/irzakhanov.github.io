@@ -311,7 +311,7 @@ button {
   cursor: pointer;
   background-color: #000;
   position: absolute;
-  right: 10px;
+  right: 38px;
   top: 20px;
   z-index: 600;
   -webkit-transition: 0.2s;
