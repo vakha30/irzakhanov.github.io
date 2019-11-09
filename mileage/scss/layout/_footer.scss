@@ -1,0 +1,14 @@
+.footer {
+    background-color: #222;
+    text-align: center;
+    padding-top: 102px;
+    padding-bottom: 62px;
+    &__logo {
+        padding-left: 70px;
+    }
+    &__copyright {
+        color: #777;
+        font-size: 14px;
+        margin-top: 124px;
+    }
+}

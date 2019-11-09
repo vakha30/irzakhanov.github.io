@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  padding-top: 5px;
+
+  .header-logo {
+    padding-top: 20px;
+  }
+  .menu {
+    display: flex;
+    transition: .2s;
+    @media screen and (max-width: 1024px) {
+      display: block;
+      background-color: rgba(0,0,0,.9);
+      width: 60%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -2000px;
+      text-align: center;
+      padding-top: 100px;
+      padding-right: 50px;
+    }
+    &__item {
+      margin-left: 72px;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 30px;
+      }
+    }
+    &__link {
+      font-size: 14px;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      border-color: transparent;
+      transition: 0.3s;
+      @media screen and (max-width: 1024px) {
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+      &:hover {
+        border-color: #fff;
+      }
+    }
+
+    &.menu-open {
+      right: 0;
+    }
+
+    .menu-active {
+      border-color: #fff;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 600;
+  transition: 0.2s;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .btn {
+    display: flex;
+  }
+}
+
+.btn__line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.btn__line::before,
+.btn__line::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+  /*   transform-origin: right; */
+}
+
+.btn__line::before {
+  top: -8px;
+}
+
+.btn__line::after {
+  bottom: -8px;
+}
+
+.active-btn {
+  background-color: #46a746;
+}
+
+.active-btn .btn__line {
+  height: 0;
+}
+
+.active-btn .btn__line::before {
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+.active-btn .btn__line::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
