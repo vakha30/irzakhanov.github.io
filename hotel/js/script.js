@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
 
     $("#fullpage").fullpage({
         // sectionsColor:['#C63D0F','#1BBC9B','#7E8F7C'],
-        anchors: ['home', 'secondPage', '3rdPage'],
+        // anchors: ['home', 'secondPage', '3rdPage'],
         menu: '#menu',
         scrollBar: false,
         scrollOverflow: true,
