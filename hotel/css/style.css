@@ -1038,7 +1038,7 @@ section {
     @media screen and (max-width: 768px) {
       .personal-section::after {
         width: 80px;
-        top: 20px;
+        top: 0px;
         left: calc(100% - 85px);
         background-position-y: top;
         background-size: contain; } }
