@@ -39,15 +39,18 @@ jQuery(document).ready(function ($) {
                 $(".header__nav > a").css({
                     'color': '#000000'
                 });
+
             } else {
                 $(".burger-menu").removeClass('black')
                 $(".header__nav > a").css({
                     'color': '#ffffff'
                 });
             }
-            if (link == '3rdPage') {
-                $("#section2 h1").fadeIn(1500, function () {
-                    $("#section2 p").css({ 'display': 'block' }).animate({ 'fontSize': '8em' }, 1000)
+            var mql = window.matchMedia('all and (max-width: 768px)');
+            if ( index == 4 && mql.matches) {
+                $(".burger-menu").addClass('black');
+                $(".header__nav > a").css({
+                    'color': '#000000'
                 });
             }
         }
