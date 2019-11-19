@@ -771,6 +771,9 @@ section {
         padding-top: 55px; } }
     .home__slider .home-slider {
       padding-right: 100px; }
+      @media screen and (max-width: 768px) {
+        .home__slider .home-slider {
+          padding-right: 0; } }
       .home__slider .home-slider__item {
         -webkit-box-shadow: 1px 1px 74px -29px rgba(0, 0, 0, 0.64);
         box-shadow: 1px 1px 74px -29px rgba(0, 0, 0, 0.64);
