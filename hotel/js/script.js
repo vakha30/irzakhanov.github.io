@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
                 });
             }
             var mql = window.matchMedia('all and (max-width: 768px)');
-            if ( index == 4 && mql.matches) {
+            if (index == 4 && mql.matches) {
                 $(".burger-menu").addClass('black');
                 $(".header__nav > a").css({
                     'color': '#000000'
@@ -45,7 +45,21 @@ jQuery(document).ready(function ($) {
     });
 
     $('.home-slider').slick({
-        fade: true
+        fade: true,
+        dots: true,
+        dotsClass: 'slider-count',
+        customPaging: function (slider, i) {
+            var thumb = $(slider.$slides[i]).data();
+            return '<button>' + ((i+1).toString().padStart(2, '0')) + '</button>';
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
 
     $('.personal-slider').slick({
@@ -54,7 +68,7 @@ jQuery(document).ready(function ($) {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -68,7 +82,7 @@ jQuery(document).ready(function ($) {
     var mql = window.matchMedia('all and (max-width: 768px)');
     if (mql.matches) {
         document.querySelector('.events-wrap').classList.add('events-slider');
-    } 
+    }
 
     $('.events-slider').slick({
         slidesToShow: 1,
